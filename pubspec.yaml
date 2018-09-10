@@ -30,7 +30,8 @@ flutter:
   #  - images/a_dot_burr.jpeg
   #  - images/a_dot_ham.jpeg
   assets:
-     - images/01.png
+     - images/icons/01.png
+     - images/icons/termo.png
      - images/dia-larga-transparente.png
      - images/dia-am.png
      - assets/data/cidades.json
@@ -64,9 +65,7 @@ flutter:
   fonts:
       - family: Montserrat
         fonts:
-          - asset: fonts/Montserrat-Bold.ttf
-          - asset: fonts/Montserrat-Italic.ttf
-          - asset: fonts/Montserrat-BoldItalic.ttf
+          - asset: fonts/Montserrat-Regular.ttf
 
 
 
