@@ -23,6 +23,7 @@ class _HomeTesteState extends State<HomeTeste> {
   initState() {
     carregaCidadeLista();
     super.initState();
+    
   }
 
   @override
