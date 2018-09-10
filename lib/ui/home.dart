@@ -1,3 +1,4 @@
+/*ESTE ARQUIVO*/
 import 'package:flutter/material.dart';
 
 class Home extends StatefulWidget {
@@ -72,7 +73,7 @@ Widget linhaTempo(String diaSemana, int graus) {
             Padding(
               padding: EdgeInsets.only(left: 0.0, top: 0.0, right: 15.0, bottom: 0.0),
               child: Image.asset(
-                "images/01.png",
+                "images/icons/01.png",
                 fit: BoxFit.cover,
                 height: 115.0,
               ),
@@ -81,7 +82,7 @@ Widget linhaTempo(String diaSemana, int graus) {
               children: <Widget>[
                 Text(
                   "$graus° C",
-                  style: TextStyle(fontSize: 50.0, fontWeight: FontWeight.bold, color: Colors.white, fontStyle: FontStyle.italic),
+                  style: TextStyle(fontSize: 50.0, fontWeight: FontWeight.bold, color: Colors.white,),
                 ),
                 Text(
                   "Tempo Claro",
@@ -141,6 +142,10 @@ Widget descricao(String descricao){
       Text(
         "$descricao",
         style: TextStyle(fontSize: 30.0, color: Colors.white),
+      ),
+      Image.asset(
+        "images/icons/img.png",
+        height: 25.0,
       ),
     ],
   );

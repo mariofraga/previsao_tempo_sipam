@@ -30,10 +30,11 @@ flutter:
   #  - images/a_dot_burr.jpeg
   #  - images/a_dot_ham.jpeg
   assets:
-     - images/01.png
+     - images/icons/01.png
+     - images/icons/termo.png
      - images/dia-larga-transparente.png
+     - images/dia-am.png
      - assets/data/cidades.json
-
 
 
   # An image asset can refer to one or more resolution-specific "variants", see
@@ -61,3 +62,10 @@ flutter:
   #
   # For details regarding fonts from package dependencies,
   # see https://flutter.io/custom-fonts/#from-packages
+  fonts:
+      - family: Montserrat
+        fonts:
+          - asset: fonts/Montserrat-Regular.ttf
+
+
+
