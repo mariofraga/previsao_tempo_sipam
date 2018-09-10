@@ -1,4 +1,4 @@
-/*ESTE ARQUIVO*/
+//ESTE
 import 'package:flutter/material.dart';
 
 class Home extends StatefulWidget {
