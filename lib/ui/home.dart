@@ -10,7 +10,6 @@ class Home extends StatefulWidget {
 }
 
 class _HomeState extends State<Home> {
-
   List<Previsaotempo> listObjPrevisao = new List<Previsaotempo>();
   String cidadeFavorita;
 
@@ -63,9 +62,8 @@ class _HomeState extends State<Home> {
   //FIM CARREGAR INFORMAÇÕES DO JSON DE PREVISÃO
 
   void _selecionaCidade(BuildContext c) async {
-    final _recCidade = await Navigator.push(c,
-        MaterialPageRoute(
-            builder: (context) => Cidades()));
+    final _recCidade = await Navigator.push(
+        c, MaterialPageRoute(builder: (context) => Cidades()));
     if (_recCidade != null) {
       if (_recCidade != null) {
         cidadeFavorita = _recCidade;
@@ -79,11 +77,6 @@ class _HomeState extends State<Home> {
   //WIDGET QUE CONSTROI A PAGINA INICIAL COM OS DADOS DO JSON
   Widget getPageHomeDados(BuildContext context) {
     // PEGANDO A DATA ATUAL E COMPARANDO COM A DO PRIMEIRO OBJETO DA LISTA
-    String hoje;
-    var data = DateTime.now();
-    if(listObjPrevisao[0].data == "${data.day}/0${data.month}/${data.year}"){
-      hoje = "Hoje";
-    }
     return DefaultTabController(
       length: 3,
       child: Scaffold(
@@ -93,13 +86,12 @@ class _HomeState extends State<Home> {
           centerTitle: true,
           title: Text("Previsão do Tempo $cidadeFavorita",
               style: TextStyle(fontSize: 16.0, fontWeight: FontWeight.bold)),
-          bottom:
-          TabBar(
+          bottom: TabBar(
             labelColor: Colors.amber,
             unselectedLabelColor: Colors.white,
             tabs: [
               Tab(
-                child: Text(hoje),
+                child: Text("Hoje"),
               ),
               Tab(
                 child: Text(listObjPrevisao[1].data),
@@ -110,17 +102,15 @@ class _HomeState extends State<Home> {
             ],
           ),
         ),
-        body:
-        Container( child:
-        TabBarView(
-          children: [
-            pagePrevisaoTempo(listObjPrevisao[0], "01"),
-            pagePrevisaoTempo(listObjPrevisao[1], "02"),
-            pagePrevisaoTempo(listObjPrevisao[2], "03"),
-          ],
+        body: Container(
+          child: TabBarView(
+            children: [
+              pagePrevisaoTempo(listObjPrevisao[0], "01", AlignmentDirectional.centerStart),
+              pagePrevisaoTempo(listObjPrevisao[1], "02", AlignmentDirectional.center),
+              pagePrevisaoTempo(listObjPrevisao[2], "03", AlignmentDirectional.centerEnd),
+            ],
+          ),
         ),
-        ),
-
         floatingActionButton: FloatingActionButton(
           onPressed: () {
             _selecionaCidade(context);
@@ -134,27 +124,30 @@ class _HomeState extends State<Home> {
   }
 }
 
-Widget pagePrevisaoTempo(Previsaotempo objPrevTemp, String imgTemp) {
+Widget pagePrevisaoTempo(Previsaotempo objPrevTemp, String imgTemp, AlignmentGeometry alinhamento) {
   return Container(
     decoration: new BoxDecoration(
       color: Colors.black87,
       image: new DecorationImage(
         image: new AssetImage("images/sol2.jpg"),
         fit: BoxFit.cover,
+        alignment: alinhamento
       ),
     ),
     child: Column(
-        children: <Widget>[
-          LinhaTemperatura(objPrevTemp.diaSemana, objPrevTemp.temperaturaMax, objPrevTemp.temperaturaMin, "$imgTemp"),
-          LinhaTempo(objPrevTemp.tempo),
-          LinhaUmidade(objPrevTemp.umidadeMax, objPrevTemp.umidadeMin),
-          LinhaVentos(objPrevTemp.direcaoVentos, objPrevTemp.intensidade)
-        ],
-      ),
+      children: <Widget>[
+        LinhaTemperatura(objPrevTemp.diaSemana, objPrevTemp.temperaturaMax,
+            objPrevTemp.temperaturaMin, "$imgTemp"),
+        LinhaTempo(objPrevTemp.tempo),
+        LinhaUmidade(objPrevTemp.umidadeMax, objPrevTemp.umidadeMin),
+        LinhaVentos(objPrevTemp.direcaoVentos, objPrevTemp.intensidade)
+      ],
+    ),
   );
 }
 
-Widget LinhaTemperatura(String diaSemana, String tempMax, String tempMin, String imgTempo) {
+Widget LinhaTemperatura(
+    String diaSemana, String tempMax, String tempMin, String imgTempo) {
   return Padding(
     padding: EdgeInsets.only(left: 20.0, top: 10.0, right: 20.0, bottom: 0.0),
     child: Column(
@@ -239,7 +232,7 @@ Widget LinhaVentos(String direcao, String intensidade) {
 // WIDGET QUE MONTA A OS DESCRIÇÃO DE CADA MOSTRAGEM
 
 Widget Descricao(String descricao, String img) {
-  if(img == "vazia"){
+  if (img == "vazia") {
     return Row(
       mainAxisAlignment: MainAxisAlignment.spaceBetween,
       children: <Widget>[
@@ -264,7 +257,6 @@ Widget Descricao(String descricao, String img) {
       ],
     );
   }
-
 }
 
 // WIDGET QUE MONTA A OS TITULOS DE CADA MOSTRAGEM
@@ -274,7 +266,8 @@ Widget TituloELinha(String titulo) {
     children: <Widget>[
       Text(
         "$titulo",
-        style: TextStyle(fontSize: 19.5, color: Colors.white, fontWeight: FontWeight.bold),
+        style: TextStyle(
+            fontSize: 19.5, color: Colors.white, fontWeight: FontWeight.bold),
       ),
       Container(
         color: Colors.white.withOpacity(0.85),
