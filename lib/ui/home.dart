@@ -1,4 +1,3 @@
-//ESTE
 import 'package:flutter/material.dart';
 
 class Home extends StatefulWidget {
@@ -35,14 +34,20 @@ class _HomeState extends State<Home> {
           ),
         ),
         body: TabBarView(
-          children: [pagePrevisaoTempo("SEGUNDA-FEIRA", 25)],
+          children: [pagePrevisaoTempo("SEGUNDA-FEIRA", "36", "25", "Claro a parcialmente nublado com possibilidade de chuva em áreas isoladas", "60", "20", "N-NW", "Fracos")],
+        ),
+        floatingActionButton: FloatingActionButton(
+          onPressed: () {},
+          backgroundColor: Colors.lightGreen[900],
+          tooltip: 'Inbox',
+          child: Icon(Icons.location_on),
         ),
       ),
     );
   }
 }
 
-Widget pagePrevisaoTempo(String diaSemana, int graus) {
+Widget pagePrevisaoTempo(String diaSemana, String max, String min, String tempo, String umidadeMax, String umidadeMin, String direcao, String intensidade) {
   return Stack(
     children: <Widget>[
       Image.asset(
@@ -52,22 +57,22 @@ Widget pagePrevisaoTempo(String diaSemana, int graus) {
       ),
       Column(
         children: <Widget>[
-          linhaTempo(diaSemana, graus),
-          linhaMaxMin(),
-          linhaUmidade(),
-          linhaVentos()
+          LinhaTemperatura("$diaSemana", "$max", "$min"),
+          LinhaTempo("$tempo"),
+          LinhaUmidade("$umidadeMax","$umidadeMin"),
+          LinhaVentos("$direcao", "$intensidade")
         ],
       ),
     ],
   );
 }
 
-Widget linhaTempo(String diaSemana, int graus) {
+Widget LinhaTemperatura(String diaSemana, String max, String min) {
   return Padding(
     padding: EdgeInsets.only(left: 20.0, top: 5.0, right: 20.0, bottom: 0.0),
     child: Column(
       children: <Widget>[
-        tituloELinha("$diaSemana"),
+        TituloELinha("$diaSemana"),
         Row(
           children: <Widget>[
             Padding(
@@ -81,17 +86,13 @@ Widget linhaTempo(String diaSemana, int graus) {
             Column(
               children: <Widget>[
                 Text(
-                  "$graus° C",
-                  style: TextStyle(fontSize: 50.0, fontWeight: FontWeight.bold, color: Colors.white,),
+                  "Temperatudo Máx e Mín",
+                  style: TextStyle(fontSize: 17.0, fontWeight: FontWeight.bold, color: Colors.white,),
                 ),
                 Text(
-                  "Tempo Claro",
-                  style: TextStyle(fontSize: 16.0, fontWeight: FontWeight.bold, color: Colors.white),
+                  "$max°C - $min°C",
+                  style: TextStyle(fontSize: 35.0, fontWeight: FontWeight.bold, color: Colors.white),
                 ),
-                Text(
-                  "Parcialmente Nublado",
-                  style: TextStyle(fontSize: 16.0, fontWeight: FontWeight.bold, color: Colors.white),
-                )
               ],
             ),
           ],
@@ -101,57 +102,61 @@ Widget linhaTempo(String diaSemana, int graus) {
   );
 }
 
-Widget linhaMaxMin() {
+Widget LinhaTempo(String tempo) {
   return Padding(
-    padding: EdgeInsets.only(left: 20.0, top: 10.0, right: 20.0, bottom: 0.0),
+    padding: EdgeInsets.only(left: 20.0, top: 5.0, right: 20.0, bottom: 0.0),
     child: Column(
       children: <Widget>[
-        tituloELinha("MÁX E MÍN"),
-        descricao("60% - 20%"),
+        TituloELinha("TEMPO"),
+        Text("$tempo", style: TextStyle(fontSize: 16.0, fontWeight: FontWeight.bold, color: Colors.white))
       ],
     ),
   );
 }
 
-Widget linhaUmidade() {
+Widget LinhaUmidade(String max, String min) {
   return Padding(
-    padding: EdgeInsets.only(left: 20.0, top: 10.0, right: 20.0, bottom: 0.0),
+    padding: EdgeInsets.only(left: 20.0, top: 5.0, right: 20.0, bottom: 0.0),
     child: Column(
       children: <Widget>[
-        tituloELinha("MÁX E MÍN"),
-        descricao("60% - 20%"),
+        TituloELinha("UMIDADE MÁX E MÍN"),
+        Descricao("$max% - $min%", "umidade"),
       ],
     ),
   );
 }
 
-Widget linhaVentos() {
+Widget LinhaVentos(String direcao, String intensidade) {
   return Padding(
-    padding: EdgeInsets.only(left: 20.0, top: 10.0, right: 20.0, bottom: 0.0),
+    padding: EdgeInsets.only(left: 20.0, top: 5.0, right: 20.0, bottom: 0.0),
     child: Column(
       children: <Widget>[
-        tituloELinha("MÁX E MÍN"),
-        descricao("60% - 20%"),
+        TituloELinha("VENTOS - DIREÇÃO E INTENSIDADE"),
+        Descricao("$direcao/$intensidade", "ventos"),
       ],
     ),
   );
 }
-Widget descricao(String descricao){
+// WIDGET QUE MONTA A OS DESCRIÇÃO DE CADA MOSTRAGEM
+
+Widget Descricao(String descricao, String img){
   return Row(
+    mainAxisAlignment: MainAxisAlignment.spaceBetween,
     children: <Widget>[
       Text(
         "$descricao",
         style: TextStyle(fontSize: 30.0, color: Colors.white),
       ),
       Image.asset(
-        "images/icons/img.png",
+        "images/icons/$img.png",
         height: 25.0,
       ),
     ],
   );
 }
 
-Widget tituloELinha(String titulo) {
+// WIDGET QUE MONTA A OS TITULOS DE CADA MOSTRAGEM
+Widget TituloELinha(String titulo) {
   return Column(
     crossAxisAlignment: CrossAxisAlignment.stretch,
     children: <Widget>[

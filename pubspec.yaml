@@ -32,6 +32,8 @@ flutter:
   assets:
      - images/icons/01.png
      - images/icons/termo.png
+     - images/icons/ventos.png
+     - images/icons/umidade.png
      - images/dia-larga-transparente.png
      - images/dia-am.png
      - assets/data/cidades.json
