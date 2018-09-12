@@ -37,6 +37,11 @@ flutter:
      - images/dia-larga-transparente.png
      - images/dia-am.png
      - assets/data/cidades.json
+     - images/sol1.jpg
+     - images/sol2.jpg
+     - images/sol1_escurecido.jpg
+     - images/sol2_escurecido.jpg
+
 
 
   # An image asset can refer to one or more resolution-specific "variants", see
