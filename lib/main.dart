@@ -10,7 +10,7 @@ void main() {
         accentColor: Colors.green[600],
 
     ),
-    home: HomeTeste()
+    home: Home()
   )
   );
 }

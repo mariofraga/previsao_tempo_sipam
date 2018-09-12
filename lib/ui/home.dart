@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:previsao_tempo/ui/cidades.dart';
 
 class Home extends StatefulWidget {
   @override
@@ -6,6 +7,22 @@ class Home extends StatefulWidget {
 }
 
 class _HomeState extends State<Home> {
+
+  String cidadeFavorita;
+
+  @override
+  void initState() {
+    super.initState();
+    print("ok");
+    if (cidadeFavorita == null || cidadeFavorita.isEmpty) {
+      cidadeFavorita = "Porto Velho";
+    } else {
+      cidadeFavorita = "outra";
+    }
+  }
+
+
+
   @override
   Widget build(BuildContext context) {
     return DefaultTabController(
@@ -15,9 +32,13 @@ class _HomeState extends State<Home> {
         appBar: AppBar(
           backgroundColor: Colors.lightGreen[900],
           centerTitle: true,
-          title: Text("Previsão do Tempo Porto Velho",
+          title: Text("Previsão do Tempo $cidadeFavorita",
               style: TextStyle(fontSize: 16.0, fontWeight: FontWeight.bold)),
-          bottom: TabBar(
+          bottom:
+
+          TabBar(
+            labelColor: Colors.amber,
+            unselectedLabelColor: Colors.white,
             tabs: [
               Tab(
                 child: Text("Hoje"),
@@ -49,7 +70,9 @@ class _HomeState extends State<Home> {
         ),
 
         floatingActionButton: FloatingActionButton(
-          onPressed: () {},
+          onPressed: () {
+            _selecionaCidade(context);
+          },
           backgroundColor: Colors.lightGreen[900],
           tooltip: 'Inbox',
           child: Icon(Icons.location_on),
@@ -57,15 +80,30 @@ class _HomeState extends State<Home> {
       ),
     );
   }
+
+  void _selecionaCidade(BuildContext c) async {
+    final _recCidade = await Navigator.push(c,
+        MaterialPageRoute(
+            builder: (context) => Cidades()));
+    if (_recCidade != null) {
+      if (_recCidade != null) {
+        cidadeFavorita = _recCidade;
+      } else {
+        cidadeFavorita = "nenhuma";
+      }
+      setState(() {});
+    }
+  }
+
 }
 
 Widget pagePrevisaoTempo(String diaSemana, String max, String min, String tempo,
     String umidadeMax, String umidadeMin, String direcao, String intensidade) {
   return Container(
     decoration: new BoxDecoration(
-      color: Colors.black38,
+      color: Colors.black87,
       image: new DecorationImage(
-        image: new AssetImage("images/sol1.jpg"),
+        image: new AssetImage("images/sol2.jpg"),
         fit: BoxFit.cover,
       ),
     ),

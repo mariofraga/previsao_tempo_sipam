@@ -4,9 +4,9 @@ import 'package:flutter/material.dart';
 import 'dart:async' show Future;
 import 'package:flutter/services.dart' show rootBundle;
 
-class HomeTeste extends StatefulWidget {
+class Cidades extends StatefulWidget {
   @override
-  _HomeTesteState createState() => _HomeTesteState();
+  _CidadesState createState() => _CidadesState();
 }
 
 /*class Cidade {
@@ -16,7 +16,7 @@ class HomeTeste extends StatefulWidget {
   Cidade(this.nomeCidade, this.uf, this.estado);
 }*/
 
-class _HomeTesteState extends State<HomeTeste> {
+class _CidadesState extends State<Cidades> {
   List<String> cidadesOrifinal = new List<String>();
   List<String> cidades = new List<String>();
 
@@ -32,15 +32,14 @@ class _HomeTesteState extends State<HomeTeste> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        backgroundColor: Colors.green,
+        backgroundColor: Colors.lightGreen[900],
         title: Text(
           "Selecione a Cidade",
-          style: TextStyle(color: Colors.white),
+          style: TextStyle(color: Colors.white, fontSize: 16.0, fontWeight: FontWeight.bold),
         ),
         centerTitle: true,
       ),
       body: Container(
-
         decoration: new BoxDecoration(
           color: Colors.black38,
           image: new DecorationImage(
