@@ -16,9 +16,7 @@ class _HomeState extends State<Home> {
           backgroundColor: Colors.lightGreen[900],
           centerTitle: true,
           title: Text("Previsão do Tempo Porto Velho",
-              style: TextStyle(
-                  fontSize: 16.0,
-                  fontWeight: FontWeight.bold)),
+              style: TextStyle(fontSize: 16.0, fontWeight: FontWeight.bold)),
           bottom: TabBar(
             tabs: [
               Tab(
@@ -34,7 +32,17 @@ class _HomeState extends State<Home> {
           ),
         ),
         body: TabBarView(
-          children: [pagePrevisaoTempo("SEGUNDA-FEIRA", "36", "25", "Claro a parcialmente nublado com possibilidade de chuva em áreas isoladas", "60", "20", "N-NW", "Fracos")],
+          children: [
+            pagePrevisaoTempo(
+                "SEGUNDA-FEIRA",
+                "36",
+                "25",
+                "Claro a parcialmente nublado com possibilidade de chuva em áreas isoladas",
+                "60",
+                "20",
+                "N-NW",
+                "Fracos")
+          ],
         ),
         floatingActionButton: FloatingActionButton(
           onPressed: () {},
@@ -47,7 +55,8 @@ class _HomeState extends State<Home> {
   }
 }
 
-Widget pagePrevisaoTempo(String diaSemana, String max, String min, String tempo, String umidadeMax, String umidadeMin, String direcao, String intensidade) {
+Widget pagePrevisaoTempo(String diaSemana, String max, String min, String tempo,
+    String umidadeMax, String umidadeMin, String direcao, String intensidade) {
   return Stack(
     children: <Widget>[
       Image.asset(
@@ -59,7 +68,7 @@ Widget pagePrevisaoTempo(String diaSemana, String max, String min, String tempo,
         children: <Widget>[
           LinhaTemperatura("$diaSemana", "$max", "$min"),
           LinhaTempo("$tempo"),
-          LinhaUmidade("$umidadeMax","$umidadeMin"),
+          LinhaUmidade("$umidadeMax", "$umidadeMin"),
           LinhaVentos("$direcao", "$intensidade")
         ],
       ),
@@ -76,7 +85,8 @@ Widget LinhaTemperatura(String diaSemana, String max, String min) {
         Row(
           children: <Widget>[
             Padding(
-              padding: EdgeInsets.only(left: 0.0, top: 0.0, right: 15.0, bottom: 0.0),
+              padding: EdgeInsets.only(
+                  left: 0.0, top: 0.0, right: 15.0, bottom: 0.0),
               child: Image.asset(
                 "images/icons/01.png",
                 fit: BoxFit.cover,
@@ -87,11 +97,18 @@ Widget LinhaTemperatura(String diaSemana, String max, String min) {
               children: <Widget>[
                 Text(
                   "Temperatudo Máx e Mín",
-                  style: TextStyle(fontSize: 17.0, fontWeight: FontWeight.bold, color: Colors.white,),
+                  style: TextStyle(
+                    fontSize: 17.0,
+                    fontWeight: FontWeight.bold,
+                    color: Colors.white,
+                  ),
                 ),
                 Text(
                   "$max°C - $min°C",
-                  style: TextStyle(fontSize: 35.0, fontWeight: FontWeight.bold, color: Colors.white),
+                  style: TextStyle(
+                      fontSize: 35.0,
+                      fontWeight: FontWeight.bold,
+                      color: Colors.white),
                 ),
               ],
             ),
@@ -108,7 +125,11 @@ Widget LinhaTempo(String tempo) {
     child: Column(
       children: <Widget>[
         TituloELinha("TEMPO"),
-        Text("$tempo", style: TextStyle(fontSize: 16.0, fontWeight: FontWeight.bold, color: Colors.white))
+        Text("$tempo",
+            style: TextStyle(
+                fontSize: 16.0,
+                fontWeight: FontWeight.bold,
+                color: Colors.white))
       ],
     ),
   );
@@ -139,7 +160,7 @@ Widget LinhaVentos(String direcao, String intensidade) {
 }
 // WIDGET QUE MONTA A OS DESCRIÇÃO DE CADA MOSTRAGEM
 
-Widget Descricao(String descricao, String img){
+Widget Descricao(String descricao, String img) {
   return Row(
     mainAxisAlignment: MainAxisAlignment.spaceBetween,
     children: <Widget>[
