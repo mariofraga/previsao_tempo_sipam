@@ -31,7 +31,9 @@ class _HomeState extends State<Home> {
             ],
           ),
         ),
-        body: TabBarView(
+        body:
+        Container( child:
+        TabBarView(
           children: [
             pagePrevisaoTempo(
                 "SEGUNDA-FEIRA",
@@ -44,6 +46,8 @@ class _HomeState extends State<Home> {
                 "Fracos")
           ],
         ),
+        ),
+
         floatingActionButton: FloatingActionButton(
           onPressed: () {},
           backgroundColor: Colors.lightGreen[900],
@@ -57,14 +61,16 @@ class _HomeState extends State<Home> {
 
 Widget pagePrevisaoTempo(String diaSemana, String max, String min, String tempo,
     String umidadeMax, String umidadeMin, String direcao, String intensidade) {
-  return Stack(
-    children: <Widget>[
-      Image.asset(
-        "images/dia-am.png",
+  return Container(
+    decoration: new BoxDecoration(
+      color: Colors.black38,
+      image: new DecorationImage(
+        image: new AssetImage("images/sol1.jpg"),
         fit: BoxFit.cover,
-        height: 500.0,
       ),
-      Column(
+    ),
+    child: Column(
+        mainAxisAlignment: MainAxisAlignment.spaceAround,
         children: <Widget>[
           LinhaTemperatura("$diaSemana", "$max", "$min"),
           LinhaTempo("$tempo"),
@@ -72,7 +78,6 @@ Widget pagePrevisaoTempo(String diaSemana, String max, String min, String tempo,
           LinhaVentos("$direcao", "$intensidade")
         ],
       ),
-    ],
   );
 }
 
