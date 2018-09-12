@@ -30,12 +30,16 @@ flutter:
   #  - images/a_dot_ham.jpeg
   assets:
      - images/icons/01.png
+     - images/icons/02.png
+     - images/icons/03.png
+     - images/icons/vazia.png
      - images/icons/termo.png
      - images/icons/ventos.png
      - images/icons/umidade.png
      - images/dia-larga-transparente.png
      - images/dia-am.png
      - assets/data/cidades.json
+     - assets/data/previsaoTempo.json
      - images/sol1.jpg
      - images/sol2.jpg
      - images/sol1_escurecido.jpg
