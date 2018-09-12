@@ -44,7 +44,7 @@ class _HomeTesteState extends State<HomeTeste> {
         decoration: new BoxDecoration(
           color: Colors.black38,
           image: new DecorationImage(
-            image: new AssetImage("images/dia-am.png"),
+            image: new AssetImage("images/sol1.jpg"),
             fit: BoxFit.cover,
           ),
         ),
@@ -52,7 +52,7 @@ class _HomeTesteState extends State<HomeTeste> {
 
             children: <Widget>[
               Container(
-                color: Colors.transparent,
+
                 padding: EdgeInsets.all(10.0),
                 child: TextField(
                   style: TextStyle(color: Colors.white, fontWeight: FontWeight.bold, fontSize: 18.0,  ),
@@ -64,7 +64,8 @@ class _HomeTesteState extends State<HomeTeste> {
                   },
                   decoration: InputDecoration(
                     labelText: "Pesquise Aqui",
-                    labelStyle:  TextStyle(color: Colors.white70, fontWeight: FontWeight.bold, fontSize: 18.0),
+                    labelStyle:  TextStyle(color: Colors.white, fontWeight: FontWeight.bold, fontSize: 18.0,),
+
                   ),
                 ),
               ),
