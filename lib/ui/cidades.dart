@@ -39,33 +39,52 @@ class _HomeTesteState extends State<HomeTeste> {
         ),
         centerTitle: true,
       ),
-      body: Column(children: <Widget>[
-        Container(
-          padding: EdgeInsets.all(10.0),
-          child: TextField(
-            onChanged:(text){
-              setState(() {
-                cidades = cidadesOrifinal.where((f) => f.toLowerCase().contains(text.toLowerCase())).toList();
-                print("Quantidade de Cidades Encontradas: ${cidades.length.toString()}");
-              });
-            },
-            decoration: InputDecoration(
-              labelText: "Pesquise Aqui",
-              labelStyle: TextStyle(color: Colors.black),
-              border: OutlineInputBorder(),
-            ),
+      body: Container(
+
+        decoration: new BoxDecoration(
+          color: Colors.black38,
+          image: new DecorationImage(
+            image: new AssetImage("images/dia-am.png"),
+            fit: BoxFit.cover,
           ),
         ),
-        Expanded(
-          child: ListView.builder(
-            padding: EdgeInsets.all(10.0),
-            itemCount: cidades.length,
-            itemBuilder: (context, index) {
-              return getCidadeList(context, index);
-            },
-          ),
-        )
-      ]),
+        child: Column(
+
+            children: <Widget>[
+              Container(
+                color: Colors.transparent,
+                padding: EdgeInsets.all(10.0),
+                child: TextField(
+                  style: TextStyle(color: Colors.white, fontWeight: FontWeight.bold, fontSize: 18.0,  ),
+                  onChanged:(text){
+                    setState(() {
+                      cidades = cidadesOrifinal.where((f) => f.toLowerCase().contains(text.toLowerCase())).toList();
+                      print("Quantidade de Cidades Encontradas: ${cidades.length.toString()}");
+                    });
+                  },
+                  decoration: InputDecoration(
+                    labelText: "Pesquise Aqui",
+                    labelStyle:  TextStyle(color: Colors.white70, fontWeight: FontWeight.bold, fontSize: 18.0),
+                  ),
+                ),
+              ),
+              Expanded(
+                  child:
+                  Container(
+                    color: Colors.black38,
+                    child:
+                    ListView.builder(
+                      padding: EdgeInsets.all(10.0),
+                      itemCount: cidades.length,
+                      itemBuilder: (context, index) {
+                        return getCidadeList(context, index);
+                      },
+                    ),
+                  )
+              )
+            ]),
+      )
+
     );
   }
 
@@ -94,22 +113,38 @@ class _HomeTesteState extends State<HomeTeste> {
   }
 
   Widget getCidadeList(BuildContext context, int index) {
-    return Card(
-        child: Container(
+    return Container(
+
       padding: EdgeInsets.only(left: 10.0, top: 5.0, bottom: 5.0),
-      color: Colors.transparent,
-      child: Row(
-        mainAxisAlignment: MainAxisAlignment.spaceBetween,
+      color: Colors.black12,
+      child: Column(
         children: <Widget>[
-          Text(cidades[index]),
-          FlatButton(
-            onPressed: () {
-              Navigator.pop(context, cidades[index]);
-            },
-            child: Icon(Icons.location_on),
+
+          Row(
+            mainAxisAlignment: MainAxisAlignment.spaceBetween,
+            children: <Widget>[
+              Text(
+                  cidades[index],
+                  style: TextStyle(color: Colors.white, fontWeight: FontWeight.bold)
+
+              ),
+              FlatButton(
+                onPressed: () {
+                  Navigator.pop(context, cidades[index]);
+                },
+                child: Icon(Icons.location_on, color: Colors.white,),
+              ),
+
+            ],
           ),
+
+          new Divider(
+            height: 5.0,
+            color: Colors.white,
+          )
         ],
-      ),
-    ));
+
+      )
+    );
   }
 }

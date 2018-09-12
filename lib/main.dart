@@ -4,8 +4,13 @@ import 'ui/cidades.dart';
 
 void main() {
   runApp(MaterialApp(
-    home: SingleChildScrollView(
-      child: Home(),
-    )
-  ));
+    theme: ThemeData(
+        brightness: Brightness.light,
+        primaryColor: Colors.green[800],
+        accentColor: Colors.green[600],
+
+    ),
+    home: HomeTeste()
+  )
+  );
 }
