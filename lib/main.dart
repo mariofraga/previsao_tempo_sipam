@@ -8,9 +8,8 @@ void main() {
         brightness: Brightness.light,
         primaryColor: Colors.green[800],
         accentColor: Colors.green[600],
-
     ),
-    home: Home()
+    home: Home(),
   )
   );
 }
