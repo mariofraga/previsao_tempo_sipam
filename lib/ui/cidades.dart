@@ -3,6 +3,8 @@ import 'dart:convert';
 import 'package:flutter/material.dart';
 import 'dart:async' show Future;
 import 'package:flutter/services.dart' show rootBundle;
+import 'package:http/http.dart' as http;
+
 
 class Cidades extends StatefulWidget {
   @override
@@ -31,61 +33,94 @@ class _CidadesState extends State<Cidades> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        backgroundColor: Colors.lightGreen[900],
-        title: Text(
-          "Selecione a Cidade",
-          style: TextStyle(color: Colors.white, fontSize: 16.0, fontWeight: FontWeight.bold),
-        ),
-        centerTitle: true,
-      ),
-      body: Container(
-        decoration: new BoxDecoration(
-          color: Colors.black38,
-          image: new DecorationImage(
-            image: new AssetImage("images/sol1.jpg"),
-            fit: BoxFit.cover,
+        appBar: AppBar(
+          backgroundColor: Colors.lightGreen[900],
+          title: Text(
+            "Selecione a Cidade",
+            style: TextStyle(
+                color: Colors.white,
+                fontSize: 16.0,
+                fontWeight: FontWeight.bold),
           ),
+          centerTitle: true,
         ),
-        child: Column(
-
-            children: <Widget>[
-              Container(
-
-                padding: EdgeInsets.all(10.0),
-                child: TextField(
-                  style: TextStyle(color: Colors.white, fontWeight: FontWeight.bold, fontSize: 18.0,  ),
-                  onChanged:(text){
-                    setState(() {
-                      cidades = cidadesOrifinal.where((f) => f.toLowerCase().contains(text.toLowerCase())).toList();
-                      print("Quantidade de Cidades Encontradas: ${cidades.length.toString()}");
-                    });
-                  },
-                  decoration: InputDecoration(
-                    labelText: "Pesquise Aqui",
-                    labelStyle:  TextStyle(color: Colors.white, fontWeight: FontWeight.bold, fontSize: 18.0,),
-
+        body: Container(
+          decoration: new BoxDecoration(
+            image: new DecorationImage(
+              image: new AssetImage("images/sol1.jpg"),
+              fit: BoxFit.cover,
+            ),
+          ),
+          child: Column(children: <Widget>[
+            Container(
+              padding: EdgeInsets.all(10.0),
+              child: TextField(
+                style: TextStyle(
+                  color: Colors.white,
+                  fontWeight: FontWeight.bold,
+                  fontSize: 18.0,
+                ),
+                onChanged: (text) {
+                  setState(() {
+                    cidades = cidadesOrifinal
+                        .where(
+                            (f) => f.toLowerCase().contains(text.toLowerCase()))
+                        .toList();
+                    print(
+                        "Quantidade de Cidades Encontradas: ${cidades.length.toString()}");
+                  });
+                },
+                decoration: InputDecoration(
+                  labelText: "Pesquise Aqui",
+                  labelStyle: TextStyle(
+                    color: Colors.white,
+                    fontWeight: FontWeight.bold,
+                    fontSize: 18.0,
                   ),
                 ),
               ),
-              Expanded(
-                  child:
-                  Container(
-                    color: Colors.black38,
-                    child:
-                    ListView.builder(
-                      padding: EdgeInsets.all(10.0),
-                      itemCount: cidades.length,
-                      itemBuilder: (context, index) {
-                        return getCidadeList(context, index);
-                      },
-                    ),
-                  )
-              )
-            ]),
-      )
+            ),
+            Container(
+              child: FutureBuilder(
+                  future: loadCrossword(),
+                  builder: (context, snapshot) {
+                    switch (snapshot.connectionState) {
+                      case (ConnectionState.waiting):
+                      case (ConnectionState.none):
+                        return Container(
+                          width: 120.0,
+                          height: 120.0,
+                          alignment: Alignment.center,
+                          child: CircularProgressIndicator(
+                            valueColor:
+                                AlwaysStoppedAnimation<Color>(Colors.white),
+                            strokeWidth: 5.0,
+                          ),
+                        );
+                      default:
+                        if (snapshot.hasError)
+                          return Container();
+                        else
+                          return carregarLista(context, snapshot);
+                    }
+                  }),
+            )
+          ]),
+        ));
+  }
 
-    );
+  Widget carregarLista(BuildContext context, AsyncSnapshot snapshot) {
+    return Expanded(
+        child: Container(
+      color: Colors.black38,
+      child: ListView.builder(
+        padding: EdgeInsets.all(10.0),
+        itemCount: cidades.length,
+        itemBuilder: (context, index) {
+          return getCidadeList(context, index);
+        },
+      ),
+    ));
   }
 
   Future<Map> loadCrossword() async {
@@ -106,45 +141,47 @@ class _CidadesState extends State<Cidades> {
     });
   }
 
-
-
   Future<String> _loadCrosswordAsset() async {
     return await rootBundle.loadString('assets/data/cidades.json');
   }
 
   Widget getCidadeList(BuildContext context, int index) {
     return Container(
+        padding: EdgeInsets.only(left: 10.0, top: 5.0, bottom: 5.0),
+        color: Colors.black12,
+        child: Column(
+          children: <Widget>[
+            Row(
+              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+              children: <Widget>[
+                FlatButton(
+                  onPressed: () {
+                    Navigator.pop(context, cidades[index]);
+                  },
+                  child:
 
-      padding: EdgeInsets.only(left: 10.0, top: 5.0, bottom: 5.0),
-      color: Colors.black12,
-      child: Column(
-        children: <Widget>[
+                Text(cidades[index],
+                    style: TextStyle(
+                        color: Colors.white, fontWeight: FontWeight.bold)),
+                ),
 
-          Row(
-            mainAxisAlignment: MainAxisAlignment.spaceBetween,
-            children: <Widget>[
-              Text(
-                  cidades[index],
-                  style: TextStyle(color: Colors.white, fontWeight: FontWeight.bold)
 
-              ),
-              FlatButton(
-                onPressed: () {
-                  Navigator.pop(context, cidades[index]);
-                },
-                child: Icon(Icons.location_on, color: Colors.white,),
-              ),
-
-            ],
-          ),
-
-          new Divider(
-            height: 5.0,
-            color: Colors.white,
-          )
-        ],
-
-      )
-    );
+                FlatButton(
+                  onPressed: () {
+                    Navigator.pop(context, cidades[index]);
+                  },
+                  child: Icon(
+                    Icons.location_on,
+                    color: Colors.white,
+                  ),
+                ),
+              ],
+            ),
+            new Divider(
+              height: 5.0,
+              color: Colors.white,
+            )
+          ],
+        ));
   }
 }

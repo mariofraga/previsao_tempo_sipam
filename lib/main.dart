@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
-import 'ui/home.dart';
+import 'package:previsao_tempo/ui/home.dart';
 import 'ui/cidades.dart';
+import 'ui/teste_map.dart';
 
 void main() {
   runApp(MaterialApp(
