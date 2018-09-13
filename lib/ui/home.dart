@@ -2,8 +2,9 @@ import 'package:flutter/material.dart';
 import 'package:previsao_tempo/ui/cidades.dart';
 import 'dart:convert';
 import 'dart:async' show Future;
-import 'package:flutter/services.dart' show rootBundle;
+import 'package:flutter/services.dart';
 import 'package:http/http.dart' as http;
+
 
 class Home extends StatefulWidget {
   @override
@@ -15,6 +16,16 @@ class _HomeState extends State<Home> {
   int contadorfundo = 0;
 
   Future<Map> dados;
+
+
+  @override
+  void dispose() {
+    super.dispose();
+    SystemChrome.setPreferredOrientations([
+      DeviceOrientation.portraitUp,
+      DeviceOrientation.portraitDown,
+    ]);
+  }
 
   @override
   void initState() {
@@ -33,7 +44,8 @@ class _HomeState extends State<Home> {
   Future<Map> _getTempo() async {
     http.Response response;
     response = await http.get("http://www.aerofilmes.com/previsaoTempo.json");
-    return json.decode(response.body);
+    String body = utf8.decode(response.bodyBytes);
+    return json.decode(body);
   }
 
   void _selecionaCidade(BuildContext c) async {
@@ -53,6 +65,10 @@ class _HomeState extends State<Home> {
 
   @override
   Widget build(BuildContext context) {
+    SystemChrome.setPreferredOrientations([
+      DeviceOrientation.portraitUp,
+      DeviceOrientation.portraitDown,
+    ]);
     return Container(
       child: FutureBuilder(
           future: _getTempo(),
@@ -106,10 +122,10 @@ class _HomeState extends State<Home> {
                         children: [
                           pagePrevisaoTempo(snapshot, "01",
                               AlignmentDirectional.centerStart, 0),
-                          pagePrevisaoTempo(snapshot, "01",
-                              AlignmentDirectional.center, 0),
-                          pagePrevisaoTempo(snapshot, "01",
-                              AlignmentDirectional.centerEnd, 0),
+                          pagePrevisaoTempo(snapshot, "02",
+                              AlignmentDirectional.center, 1),
+                          pagePrevisaoTempo(snapshot, "03",
+                              AlignmentDirectional.centerEnd, 2),
                         ],
                       ),
                     ),
