@@ -45,6 +45,7 @@ class _CidadesState extends State<Cidades> {
       DeviceOrientation.portraitUp,
       DeviceOrientation.portraitDown,
     ]);
+
     return Scaffold(
         appBar: AppBar(
           backgroundColor: Colors.lightGreen[900],

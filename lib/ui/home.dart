@@ -90,28 +90,47 @@ class _HomeState extends State<Home> {
                   return Container();
                 else
                   return DefaultTabController(
-                    length: 3,
+                    length: 4,
                     child:
                     Scaffold(
                     backgroundColor: Colors.white,
                     appBar: AppBar(
                       backgroundColor: Colors.lightGreen[900],
                       centerTitle: true,
-                      title: Text("Previsão do Tempo $cidadeFavorita",
-                          style: TextStyle(
-                              fontSize: 16.0, fontWeight: FontWeight.bold)),
+                      title:
+                      FlatButton(
+                        onPressed: () {
+                          _selecionaCidade(context);
+                        },
+                        child:
+                            Row(
+                              mainAxisAlignment: MainAxisAlignment.spaceAround,
+                              children: <Widget>[
+                             //   new Image.asset('images/favicon.ico', width: 32.0,),
+                            Text(" Previsão do Tempo $cidadeFavorita",
+                                style: TextStyle( color: Colors.white,
+                                    fontSize: 16.0, fontWeight: FontWeight.bold)),
+
+
+                              ],
+                            )
+                      ),
+
                       bottom: TabBar(
                         labelColor: Colors.amber,
                         unselectedLabelColor: Colors.white,
                         tabs: [
                           Tab(
-                            child: Text("HOJE"),
+                            child: Text("HOJE", style: TextStyle(fontSize: 12.0),),
                           ),
                           Tab(
-                            child: Text(snapshot.data["dias"][1]["diaSemana"]),
+                            child: Text(snapshot.data["dias"][1]["data"], style: TextStyle(fontSize: 12.0),),
                           ),
                           Tab(
-                            child: Text(snapshot.data["dias"][2]["diaSemana"]),
+                            child: Text(snapshot.data["dias"][2]["data"], style: TextStyle(fontSize: 12.0),),
+                          ),
+                          Tab(
+                            child: Text("15/09/2018", style: TextStyle(fontSize: 12.0),),
                           ),
                         ],
                       ),
@@ -126,6 +145,8 @@ class _HomeState extends State<Home> {
                               AlignmentDirectional.center, 1),
                           pagePrevisaoTempo(snapshot, "03",
                               AlignmentDirectional.centerEnd, 2),
+                          pagePrevisaoTempo(snapshot, "03",
+                              AlignmentDirectional.centerStart, 1),
                         ],
                       ),
                     ),
@@ -133,11 +154,13 @@ class _HomeState extends State<Home> {
                       onPressed: () {
                         _selecionaCidade(context);
                       },
-                      backgroundColor: Colors.lightGreen[900],
+                      backgroundColor: Colors.lightGreen[700],
                       tooltip: 'Inbox',
                       child: Icon(
                         Icons.location_on,
                         textDirection: TextDirection.rtl,
+                        color: Colors.white,
+
                       ),
                     ),
                   ),

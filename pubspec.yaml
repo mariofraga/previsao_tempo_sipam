@@ -44,6 +44,8 @@ flutter:
      - images/sol2.jpg
      - images/sol1_escurecido.jpg
      - images/sol2_escurecido.jpg
+     - images/favicon.ico
+
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.io/assets-and-images/#resolution-aware.
