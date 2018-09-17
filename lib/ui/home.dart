@@ -5,7 +5,6 @@ import 'dart:async' show Future;
 import 'package:flutter/services.dart';
 import 'package:http/http.dart' as http;
 
-
 class Home extends StatefulWidget {
   @override
   _HomeState createState() => _HomeState();
@@ -16,7 +15,6 @@ class _HomeState extends State<Home> {
   int contadorfundo = 0;
 
   Future<Map> dados;
-
 
   @override
   void dispose() {
@@ -61,8 +59,6 @@ class _HomeState extends State<Home> {
     }
   }
 
-
-
   @override
   Widget build(BuildContext context) {
     SystemChrome.setPreferredOrientations([
@@ -91,80 +87,66 @@ class _HomeState extends State<Home> {
                 else
                   return DefaultTabController(
                     length: 4,
-                    child:
-                    Scaffold(
-                    backgroundColor: Colors.white,
-                    appBar: AppBar(
-                      backgroundColor: Colors.lightGreen[900],
-                      centerTitle: true,
-                      title:
-                      FlatButton(
+                    child: Scaffold(
+                      backgroundColor: Colors.white,
+                      appBar: AppBar(
+                        backgroundColor: Colors.lightGreen[900],
+                        centerTitle: true,
+                        title: FlatButton(
+                            onPressed: () {
+                              _selecionaCidade(context);
+                            },
+                            child: Row(
+                              mainAxisAlignment: MainAxisAlignment.spaceAround,
+                              children: <Widget>[
+                                //   new Image.asset('images/favicon.ico', width: 32.0,),
+                                Text(" Previsão do Tempo $cidadeFavorita",
+                                    style: TextStyle(
+                                        color: Colors.white,
+                                        fontSize: 16.0,
+                                        fontWeight: FontWeight.bold)),
+                              ],
+                            )),
+                        bottom: TabBar(
+                          labelColor: Colors.amber,
+                          unselectedLabelColor: Colors.white,
+                          tabs: List<Widget>.generate(
+                              snapshot.data["dias"].length, (index) {
+                            return Tab(
+                              child: Text(
+                                index == 0
+                                    ? "Hoje"
+                                    : snapshot.data["dias"][index]["data"],
+                                style: TextStyle(fontSize: 12.0),
+                              ),
+                            );
+                          }),
+                        ),
+                      ),
+                      body: Container(
+                        color: Colors.black38,
+                        child: TabBarView(
+                          children: List<Widget>.generate(
+                              snapshot.data["dias"].length, (index) {
+                            return pagePrevisaoTempo(snapshot, "0${index + 1}",
+                                AlignmentDirectional.centerStart, index);
+                          }),
+                        ),
+                      ),
+                      floatingActionButton: FloatingActionButton(
                         onPressed: () {
                           _selecionaCidade(context);
                         },
-                        child:
-                            Row(
-                              mainAxisAlignment: MainAxisAlignment.spaceAround,
-                              children: <Widget>[
-                             //   new Image.asset('images/favicon.ico', width: 32.0,),
-                            Text(" Previsão do Tempo $cidadeFavorita",
-                                style: TextStyle( color: Colors.white,
-                                    fontSize: 16.0, fontWeight: FontWeight.bold)),
-
-
-                              ],
-                            )
-                      ),
-
-                      bottom: TabBar(
-                        labelColor: Colors.amber,
-                        unselectedLabelColor: Colors.white,
-                        tabs: [
-                          Tab(
-                            child: Text("HOJE", style: TextStyle(fontSize: 12.0),),
-                          ),
-                          Tab(
-                            child: Text(snapshot.data["dias"][1]["data"], style: TextStyle(fontSize: 12.0),),
-                          ),
-                          Tab(
-                            child: Text(snapshot.data["dias"][2]["data"], style: TextStyle(fontSize: 12.0),),
-                          ),
-                          Tab(
-                            child: Text("15/09/2018", style: TextStyle(fontSize: 12.0),),
-                          ),
-                        ],
+                        backgroundColor: Colors.lightGreen[700],
+                        tooltip: 'Inbox',
+                        child: Icon(
+                          Icons.location_on,
+                          textDirection: TextDirection.rtl,
+                          color: Colors.white,
+                        ),
                       ),
                     ),
-                    body: Container(
-                      color: Colors.black38,
-                      child: TabBarView(
-                        children: [
-                          pagePrevisaoTempo(snapshot, "01",
-                              AlignmentDirectional.centerStart, 0),
-                          pagePrevisaoTempo(snapshot, "02",
-                              AlignmentDirectional.center, 1),
-                          pagePrevisaoTempo(snapshot, "03",
-                              AlignmentDirectional.centerEnd, 2),
-                          pagePrevisaoTempo(snapshot, "03",
-                              AlignmentDirectional.centerStart, 1),
-                        ],
-                      ),
-                    ),
-                    floatingActionButton: FloatingActionButton(
-                      onPressed: () {
-                        _selecionaCidade(context);
-                      },
-                      backgroundColor: Colors.lightGreen[700],
-                      tooltip: 'Inbox',
-                      child: Icon(
-                        Icons.location_on,
-                        textDirection: TextDirection.rtl,
-                        color: Colors.white,
-
-                      ),
-                    ),
-                  ),
-               );
+                  );
             }
           }),
     );
