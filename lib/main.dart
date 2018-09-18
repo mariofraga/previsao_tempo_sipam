@@ -6,7 +6,6 @@ import 'package:flutter/services.dart';
 //import 'package:previsao_tempo/ui/teste_tabsdynamic.dart';
 
 void main() {
-
   runApp(MaterialApp(
     theme: ThemeData(
     ),

@@ -97,14 +97,32 @@ class _HomeState extends State<Home> {
                               _selecionaCidade(context);
                             },
                             child: Row(
-                              mainAxisAlignment: MainAxisAlignment.spaceAround,
+                              mainAxisAlignment: MainAxisAlignment.spaceBetween,
                               children: <Widget>[
-                                //   new Image.asset('images/favicon.ico', width: 32.0,),
-                                Text(" Previsão do Tempo $cidadeFavorita",
-                                    style: TextStyle(
-                                        color: Colors.white,
-                                        fontSize: 16.0,
-                                        fontWeight: FontWeight.bold)),
+                                Padding(
+                                  padding: EdgeInsets.only(top: 5.0),
+                                  child: Image.asset(
+                                    "images/icons/icsipam.png",
+                                    height: 60.0,
+                                    fit: BoxFit.cover,
+                                  ),
+                                ),
+                                //new Image.asset('images/favicon.ico', width: 32.0,),
+                                Column(
+                                  mainAxisAlignment: MainAxisAlignment.center,
+                                  children: <Widget>[
+                                    Text("Previsão do Tempo na Amazônia",
+                                        style: TextStyle(
+                                            color: Colors.white,
+                                            fontSize: 16.0,
+                                            fontWeight: FontWeight.bold)),
+                                    Text("$cidadeFavorita",
+                                        style: TextStyle(
+                                            color: Colors.white,
+                                            fontSize: 16.0,
+                                            fontWeight: FontWeight.bold))
+                                  ],
+                                ),
                               ],
                             )),
                         bottom: TabBar(
