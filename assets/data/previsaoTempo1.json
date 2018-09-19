@@ -1,0 +1,17 @@
+{
+  "nome": "Porto Velho",
+  "dias": [
+    {
+      "data": "12/09/2018",
+      "nomeCidade": "Porto Velho",
+      "tempo": "Claro a parcialmente nublado com possibilidade de chuva em áreas isoladas",
+      "temperaturaMax": "34",
+      "temperaturaMin": "22",
+      "umidadeMax": "80",
+      "umidadeMin": "24",
+      "direcaoVentos": "N - NE",
+      "intensidade": "Fracos",
+      "diaSemana": "TERÇA-FEIRA"
+    }
+  ]
+}

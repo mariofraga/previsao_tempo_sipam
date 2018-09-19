@@ -1,0 +1,3777 @@
+[
+  {
+    "co_municipio": 1100015,
+    "no_municipio": "Alta Floresta D'Oeste",
+    "no_sigla_uf": "RO"
+  },
+  {
+    "co_municipio": 1100023,
+    "no_municipio": "Ariquemes",
+    "no_sigla_uf": "RO"
+  },
+  {
+    "co_municipio": 1100031,
+    "no_municipio": "Cabixi",
+    "no_sigla_uf": "RO"
+  },
+  {
+    "co_municipio": 1100049,
+    "no_municipio": "Cacoal",
+    "no_sigla_uf": "RO"
+  },
+  {
+    "co_municipio": 1100056,
+    "no_municipio": "Cerejeiras",
+    "no_sigla_uf": "RO"
+  },
+  {
+    "co_municipio": 1100064,
+    "no_municipio": "Colorado do Oeste",
+    "no_sigla_uf": "RO"
+  },
+  {
+    "co_municipio": 1100072,
+    "no_municipio": "Corumbiara",
+    "no_sigla_uf": "RO"
+  },
+  {
+    "co_municipio": 1100080,
+    "no_municipio": "Costa Marques",
+    "no_sigla_uf": "RO"
+  },
+  {
+    "co_municipio": 1100098,
+    "no_municipio": "Espigão D'Oeste",
+    "no_sigla_uf": "RO"
+  },
+  {
+    "co_municipio": 1100106,
+    "no_municipio": "Guajará-Mirim",
+    "no_sigla_uf": "RO"
+  },
+  {
+    "co_municipio": 1100114,
+    "no_municipio": "Jaru",
+    "no_sigla_uf": "RO"
+  },
+  {
+    "co_municipio": 1100122,
+    "no_municipio": "Ji-Paraná",
+    "no_sigla_uf": "RO"
+  },
+  {
+    "co_municipio": 1100130,
+    "no_municipio": "Machadinho D'Oeste",
+    "no_sigla_uf": "RO"
+  },
+  {
+    "co_municipio": 1100148,
+    "no_municipio": "Nova Brasilândia D'Oeste",
+    "no_sigla_uf": "RO"
+  },
+  {
+    "co_municipio": 1100155,
+    "no_municipio": "Ouro Preto do Oeste",
+    "no_sigla_uf": "RO"
+  },
+  {
+    "co_municipio": 1100189,
+    "no_municipio": "Pimenta Bueno",
+    "no_sigla_uf": "RO"
+  },
+  {
+    "co_municipio": 1100205,
+    "no_municipio": "Porto Velho",
+    "no_sigla_uf": "RO"
+  },
+  {
+    "co_municipio": 1100254,
+    "no_municipio": "Presidente Médici",
+    "no_sigla_uf": "RO"
+  },
+  {
+    "co_municipio": 1100262,
+    "no_municipio": "Rio Crespo",
+    "no_sigla_uf": "RO"
+  },
+  {
+    "co_municipio": 1100288,
+    "no_municipio": "Rolim de Moura",
+    "no_sigla_uf": "RO"
+  },
+  {
+    "co_municipio": 1100296,
+    "no_municipio": "Santa Luzia D'Oeste",
+    "no_sigla_uf": "RO"
+  },
+  {
+    "co_municipio": 1100304,
+    "no_municipio": "Vilhena",
+    "no_sigla_uf": "RO"
+  },
+  {
+    "co_municipio": 1100320,
+    "no_municipio": "São Miguel do Guaporé",
+    "no_sigla_uf": "RO"
+  },
+  {
+    "co_municipio": 1100338,
+    "no_municipio": "Nova Mamoré",
+    "no_sigla_uf": "RO"
+  },
+  {
+    "co_municipio": 1100346,
+    "no_municipio": "Alvorada D'Oeste",
+    "no_sigla_uf": "RO"
+  },
+  {
+    "co_municipio": 1100379,
+    "no_municipio": "Alto Alegre dos Parecis",
+    "no_sigla_uf": "RO"
+  },
+  {
+    "co_municipio": 1100403,
+    "no_municipio": "Alto Paraíso",
+    "no_sigla_uf": "RO"
+  },
+  {
+    "co_municipio": 1100452,
+    "no_municipio": "Buritis",
+    "no_sigla_uf": "RO"
+  },
+  {
+    "co_municipio": 1100502,
+    "no_municipio": "Novo Horizonte do Oeste",
+    "no_sigla_uf": "RO"
+  },
+  {
+    "co_municipio": 1100601,
+    "no_municipio": "Cacaulândia",
+    "no_sigla_uf": "RO"
+  },
+  {
+    "co_municipio": 1100700,
+    "no_municipio": "Campo Novo de Rondônia",
+    "no_sigla_uf": "RO"
+  },
+  {
+    "co_municipio": 1100809,
+    "no_municipio": "Candeias do Jamari",
+    "no_sigla_uf": "RO"
+  },
+  {
+    "co_municipio": 1100908,
+    "no_municipio": "Castanheiras",
+    "no_sigla_uf": "RO"
+  },
+  {
+    "co_municipio": 1100924,
+    "no_municipio": "Chupinguaia",
+    "no_sigla_uf": "RO"
+  },
+  {
+    "co_municipio": 1100940,
+    "no_municipio": "Cujubim",
+    "no_sigla_uf": "RO"
+  },
+  {
+    "co_municipio": 1101005,
+    "no_municipio": "Governador Jorge Teixeira",
+    "no_sigla_uf": "RO"
+  },
+  {
+    "co_municipio": 1101104,
+    "no_municipio": "Itapuã do Oeste",
+    "no_sigla_uf": "RO"
+  },
+  {
+    "co_municipio": 1101203,
+    "no_municipio": "Ministro Andreazza",
+    "no_sigla_uf": "RO"
+  },
+  {
+    "co_municipio": 1101302,
+    "no_municipio": "Mirante da Serra",
+    "no_sigla_uf": "RO"
+  },
+  {
+    "co_municipio": 1101401,
+    "no_municipio": "Monte Negro",
+    "no_sigla_uf": "RO"
+  },
+  {
+    "co_municipio": 1101435,
+    "no_municipio": "Nova União",
+    "no_sigla_uf": "RO"
+  },
+  {
+    "co_municipio": 1101450,
+    "no_municipio": "Parecis",
+    "no_sigla_uf": "RO"
+  },
+  {
+    "co_municipio": 1101468,
+    "no_municipio": "Pimenteiras do Oeste",
+    "no_sigla_uf": "RO"
+  },
+  {
+    "co_municipio": 1101476,
+    "no_municipio": "Primavera de Rondônia",
+    "no_sigla_uf": "RO"
+  },
+  {
+    "co_municipio": 1101484,
+    "no_municipio": "São Felipe D'Oeste",
+    "no_sigla_uf": "RO"
+  },
+  {
+    "co_municipio": 1101492,
+    "no_municipio": "São Francisco do Guaporé",
+    "no_sigla_uf": "RO"
+  },
+  {
+    "co_municipio": 1101500,
+    "no_municipio": "Seringueiras",
+    "no_sigla_uf": "RO"
+  },
+  {
+    "co_municipio": 1101559,
+    "no_municipio": "Teixeirópolis",
+    "no_sigla_uf": "RO"
+  },
+  {
+    "co_municipio": 1101609,
+    "no_municipio": "Theobroma",
+    "no_sigla_uf": "RO"
+  },
+  {
+    "co_municipio": 1101708,
+    "no_municipio": "Urupá",
+    "no_sigla_uf": "RO"
+  },
+  {
+    "co_municipio": 1101757,
+    "no_municipio": "Vale do Anari",
+    "no_sigla_uf": "RO"
+  },
+  {
+    "co_municipio": 1101807,
+    "no_municipio": "Vale do Paraíso",
+    "no_sigla_uf": "RO"
+  },
+  {
+    "co_municipio": 1200013,
+    "no_municipio": "Acrelândia",
+    "no_sigla_uf": "AC"
+  },
+  {
+    "co_municipio": 1200054,
+    "no_municipio": "Assis Brasil",
+    "no_sigla_uf": "AC"
+  },
+  {
+    "co_municipio": 1200104,
+    "no_municipio": "Brasiléia",
+    "no_sigla_uf": "AC"
+  },
+  {
+    "co_municipio": 1200138,
+    "no_municipio": "Bujari",
+    "no_sigla_uf": "AC"
+  },
+  {
+    "co_municipio": 1200179,
+    "no_municipio": "Capixaba",
+    "no_sigla_uf": "AC"
+  },
+  {
+    "co_municipio": 1200203,
+    "no_municipio": "Cruzeiro do Sul",
+    "no_sigla_uf": "AC"
+  },
+  {
+    "co_municipio": 1200252,
+    "no_municipio": "Epitaciolândia",
+    "no_sigla_uf": "AC"
+  },
+  {
+    "co_municipio": 1200302,
+    "no_municipio": "Feijó",
+    "no_sigla_uf": "AC"
+  },
+  {
+    "co_municipio": 1200328,
+    "no_municipio": "Jordão",
+    "no_sigla_uf": "AC"
+  },
+  {
+    "co_municipio": 1200336,
+    "no_municipio": "Mâncio Lima",
+    "no_sigla_uf": "AC"
+  },
+  {
+    "co_municipio": 1200344,
+    "no_municipio": "Manoel Urbano",
+    "no_sigla_uf": "AC"
+  },
+  {
+    "co_municipio": 1200351,
+    "no_municipio": "Marechal Thaumaturgo",
+    "no_sigla_uf": "AC"
+  },
+  {
+    "co_municipio": 1200385,
+    "no_municipio": "Plácido de Castro",
+    "no_sigla_uf": "AC"
+  },
+  {
+    "co_municipio": 1200393,
+    "no_municipio": "Porto Walter",
+    "no_sigla_uf": "AC"
+  },
+  {
+    "co_municipio": 1200401,
+    "no_municipio": "Rio Branco",
+    "no_sigla_uf": "AC"
+  },
+  {
+    "co_municipio": 1200427,
+    "no_municipio": "Rodrigues Alves",
+    "no_sigla_uf": "AC"
+  },
+  {
+    "co_municipio": 1200435,
+    "no_municipio": "Santa Rosa do Purus",
+    "no_sigla_uf": "AC"
+  },
+  {
+    "co_municipio": 1200450,
+    "no_municipio": "Senador Guiomard",
+    "no_sigla_uf": "AC"
+  },
+  {
+    "co_municipio": 1200500,
+    "no_municipio": "Sena Madureira",
+    "no_sigla_uf": "AC"
+  },
+  {
+    "co_municipio": 1200609,
+    "no_municipio": "Tarauacá",
+    "no_sigla_uf": "AC"
+  },
+  {
+    "co_municipio": 1200708,
+    "no_municipio": "Xapuri",
+    "no_sigla_uf": "AC"
+  },
+  {
+    "co_municipio": 1200807,
+    "no_municipio": "Porto Acre",
+    "no_sigla_uf": "AC"
+  },
+  {
+    "co_municipio": 1300144,
+    "no_municipio": "Apuí",
+    "no_sigla_uf": "AM"
+  },
+  {
+    "co_municipio": 1300409,
+    "no_municipio": "Barcelos",
+    "no_sigla_uf": "AM"
+  },
+  {
+    "co_municipio": 1300706,
+    "no_municipio": "Boca do Acre",
+    "no_sigla_uf": "AM"
+  },
+  {
+    "co_municipio": 1300904,
+    "no_municipio": "Canutama",
+    "no_sigla_uf": "AM"
+  },
+  {
+    "co_municipio": 1301001,
+    "no_municipio": "Carauari",
+    "no_sigla_uf": "AM"
+  },
+  {
+    "co_municipio": 1301100,
+    "no_municipio": "Careiro",
+    "no_sigla_uf": "AM"
+  },
+  {
+    "co_municipio": 1301209,
+    "no_municipio": "Coari",
+    "no_sigla_uf": "AM"
+  },
+  {
+    "co_municipio": 1301308,
+    "no_municipio": "Codajás",
+    "no_sigla_uf": "AM"
+  },
+  {
+    "co_municipio": 1301407,
+    "no_municipio": "Eirunepé",
+    "no_sigla_uf": "AM"
+  },
+  {
+    "co_municipio": 1301605,
+    "no_municipio": "Fonte Boa",
+    "no_sigla_uf": "AM"
+  },
+  {
+    "co_municipio": 1301704,
+    "no_municipio": "Humaitá",
+    "no_sigla_uf": "AM"
+  },
+  {
+    "co_municipio": 1301803,
+    "no_municipio": "Ipixuna",
+    "no_sigla_uf": "AM"
+  },
+  {
+    "co_municipio": 1301852,
+    "no_municipio": "Iranduba",
+    "no_sigla_uf": "AM"
+  },
+  {
+    "co_municipio": 1301902,
+    "no_municipio": "Itacoatiara",
+    "no_sigla_uf": "AM"
+  },
+  {
+    "co_municipio": 1302108,
+    "no_municipio": "Japurá",
+    "no_sigla_uf": "AM"
+  },
+  {
+    "co_municipio": 1302306,
+    "no_municipio": "Jutaí",
+    "no_sigla_uf": "AM"
+  },
+  {
+    "co_municipio": 1302405,
+    "no_municipio": "Lábrea",
+    "no_sigla_uf": "AM"
+  },
+  {
+    "co_municipio": 1302504,
+    "no_municipio": "Manacapuru",
+    "no_sigla_uf": "AM"
+  },
+  {
+    "co_municipio": 1302553,
+    "no_municipio": "Manaquiri",
+    "no_sigla_uf": "AM"
+  },
+  {
+    "co_municipio": 1302603,
+    "no_municipio": "Manaus",
+    "no_sigla_uf": "AM"
+  },
+  {
+    "co_municipio": 1302702,
+    "no_municipio": "Manicoré",
+    "no_sigla_uf": "AM"
+  },
+  {
+    "co_municipio": 1303304,
+    "no_municipio": "Novo Aripuanã",
+    "no_sigla_uf": "AM"
+  },
+  {
+    "co_municipio": 1303403,
+    "no_municipio": "Parintins",
+    "no_sigla_uf": "AM"
+  },
+  {
+    "co_municipio": 1303502,
+    "no_municipio": "Pauini",
+    "no_sigla_uf": "AM"
+  },
+  {
+    "co_municipio": 1303536,
+    "no_municipio": "Presidente Figueiredo",
+    "no_sigla_uf": "AM"
+  },
+  {
+    "co_municipio": 1303601,
+    "no_municipio": "Santa Isabel do Rio Negro",
+    "no_sigla_uf": "AM"
+  },
+  {
+    "co_municipio": 1303809,
+    "no_municipio": "São Gabriel da Cachoeira",
+    "no_sigla_uf": "AM"
+  },
+  {
+    "co_municipio": 1303908,
+    "no_municipio": "São Paulo de Olivença",
+    "no_sigla_uf": "AM"
+  },
+  {
+    "co_municipio": 1304062,
+    "no_municipio": "Tabatinga",
+    "no_sigla_uf": "AM"
+  },
+  {
+    "co_municipio": 1304104,
+    "no_municipio": "Tapauá",
+    "no_sigla_uf": "AM"
+  },
+  {
+    "co_municipio": 1304203,
+    "no_municipio": "Tefé",
+    "no_sigla_uf": "AM"
+  },
+  {
+    "co_municipio": 1304302,
+    "no_municipio": "Urucará",
+    "no_sigla_uf": "AM"
+  },
+  {
+    "co_municipio": 1400050,
+    "no_municipio": "Alto Alegre",
+    "no_sigla_uf": "RR"
+  },
+  {
+    "co_municipio": 1400100,
+    "no_municipio": "Boa Vista",
+    "no_sigla_uf": "RR"
+  },
+  {
+    "co_municipio": 1400159,
+    "no_municipio": "Bonfim",
+    "no_sigla_uf": "RR"
+  },
+  {
+    "co_municipio": 1400209,
+    "no_municipio": "Caracaraí",
+    "no_sigla_uf": "RR"
+  },
+  {
+    "co_municipio": 1400407,
+    "no_municipio": "Normandia",
+    "no_sigla_uf": "RR"
+  },
+  {
+    "co_municipio": 1400456,
+    "no_municipio": "Pacaraima",
+    "no_sigla_uf": "RR"
+  },
+  {
+    "co_municipio": 1400472,
+    "no_municipio": "Rorainópolis",
+    "no_sigla_uf": "RR"
+  },
+  {
+    "co_municipio": 1400506,
+    "no_municipio": "São João da Baliza",
+    "no_sigla_uf": "RR"
+  },
+  {
+    "co_municipio": 1400605,
+    "no_municipio": "São Luiz",
+    "no_sigla_uf": "RR"
+  },
+  {
+    "co_municipio": 1500107,
+    "no_municipio": "Abaetetuba",
+    "no_sigla_uf": "PA"
+  },
+  {
+    "co_municipio": 1500131,
+    "no_municipio": "Abel Figueiredo",
+    "no_sigla_uf": "PA"
+  },
+  {
+    "co_municipio": 1500206,
+    "no_municipio": "Acará",
+    "no_sigla_uf": "PA"
+  },
+  {
+    "co_municipio": 1500305,
+    "no_municipio": "Afuá",
+    "no_sigla_uf": "PA"
+  },
+  {
+    "co_municipio": 1500347,
+    "no_municipio": "Água Azul do Norte",
+    "no_sigla_uf": "PA"
+  },
+  {
+    "co_municipio": 1500404,
+    "no_municipio": "Alenquer",
+    "no_sigla_uf": "PA"
+  },
+  {
+    "co_municipio": 1500503,
+    "no_municipio": "Almeirim",
+    "no_sigla_uf": "PA"
+  },
+  {
+    "co_municipio": 1500602,
+    "no_municipio": "Altamira",
+    "no_sigla_uf": "PA"
+  },
+  {
+    "co_municipio": 1500701,
+    "no_municipio": "Anajás",
+    "no_sigla_uf": "PA"
+  },
+  {
+    "co_municipio": 1500800,
+    "no_municipio": "Ananindeua",
+    "no_sigla_uf": "PA"
+  },
+  {
+    "co_municipio": 1500859,
+    "no_municipio": "Anapu",
+    "no_sigla_uf": "PA"
+  },
+  {
+    "co_municipio": 1500909,
+    "no_municipio": "Augusto Corrêa",
+    "no_sigla_uf": "PA"
+  },
+  {
+    "co_municipio": 1500958,
+    "no_municipio": "Aurora do Pará",
+    "no_sigla_uf": "PA"
+  },
+  {
+    "co_municipio": 1501006,
+    "no_municipio": "Aveiro",
+    "no_sigla_uf": "PA"
+  },
+  {
+    "co_municipio": 1501105,
+    "no_municipio": "Bagre",
+    "no_sigla_uf": "PA"
+  },
+  {
+    "co_municipio": 1501204,
+    "no_municipio": "Baião",
+    "no_sigla_uf": "PA"
+  },
+  {
+    "co_municipio": 1501253,
+    "no_municipio": "Bannach",
+    "no_sigla_uf": "PA"
+  },
+  {
+    "co_municipio": 1501303,
+    "no_municipio": "Barcarena",
+    "no_sigla_uf": "PA"
+  },
+  {
+    "co_municipio": 1501402,
+    "no_municipio": "Belém",
+    "no_sigla_uf": "PA"
+  },
+  {
+    "co_municipio": 1501451,
+    "no_municipio": "Belterra",
+    "no_sigla_uf": "PA"
+  },
+  {
+    "co_municipio": 1501501,
+    "no_municipio": "Benevides",
+    "no_sigla_uf": "PA"
+  },
+  {
+    "co_municipio": 1501576,
+    "no_municipio": "Bom Jesus do Tocantins",
+    "no_sigla_uf": "PA"
+  },
+  {
+    "co_municipio": 1501600,
+    "no_municipio": "Bonito",
+    "no_sigla_uf": "PA"
+  },
+  {
+    "co_municipio": 1501709,
+    "no_municipio": "Bragança",
+    "no_sigla_uf": "PA"
+  },
+  {
+    "co_municipio": 1501725,
+    "no_municipio": "Brasil Novo",
+    "no_sigla_uf": "PA"
+  },
+  {
+    "co_municipio": 1501758,
+    "no_municipio": "Brejo Grande do Araguaia",
+    "no_sigla_uf": "PA"
+  },
+  {
+    "co_municipio": 1501782,
+    "no_municipio": "Breu Branco",
+    "no_sigla_uf": "PA"
+  },
+  {
+    "co_municipio": 1501808,
+    "no_municipio": "Breves",
+    "no_sigla_uf": "PA"
+  },
+  {
+    "co_municipio": 1501907,
+    "no_municipio": "Bujaru",
+    "no_sigla_uf": "PA"
+  },
+  {
+    "co_municipio": 1501956,
+    "no_municipio": "Cachoeira do Piriá",
+    "no_sigla_uf": "PA"
+  },
+  {
+    "co_municipio": 1502004,
+    "no_municipio": "Cachoeira do Arari",
+    "no_sigla_uf": "PA"
+  },
+  {
+    "co_municipio": 1502103,
+    "no_municipio": "Cametá",
+    "no_sigla_uf": "PA"
+  },
+  {
+    "co_municipio": 1502152,
+    "no_municipio": "Canaã dos Carajás",
+    "no_sigla_uf": "PA"
+  },
+  {
+    "co_municipio": 1502202,
+    "no_municipio": "Capanema",
+    "no_sigla_uf": "PA"
+  },
+  {
+    "co_municipio": 1502301,
+    "no_municipio": "Capitão Poço",
+    "no_sigla_uf": "PA"
+  },
+  {
+    "co_municipio": 1502400,
+    "no_municipio": "Castanhal",
+    "no_sigla_uf": "PA"
+  },
+  {
+    "co_municipio": 1502509,
+    "no_municipio": "Chaves",
+    "no_sigla_uf": "PA"
+  },
+  {
+    "co_municipio": 1502608,
+    "no_municipio": "Colares",
+    "no_sigla_uf": "PA"
+  },
+  {
+    "co_municipio": 1502707,
+    "no_municipio": "Conceição do Araguaia",
+    "no_sigla_uf": "PA"
+  },
+  {
+    "co_municipio": 1502756,
+    "no_municipio": "Concórdia do Pará",
+    "no_sigla_uf": "PA"
+  },
+  {
+    "co_municipio": 1502764,
+    "no_municipio": "Cumaru do Norte",
+    "no_sigla_uf": "PA"
+  },
+  {
+    "co_municipio": 1502772,
+    "no_municipio": "Curionópolis",
+    "no_sigla_uf": "PA"
+  },
+  {
+    "co_municipio": 1502806,
+    "no_municipio": "Curralinho",
+    "no_sigla_uf": "PA"
+  },
+  {
+    "co_municipio": 1502855,
+    "no_municipio": "Curuá",
+    "no_sigla_uf": "PA"
+  },
+  {
+    "co_municipio": 1502905,
+    "no_municipio": "Curuçá",
+    "no_sigla_uf": "PA"
+  },
+  {
+    "co_municipio": 1502939,
+    "no_municipio": "Dom Eliseu",
+    "no_sigla_uf": "PA"
+  },
+  {
+    "co_municipio": 1502954,
+    "no_municipio": "Eldorado dos Carajás",
+    "no_sigla_uf": "PA"
+  },
+  {
+    "co_municipio": 1503002,
+    "no_municipio": "Faro",
+    "no_sigla_uf": "PA"
+  },
+  {
+    "co_municipio": 1503044,
+    "no_municipio": "Floresta do Araguaia",
+    "no_sigla_uf": "PA"
+  },
+  {
+    "co_municipio": 1503077,
+    "no_municipio": "Garrafão do Norte",
+    "no_sigla_uf": "PA"
+  },
+  {
+    "co_municipio": 1503093,
+    "no_municipio": "Goianésia do Pará",
+    "no_sigla_uf": "PA"
+  },
+  {
+    "co_municipio": 1503101,
+    "no_municipio": "Gurupá",
+    "no_sigla_uf": "PA"
+  },
+  {
+    "co_municipio": 1503200,
+    "no_municipio": "Igarapé-Açu",
+    "no_sigla_uf": "PA"
+  },
+  {
+    "co_municipio": 1503309,
+    "no_municipio": "Igarapé-Miri",
+    "no_sigla_uf": "PA"
+  },
+  {
+    "co_municipio": 1503408,
+    "no_municipio": "Inhangapi",
+    "no_sigla_uf": "PA"
+  },
+  {
+    "co_municipio": 1503457,
+    "no_municipio": "Ipixuna do Pará",
+    "no_sigla_uf": "PA"
+  },
+  {
+    "co_municipio": 1503507,
+    "no_municipio": "Irituia",
+    "no_sigla_uf": "PA"
+  },
+  {
+    "co_municipio": 1503606,
+    "no_municipio": "Itaituba",
+    "no_sigla_uf": "PA"
+  },
+  {
+    "co_municipio": 1503705,
+    "no_municipio": "Itupiranga",
+    "no_sigla_uf": "PA"
+  },
+  {
+    "co_municipio": 1503754,
+    "no_municipio": "Jacareacanga",
+    "no_sigla_uf": "PA"
+  },
+  {
+    "co_municipio": 1503804,
+    "no_municipio": "Jacundá",
+    "no_sigla_uf": "PA"
+  },
+  {
+    "co_municipio": 1503903,
+    "no_municipio": "Juruti",
+    "no_sigla_uf": "PA"
+  },
+  {
+    "co_municipio": 1504000,
+    "no_municipio": "Limoeiro do Ajuru",
+    "no_sigla_uf": "PA"
+  },
+  {
+    "co_municipio": 1504059,
+    "no_municipio": "Mãe do Rio",
+    "no_sigla_uf": "PA"
+  },
+  {
+    "co_municipio": 1504109,
+    "no_municipio": "Magalhães Barata",
+    "no_sigla_uf": "PA"
+  },
+  {
+    "co_municipio": 1504208,
+    "no_municipio": "Marabá",
+    "no_sigla_uf": "PA"
+  },
+  {
+    "co_municipio": 1504307,
+    "no_municipio": "Maracanã",
+    "no_sigla_uf": "PA"
+  },
+  {
+    "co_municipio": 1504406,
+    "no_municipio": "Marapanim",
+    "no_sigla_uf": "PA"
+  },
+  {
+    "co_municipio": 1504422,
+    "no_municipio": "Marituba",
+    "no_sigla_uf": "PA"
+  },
+  {
+    "co_municipio": 1504455,
+    "no_municipio": "Medicilândia",
+    "no_sigla_uf": "PA"
+  },
+  {
+    "co_municipio": 1504505,
+    "no_municipio": "Melgaço",
+    "no_sigla_uf": "PA"
+  },
+  {
+    "co_municipio": 1504604,
+    "no_municipio": "Mocajuba",
+    "no_sigla_uf": "PA"
+  },
+  {
+    "co_municipio": 1504703,
+    "no_municipio": "Moju",
+    "no_sigla_uf": "PA"
+  },
+  {
+    "co_municipio": 1504752,
+    "no_municipio": "Mojuí dos Campos",
+    "no_sigla_uf": "PA"
+  },
+  {
+    "co_municipio": 1504802,
+    "no_municipio": "Monte Alegre",
+    "no_sigla_uf": "PA"
+  },
+  {
+    "co_municipio": 1504901,
+    "no_municipio": "Muaná",
+    "no_sigla_uf": "PA"
+  },
+  {
+    "co_municipio": 1504950,
+    "no_municipio": "Nova Esperança do Piriá",
+    "no_sigla_uf": "PA"
+  },
+  {
+    "co_municipio": 1504976,
+    "no_municipio": "Nova Ipixuna",
+    "no_sigla_uf": "PA"
+  },
+  {
+    "co_municipio": 1505007,
+    "no_municipio": "Nova Timboteua",
+    "no_sigla_uf": "PA"
+  },
+  {
+    "co_municipio": 1505031,
+    "no_municipio": "Novo Progresso",
+    "no_sigla_uf": "PA"
+  },
+  {
+    "co_municipio": 1505064,
+    "no_municipio": "Novo Repartimento",
+    "no_sigla_uf": "PA"
+  },
+  {
+    "co_municipio": 1505106,
+    "no_municipio": "Óbidos",
+    "no_sigla_uf": "PA"
+  },
+  {
+    "co_municipio": 1505205,
+    "no_municipio": "Oeiras do Pará",
+    "no_sigla_uf": "PA"
+  },
+  {
+    "co_municipio": 1505304,
+    "no_municipio": "Oriximiná",
+    "no_sigla_uf": "PA"
+  },
+  {
+    "co_municipio": 1505403,
+    "no_municipio": "Ourém",
+    "no_sigla_uf": "PA"
+  },
+  {
+    "co_municipio": 1505437,
+    "no_municipio": "Ourilândia do Norte",
+    "no_sigla_uf": "PA"
+  },
+  {
+    "co_municipio": 1505486,
+    "no_municipio": "Pacajá",
+    "no_sigla_uf": "PA"
+  },
+  {
+    "co_municipio": 1505494,
+    "no_municipio": "Palestina do Pará",
+    "no_sigla_uf": "PA"
+  },
+  {
+    "co_municipio": 1505502,
+    "no_municipio": "Paragominas",
+    "no_sigla_uf": "PA"
+  },
+  {
+    "co_municipio": 1505536,
+    "no_municipio": "Parauapebas",
+    "no_sigla_uf": "PA"
+  },
+  {
+    "co_municipio": 1505551,
+    "no_municipio": "Pau D'Arco",
+    "no_sigla_uf": "PA"
+  },
+  {
+    "co_municipio": 1505601,
+    "no_municipio": "Peixe-Boi",
+    "no_sigla_uf": "PA"
+  },
+  {
+    "co_municipio": 1505635,
+    "no_municipio": "Piçarra",
+    "no_sigla_uf": "PA"
+  },
+  {
+    "co_municipio": 1505650,
+    "no_municipio": "Placas",
+    "no_sigla_uf": "PA"
+  },
+  {
+    "co_municipio": 1505700,
+    "no_municipio": "Ponta de Pedras",
+    "no_sigla_uf": "PA"
+  },
+  {
+    "co_municipio": 1505809,
+    "no_municipio": "Portel",
+    "no_sigla_uf": "PA"
+  },
+  {
+    "co_municipio": 1505908,
+    "no_municipio": "Porto de Moz",
+    "no_sigla_uf": "PA"
+  },
+  {
+    "co_municipio": 1506005,
+    "no_municipio": "Prainha",
+    "no_sigla_uf": "PA"
+  },
+  {
+    "co_municipio": 1506104,
+    "no_municipio": "Primavera",
+    "no_sigla_uf": "PA"
+  },
+  {
+    "co_municipio": 1506112,
+    "no_municipio": "Quatipuru",
+    "no_sigla_uf": "PA"
+  },
+  {
+    "co_municipio": 1506138,
+    "no_municipio": "Redenção",
+    "no_sigla_uf": "PA"
+  },
+  {
+    "co_municipio": 1506161,
+    "no_municipio": "Rio Maria",
+    "no_sigla_uf": "PA"
+  },
+  {
+    "co_municipio": 1506187,
+    "no_municipio": "Rondon do Pará",
+    "no_sigla_uf": "PA"
+  },
+  {
+    "co_municipio": 1506195,
+    "no_municipio": "Rurópolis",
+    "no_sigla_uf": "PA"
+  },
+  {
+    "co_municipio": 1506203,
+    "no_municipio": "Salinópolis",
+    "no_sigla_uf": "PA"
+  },
+  {
+    "co_municipio": 1506302,
+    "no_municipio": "Salvaterra",
+    "no_sigla_uf": "PA"
+  },
+  {
+    "co_municipio": 1506351,
+    "no_municipio": "Santa Bárbara do Pará",
+    "no_sigla_uf": "PA"
+  },
+  {
+    "co_municipio": 1506401,
+    "no_municipio": "Santa Cruz do Arari",
+    "no_sigla_uf": "PA"
+  },
+  {
+    "co_municipio": 1506500,
+    "no_municipio": "Santa Isabel do Pará",
+    "no_sigla_uf": "PA"
+  },
+  {
+    "co_municipio": 1506559,
+    "no_municipio": "Santa Luzia do Pará",
+    "no_sigla_uf": "PA"
+  },
+  {
+    "co_municipio": 1506583,
+    "no_municipio": "Santa Maria das Barreiras",
+    "no_sigla_uf": "PA"
+  },
+  {
+    "co_municipio": 1506609,
+    "no_municipio": "Santa Maria do Pará",
+    "no_sigla_uf": "PA"
+  },
+  {
+    "co_municipio": 1506708,
+    "no_municipio": "Santana do Araguaia",
+    "no_sigla_uf": "PA"
+  },
+  {
+    "co_municipio": 1506807,
+    "no_municipio": "Santarém",
+    "no_sigla_uf": "PA"
+  },
+  {
+    "co_municipio": 1506906,
+    "no_municipio": "Santarém Novo",
+    "no_sigla_uf": "PA"
+  },
+  {
+    "co_municipio": 1507003,
+    "no_municipio": "Santo Antônio do Tauá",
+    "no_sigla_uf": "PA"
+  },
+  {
+    "co_municipio": 1507102,
+    "no_municipio": "São Caetano de Odivelas",
+    "no_sigla_uf": "PA"
+  },
+  {
+    "co_municipio": 1507151,
+    "no_municipio": "São Domingos do Araguaia",
+    "no_sigla_uf": "PA"
+  },
+  {
+    "co_municipio": 1507201,
+    "no_municipio": "São Domingos do Capim",
+    "no_sigla_uf": "PA"
+  },
+  {
+    "co_municipio": 1507300,
+    "no_municipio": "São Félix do Xingu",
+    "no_sigla_uf": "PA"
+  },
+  {
+    "co_municipio": 1507409,
+    "no_municipio": "São Francisco do Pará",
+    "no_sigla_uf": "PA"
+  },
+  {
+    "co_municipio": 1507458,
+    "no_municipio": "São Geraldo do Araguaia",
+    "no_sigla_uf": "PA"
+  },
+  {
+    "co_municipio": 1507466,
+    "no_municipio": "São João da Ponta",
+    "no_sigla_uf": "PA"
+  },
+  {
+    "co_municipio": 1507474,
+    "no_municipio": "São João de Pirabas",
+    "no_sigla_uf": "PA"
+  },
+  {
+    "co_municipio": 1507508,
+    "no_municipio": "São João do Araguaia",
+    "no_sigla_uf": "PA"
+  },
+  {
+    "co_municipio": 1507607,
+    "no_municipio": "São Miguel do Guamá",
+    "no_sigla_uf": "PA"
+  },
+  {
+    "co_municipio": 1507706,
+    "no_municipio": "São Sebastião da Boa Vista",
+    "no_sigla_uf": "PA"
+  },
+  {
+    "co_municipio": 1507755,
+    "no_municipio": "Sapucaia",
+    "no_sigla_uf": "PA"
+  },
+  {
+    "co_municipio": 1507805,
+    "no_municipio": "Senador José Porfírio",
+    "no_sigla_uf": "PA"
+  },
+  {
+    "co_municipio": 1507904,
+    "no_municipio": "Soure",
+    "no_sigla_uf": "PA"
+  },
+  {
+    "co_municipio": 1507953,
+    "no_municipio": "Tailândia",
+    "no_sigla_uf": "PA"
+  },
+  {
+    "co_municipio": 1507961,
+    "no_municipio": "Terra Alta",
+    "no_sigla_uf": "PA"
+  },
+  {
+    "co_municipio": 1507979,
+    "no_municipio": "Terra Santa",
+    "no_sigla_uf": "PA"
+  },
+  {
+    "co_municipio": 1508001,
+    "no_municipio": "Tomé-Açu",
+    "no_sigla_uf": "PA"
+  },
+  {
+    "co_municipio": 1508035,
+    "no_municipio": "Tracuateua",
+    "no_sigla_uf": "PA"
+  },
+  {
+    "co_municipio": 1508050,
+    "no_municipio": "Trairão",
+    "no_sigla_uf": "PA"
+  },
+  {
+    "co_municipio": 1508084,
+    "no_municipio": "Tucumã",
+    "no_sigla_uf": "PA"
+  },
+  {
+    "co_municipio": 1508100,
+    "no_municipio": "Tucuruí",
+    "no_sigla_uf": "PA"
+  },
+  {
+    "co_municipio": 1508126,
+    "no_municipio": "Ulianópolis",
+    "no_sigla_uf": "PA"
+  },
+  {
+    "co_municipio": 1508159,
+    "no_municipio": "Uruará",
+    "no_sigla_uf": "PA"
+  },
+  {
+    "co_municipio": 1508209,
+    "no_municipio": "Vigia",
+    "no_sigla_uf": "PA"
+  },
+  {
+    "co_municipio": 1508308,
+    "no_municipio": "Viseu",
+    "no_sigla_uf": "PA"
+  },
+  {
+    "co_municipio": 1508357,
+    "no_municipio": "Vitória do Xingu",
+    "no_sigla_uf": "PA"
+  },
+  {
+    "co_municipio": 1508407,
+    "no_municipio": "Xinguara",
+    "no_sigla_uf": "PA"
+  },
+  {
+    "co_municipio": 1600055,
+    "no_municipio": "Serra do Navio",
+    "no_sigla_uf": "AP"
+  },
+  {
+    "co_municipio": 1600105,
+    "no_municipio": "Amapá",
+    "no_sigla_uf": "AP"
+  },
+  {
+    "co_municipio": 1600154,
+    "no_municipio": "Pedra Branca do Amapari",
+    "no_sigla_uf": "AP"
+  },
+  {
+    "co_municipio": 1600204,
+    "no_municipio": "Calçoene",
+    "no_sigla_uf": "AP"
+  },
+  {
+    "co_municipio": 1600212,
+    "no_municipio": "Cutias",
+    "no_sigla_uf": "AP"
+  },
+  {
+    "co_municipio": 1600238,
+    "no_municipio": "Ferreira Gomes",
+    "no_sigla_uf": "AP"
+  },
+  {
+    "co_municipio": 1600253,
+    "no_municipio": "Itaubal",
+    "no_sigla_uf": "AP"
+  },
+  {
+    "co_municipio": 1600279,
+    "no_municipio": "Laranjal do Jari",
+    "no_sigla_uf": "AP"
+  },
+  {
+    "co_municipio": 1600303,
+    "no_municipio": "Macapá",
+    "no_sigla_uf": "AP"
+  },
+  {
+    "co_municipio": 1600402,
+    "no_municipio": "Mazagão",
+    "no_sigla_uf": "AP"
+  },
+  {
+    "co_municipio": 1600501,
+    "no_municipio": "Oiapoque",
+    "no_sigla_uf": "AP"
+  },
+  {
+    "co_municipio": 1600535,
+    "no_municipio": "Porto Grande",
+    "no_sigla_uf": "AP"
+  },
+  {
+    "co_municipio": 1600550,
+    "no_municipio": "Pracuúba",
+    "no_sigla_uf": "AP"
+  },
+  {
+    "co_municipio": 1600600,
+    "no_municipio": "Santana",
+    "no_sigla_uf": "AP"
+  },
+  {
+    "co_municipio": 1600709,
+    "no_municipio": "Tartarugalzinho",
+    "no_sigla_uf": "AP"
+  },
+  {
+    "co_municipio": 1600808,
+    "no_municipio": "Vitória do Jari",
+    "no_sigla_uf": "AP"
+  },
+  {
+    "co_municipio": 1700251,
+    "no_municipio": "Abreulândia",
+    "no_sigla_uf": "TO"
+  },
+  {
+    "co_municipio": 1700301,
+    "no_municipio": "Aguiarnópolis",
+    "no_sigla_uf": "TO"
+  },
+  {
+    "co_municipio": 1700350,
+    "no_municipio": "Aliança do Tocantins",
+    "no_sigla_uf": "TO"
+  },
+  {
+    "co_municipio": 1700400,
+    "no_municipio": "Almas",
+    "no_sigla_uf": "TO"
+  },
+  {
+    "co_municipio": 1700707,
+    "no_municipio": "Alvorada",
+    "no_sigla_uf": "TO"
+  },
+  {
+    "co_municipio": 1701002,
+    "no_municipio": "Ananás",
+    "no_sigla_uf": "TO"
+  },
+  {
+    "co_municipio": 1701051,
+    "no_municipio": "Angico",
+    "no_sigla_uf": "TO"
+  },
+  {
+    "co_municipio": 1701101,
+    "no_municipio": "Aparecida do Rio Negro",
+    "no_sigla_uf": "TO"
+  },
+  {
+    "co_municipio": 1701309,
+    "no_municipio": "Aragominas",
+    "no_sigla_uf": "TO"
+  },
+  {
+    "co_municipio": 1701903,
+    "no_municipio": "Araguacema",
+    "no_sigla_uf": "TO"
+  },
+  {
+    "co_municipio": 1702000,
+    "no_municipio": "Araguaçu",
+    "no_sigla_uf": "TO"
+  },
+  {
+    "co_municipio": 1702109,
+    "no_municipio": "Araguaína",
+    "no_sigla_uf": "TO"
+  },
+  {
+    "co_municipio": 1702158,
+    "no_municipio": "Araguanã",
+    "no_sigla_uf": "TO"
+  },
+  {
+    "co_municipio": 1702208,
+    "no_municipio": "Araguatins",
+    "no_sigla_uf": "TO"
+  },
+  {
+    "co_municipio": 1702307,
+    "no_municipio": "Arapoema",
+    "no_sigla_uf": "TO"
+  },
+  {
+    "co_municipio": 1702406,
+    "no_municipio": "Arraias",
+    "no_sigla_uf": "TO"
+  },
+  {
+    "co_municipio": 1702554,
+    "no_municipio": "Augustinópolis",
+    "no_sigla_uf": "TO"
+  },
+  {
+    "co_municipio": 1702703,
+    "no_municipio": "Aurora do Tocantins",
+    "no_sigla_uf": "TO"
+  },
+  {
+    "co_municipio": 1702901,
+    "no_municipio": "Axixá do Tocantins",
+    "no_sigla_uf": "TO"
+  },
+  {
+    "co_municipio": 1703008,
+    "no_municipio": "Babaçulândia",
+    "no_sigla_uf": "TO"
+  },
+  {
+    "co_municipio": 1703057,
+    "no_municipio": "Bandeirantes do Tocantins",
+    "no_sigla_uf": "TO"
+  },
+  {
+    "co_municipio": 1703073,
+    "no_municipio": "Barra do Ouro",
+    "no_sigla_uf": "TO"
+  },
+  {
+    "co_municipio": 1703107,
+    "no_municipio": "Barrolândia",
+    "no_sigla_uf": "TO"
+  },
+  {
+    "co_municipio": 1703206,
+    "no_municipio": "Bernardo Sayão",
+    "no_sigla_uf": "TO"
+  },
+  {
+    "co_municipio": 1703305,
+    "no_municipio": "Bom Jesus do Tocantins",
+    "no_sigla_uf": "TO"
+  },
+  {
+    "co_municipio": 1703602,
+    "no_municipio": "Brasilândia do Tocantins",
+    "no_sigla_uf": "TO"
+  },
+  {
+    "co_municipio": 1703701,
+    "no_municipio": "Brejinho de Nazaré",
+    "no_sigla_uf": "TO"
+  },
+  {
+    "co_municipio": 1703800,
+    "no_municipio": "Buriti do Tocantins",
+    "no_sigla_uf": "TO"
+  },
+  {
+    "co_municipio": 1703826,
+    "no_municipio": "Cachoeirinha",
+    "no_sigla_uf": "TO"
+  },
+  {
+    "co_municipio": 1703842,
+    "no_municipio": "Campos Lindos",
+    "no_sigla_uf": "TO"
+  },
+  {
+    "co_municipio": 1703867,
+    "no_municipio": "Cariri do Tocantins",
+    "no_sigla_uf": "TO"
+  },
+  {
+    "co_municipio": 1703883,
+    "no_municipio": "Carmolândia",
+    "no_sigla_uf": "TO"
+  },
+  {
+    "co_municipio": 1703891,
+    "no_municipio": "Carrasco Bonito",
+    "no_sigla_uf": "TO"
+  },
+  {
+    "co_municipio": 1703909,
+    "no_municipio": "Caseara",
+    "no_sigla_uf": "TO"
+  },
+  {
+    "co_municipio": 1704105,
+    "no_municipio": "Centenário",
+    "no_sigla_uf": "TO"
+  },
+  {
+    "co_municipio": 1704600,
+    "no_municipio": "Chapada de Areia",
+    "no_sigla_uf": "TO"
+  },
+  {
+    "co_municipio": 1705102,
+    "no_municipio": "Chapada da Natividade",
+    "no_sigla_uf": "TO"
+  },
+  {
+    "co_municipio": 1705508,
+    "no_municipio": "Colinas do Tocantins",
+    "no_sigla_uf": "TO"
+  },
+  {
+    "co_municipio": 1705557,
+    "no_municipio": "Combinado",
+    "no_sigla_uf": "TO"
+  },
+  {
+    "co_municipio": 1705607,
+    "no_municipio": "Conceição do Tocantins",
+    "no_sigla_uf": "TO"
+  },
+  {
+    "co_municipio": 1706001,
+    "no_municipio": "Couto Magalhães",
+    "no_sigla_uf": "TO"
+  },
+  {
+    "co_municipio": 1706100,
+    "no_municipio": "Cristalândia",
+    "no_sigla_uf": "TO"
+  },
+  {
+    "co_municipio": 1706258,
+    "no_municipio": "Crixás do Tocantins",
+    "no_sigla_uf": "TO"
+  },
+  {
+    "co_municipio": 1706506,
+    "no_municipio": "Darcinópolis",
+    "no_sigla_uf": "TO"
+  },
+  {
+    "co_municipio": 1707009,
+    "no_municipio": "Dianópolis",
+    "no_sigla_uf": "TO"
+  },
+  {
+    "co_municipio": 1707108,
+    "no_municipio": "Divinópolis do Tocantins",
+    "no_sigla_uf": "TO"
+  },
+  {
+    "co_municipio": 1707207,
+    "no_municipio": "Dois Irmãos do Tocantins",
+    "no_sigla_uf": "TO"
+  },
+  {
+    "co_municipio": 1707306,
+    "no_municipio": "Dueré",
+    "no_sigla_uf": "TO"
+  },
+  {
+    "co_municipio": 1707405,
+    "no_municipio": "Esperantina",
+    "no_sigla_uf": "TO"
+  },
+  {
+    "co_municipio": 1707553,
+    "no_municipio": "Fátima",
+    "no_sigla_uf": "TO"
+  },
+  {
+    "co_municipio": 1707652,
+    "no_municipio": "Figueirópolis",
+    "no_sigla_uf": "TO"
+  },
+  {
+    "co_municipio": 1707702,
+    "no_municipio": "Filadélfia",
+    "no_sigla_uf": "TO"
+  },
+  {
+    "co_municipio": 1708205,
+    "no_municipio": "Formoso do Araguaia",
+    "no_sigla_uf": "TO"
+  },
+  {
+    "co_municipio": 1708254,
+    "no_municipio": "Fortaleza do Tabocão",
+    "no_sigla_uf": "TO"
+  },
+  {
+    "co_municipio": 1708304,
+    "no_municipio": "Goianorte",
+    "no_sigla_uf": "TO"
+  },
+  {
+    "co_municipio": 1709005,
+    "no_municipio": "Goiatins",
+    "no_sigla_uf": "TO"
+  },
+  {
+    "co_municipio": 1709302,
+    "no_municipio": "Guaraí",
+    "no_sigla_uf": "TO"
+  },
+  {
+    "co_municipio": 1709500,
+    "no_municipio": "Gurupi",
+    "no_sigla_uf": "TO"
+  },
+  {
+    "co_municipio": 1709807,
+    "no_municipio": "Ipueiras",
+    "no_sigla_uf": "TO"
+  },
+  {
+    "co_municipio": 1710508,
+    "no_municipio": "Itacajá",
+    "no_sigla_uf": "TO"
+  },
+  {
+    "co_municipio": 1710706,
+    "no_municipio": "Itaguatins",
+    "no_sigla_uf": "TO"
+  },
+  {
+    "co_municipio": 1710904,
+    "no_municipio": "Itapiratins",
+    "no_sigla_uf": "TO"
+  },
+  {
+    "co_municipio": 1711100,
+    "no_municipio": "Itaporã do Tocantins",
+    "no_sigla_uf": "TO"
+  },
+  {
+    "co_municipio": 1711506,
+    "no_municipio": "Jaú do Tocantins",
+    "no_sigla_uf": "TO"
+  },
+  {
+    "co_municipio": 1711803,
+    "no_municipio": "Juarina",
+    "no_sigla_uf": "TO"
+  },
+  {
+    "co_municipio": 1711902,
+    "no_municipio": "Lagoa da Confusão",
+    "no_sigla_uf": "TO"
+  },
+  {
+    "co_municipio": 1711951,
+    "no_municipio": "Lagoa do Tocantins",
+    "no_sigla_uf": "TO"
+  },
+  {
+    "co_municipio": 1712009,
+    "no_municipio": "Lajeado",
+    "no_sigla_uf": "TO"
+  },
+  {
+    "co_municipio": 1712157,
+    "no_municipio": "Lavandeira",
+    "no_sigla_uf": "TO"
+  },
+  {
+    "co_municipio": 1712405,
+    "no_municipio": "Lizarda",
+    "no_sigla_uf": "TO"
+  },
+  {
+    "co_municipio": 1712454,
+    "no_municipio": "Luzinópolis",
+    "no_sigla_uf": "TO"
+  },
+  {
+    "co_municipio": 1712504,
+    "no_municipio": "Marianópolis do Tocantins",
+    "no_sigla_uf": "TO"
+  },
+  {
+    "co_municipio": 1712702,
+    "no_municipio": "Mateiros",
+    "no_sigla_uf": "TO"
+  },
+  {
+    "co_municipio": 1712801,
+    "no_municipio": "Maurilândia do Tocantins",
+    "no_sigla_uf": "TO"
+  },
+  {
+    "co_municipio": 1713205,
+    "no_municipio": "Miracema do Tocantins",
+    "no_sigla_uf": "TO"
+  },
+  {
+    "co_municipio": 1713304,
+    "no_municipio": "Miranorte",
+    "no_sigla_uf": "TO"
+  },
+  {
+    "co_municipio": 1713601,
+    "no_municipio": "Monte do Carmo",
+    "no_sigla_uf": "TO"
+  },
+  {
+    "co_municipio": 1713700,
+    "no_municipio": "Monte Santo do Tocantins",
+    "no_sigla_uf": "TO"
+  },
+  {
+    "co_municipio": 1713809,
+    "no_municipio": "Palmeiras do Tocantins",
+    "no_sigla_uf": "TO"
+  },
+  {
+    "co_municipio": 1713957,
+    "no_municipio": "Muricilândia",
+    "no_sigla_uf": "TO"
+  },
+  {
+    "co_municipio": 1714203,
+    "no_municipio": "Natividade",
+    "no_sigla_uf": "TO"
+  },
+  {
+    "co_municipio": 1714302,
+    "no_municipio": "Nazaré",
+    "no_sigla_uf": "TO"
+  },
+  {
+    "co_municipio": 1714880,
+    "no_municipio": "Nova Olinda",
+    "no_sigla_uf": "TO"
+  },
+  {
+    "co_municipio": 1715002,
+    "no_municipio": "Nova Rosalândia",
+    "no_sigla_uf": "TO"
+  },
+  {
+    "co_municipio": 1715101,
+    "no_municipio": "Novo Acordo",
+    "no_sigla_uf": "TO"
+  },
+  {
+    "co_municipio": 1715150,
+    "no_municipio": "Novo Alegre",
+    "no_sigla_uf": "TO"
+  },
+  {
+    "co_municipio": 1715259,
+    "no_municipio": "Novo Jardim",
+    "no_sigla_uf": "TO"
+  },
+  {
+    "co_municipio": 1715507,
+    "no_municipio": "Oliveira de Fátima",
+    "no_sigla_uf": "TO"
+  },
+  {
+    "co_municipio": 1715705,
+    "no_municipio": "Palmeirante",
+    "no_sigla_uf": "TO"
+  },
+  {
+    "co_municipio": 1715754,
+    "no_municipio": "Palmeirópolis",
+    "no_sigla_uf": "TO"
+  },
+  {
+    "co_municipio": 1716109,
+    "no_municipio": "Paraíso do Tocantins",
+    "no_sigla_uf": "TO"
+  },
+  {
+    "co_municipio": 1716208,
+    "no_municipio": "Paranã",
+    "no_sigla_uf": "TO"
+  },
+  {
+    "co_municipio": 1716307,
+    "no_municipio": "Pau D'Arco",
+    "no_sigla_uf": "TO"
+  },
+  {
+    "co_municipio": 1716505,
+    "no_municipio": "Pedro Afonso",
+    "no_sigla_uf": "TO"
+  },
+  {
+    "co_municipio": 1716604,
+    "no_municipio": "Peixe",
+    "no_sigla_uf": "TO"
+  },
+  {
+    "co_municipio": 1716653,
+    "no_municipio": "Pequizeiro",
+    "no_sigla_uf": "TO"
+  },
+  {
+    "co_municipio": 1716703,
+    "no_municipio": "Colméia",
+    "no_sigla_uf": "TO"
+  },
+  {
+    "co_municipio": 1717008,
+    "no_municipio": "Pindorama do Tocantins",
+    "no_sigla_uf": "TO"
+  },
+  {
+    "co_municipio": 1717206,
+    "no_municipio": "Piraquê",
+    "no_sigla_uf": "TO"
+  },
+  {
+    "co_municipio": 1717503,
+    "no_municipio": "Pium",
+    "no_sigla_uf": "TO"
+  },
+  {
+    "co_municipio": 1717800,
+    "no_municipio": "Ponte Alta do Bom Jesus",
+    "no_sigla_uf": "TO"
+  },
+  {
+    "co_municipio": 1717909,
+    "no_municipio": "Ponte Alta do Tocantins",
+    "no_sigla_uf": "TO"
+  },
+  {
+    "co_municipio": 1718006,
+    "no_municipio": "Porto Alegre do Tocantins",
+    "no_sigla_uf": "TO"
+  },
+  {
+    "co_municipio": 1718204,
+    "no_municipio": "Porto Nacional",
+    "no_sigla_uf": "TO"
+  },
+  {
+    "co_municipio": 1718303,
+    "no_municipio": "Praia Norte",
+    "no_sigla_uf": "TO"
+  },
+  {
+    "co_municipio": 1718402,
+    "no_municipio": "Presidente Kennedy",
+    "no_sigla_uf": "TO"
+  },
+  {
+    "co_municipio": 1718451,
+    "no_municipio": "Pugmil",
+    "no_sigla_uf": "TO"
+  },
+  {
+    "co_municipio": 1718501,
+    "no_municipio": "Recursolândia",
+    "no_sigla_uf": "TO"
+  },
+  {
+    "co_municipio": 1718550,
+    "no_municipio": "Riachinho",
+    "no_sigla_uf": "TO"
+  },
+  {
+    "co_municipio": 1718659,
+    "no_municipio": "Rio da Conceição",
+    "no_sigla_uf": "TO"
+  },
+  {
+    "co_municipio": 1718709,
+    "no_municipio": "Rio dos Bois",
+    "no_sigla_uf": "TO"
+  },
+  {
+    "co_municipio": 1718758,
+    "no_municipio": "Rio Sono",
+    "no_sigla_uf": "TO"
+  },
+  {
+    "co_municipio": 1718808,
+    "no_municipio": "Sampaio",
+    "no_sigla_uf": "TO"
+  },
+  {
+    "co_municipio": 1718840,
+    "no_municipio": "Sandolândia",
+    "no_sigla_uf": "TO"
+  },
+  {
+    "co_municipio": 1718865,
+    "no_municipio": "Santa Fé do Araguaia",
+    "no_sigla_uf": "TO"
+  },
+  {
+    "co_municipio": 1718881,
+    "no_municipio": "Santa Maria do Tocantins",
+    "no_sigla_uf": "TO"
+  },
+  {
+    "co_municipio": 1718899,
+    "no_municipio": "Santa Rita do Tocantins",
+    "no_sigla_uf": "TO"
+  },
+  {
+    "co_municipio": 1718907,
+    "no_municipio": "Santa Rosa do Tocantins",
+    "no_sigla_uf": "TO"
+  },
+  {
+    "co_municipio": 1719004,
+    "no_municipio": "Santa Tereza do Tocantins",
+    "no_sigla_uf": "TO"
+  },
+  {
+    "co_municipio": 1720002,
+    "no_municipio": "Santa Terezinha do Tocantins",
+    "no_sigla_uf": "TO"
+  },
+  {
+    "co_municipio": 1720101,
+    "no_municipio": "São Bento do Tocantins",
+    "no_sigla_uf": "TO"
+  },
+  {
+    "co_municipio": 1720150,
+    "no_municipio": "São Félix do Tocantins",
+    "no_sigla_uf": "TO"
+  },
+  {
+    "co_municipio": 1720200,
+    "no_municipio": "São Miguel do Tocantins",
+    "no_sigla_uf": "TO"
+  },
+  {
+    "co_municipio": 1720259,
+    "no_municipio": "São Salvador do Tocantins",
+    "no_sigla_uf": "TO"
+  },
+  {
+    "co_municipio": 1720309,
+    "no_municipio": "São Sebastião do Tocantins",
+    "no_sigla_uf": "TO"
+  },
+  {
+    "co_municipio": 1720499,
+    "no_municipio": "São Valério",
+    "no_sigla_uf": "TO"
+  },
+  {
+    "co_municipio": 1720655,
+    "no_municipio": "Silvanópolis",
+    "no_sigla_uf": "TO"
+  },
+  {
+    "co_municipio": 1720804,
+    "no_municipio": "Sítio Novo do Tocantins",
+    "no_sigla_uf": "TO"
+  },
+  {
+    "co_municipio": 1720853,
+    "no_municipio": "Sucupira",
+    "no_sigla_uf": "TO"
+  },
+  {
+    "co_municipio": 1720903,
+    "no_municipio": "Taguatinga",
+    "no_sigla_uf": "TO"
+  },
+  {
+    "co_municipio": 1720937,
+    "no_municipio": "Taipas do Tocantins",
+    "no_sigla_uf": "TO"
+  },
+  {
+    "co_municipio": 1720978,
+    "no_municipio": "Talismã",
+    "no_sigla_uf": "TO"
+  },
+  {
+    "co_municipio": 1721000,
+    "no_municipio": "Palmas",
+    "no_sigla_uf": "TO"
+  },
+  {
+    "co_municipio": 1721109,
+    "no_municipio": "Tocantínia",
+    "no_sigla_uf": "TO"
+  },
+  {
+    "co_municipio": 1721208,
+    "no_municipio": "Tocantinópolis",
+    "no_sigla_uf": "TO"
+  },
+  {
+    "co_municipio": 1721257,
+    "no_municipio": "Tupirama",
+    "no_sigla_uf": "TO"
+  },
+  {
+    "co_municipio": 1721307,
+    "no_municipio": "Tupiratins",
+    "no_sigla_uf": "TO"
+  },
+  {
+    "co_municipio": 1722081,
+    "no_municipio": "Wanderlândia",
+    "no_sigla_uf": "TO"
+  },
+  {
+    "co_municipio": 1722107,
+    "no_municipio": "Xambioá",
+    "no_sigla_uf": "TO"
+  },
+  {
+    "co_municipio": 2100055,
+    "no_municipio": "Açailândia",
+    "no_sigla_uf": "MA"
+  },
+  {
+    "co_municipio": 2100105,
+    "no_municipio": "Afonso Cunha",
+    "no_sigla_uf": "MA"
+  },
+  {
+    "co_municipio": 2100154,
+    "no_municipio": "Água Doce do Maranhão",
+    "no_sigla_uf": "MA"
+  },
+  {
+    "co_municipio": 2100204,
+    "no_municipio": "Alcântara",
+    "no_sigla_uf": "MA"
+  },
+  {
+    "co_municipio": 2100303,
+    "no_municipio": "Aldeias Altas",
+    "no_sigla_uf": "MA"
+  },
+  {
+    "co_municipio": 2100402,
+    "no_municipio": "Altamira do Maranhão",
+    "no_sigla_uf": "MA"
+  },
+  {
+    "co_municipio": 2100436,
+    "no_municipio": "Alto Alegre do Maranhão",
+    "no_sigla_uf": "MA"
+  },
+  {
+    "co_municipio": 2100477,
+    "no_municipio": "Alto Alegre do Pindaré",
+    "no_sigla_uf": "MA"
+  },
+  {
+    "co_municipio": 2100501,
+    "no_municipio": "Alto Parnaíba",
+    "no_sigla_uf": "MA"
+  },
+  {
+    "co_municipio": 2100550,
+    "no_municipio": "Amapá do Maranhão",
+    "no_sigla_uf": "MA"
+  },
+  {
+    "co_municipio": 2100600,
+    "no_municipio": "Amarante do Maranhão",
+    "no_sigla_uf": "MA"
+  },
+  {
+    "co_municipio": 2100709,
+    "no_municipio": "Anajatuba",
+    "no_sigla_uf": "MA"
+  },
+  {
+    "co_municipio": 2100808,
+    "no_municipio": "Anapurus",
+    "no_sigla_uf": "MA"
+  },
+  {
+    "co_municipio": 2100832,
+    "no_municipio": "Apicum-Açu",
+    "no_sigla_uf": "MA"
+  },
+  {
+    "co_municipio": 2100873,
+    "no_municipio": "Araguanã",
+    "no_sigla_uf": "MA"
+  },
+  {
+    "co_municipio": 2100907,
+    "no_municipio": "Araioses",
+    "no_sigla_uf": "MA"
+  },
+  {
+    "co_municipio": 2100956,
+    "no_municipio": "Arame",
+    "no_sigla_uf": "MA"
+  },
+  {
+    "co_municipio": 2101004,
+    "no_municipio": "Arari",
+    "no_sigla_uf": "MA"
+  },
+  {
+    "co_municipio": 2101103,
+    "no_municipio": "Axixá",
+    "no_sigla_uf": "MA"
+  },
+  {
+    "co_municipio": 2101202,
+    "no_municipio": "Bacabal",
+    "no_sigla_uf": "MA"
+  },
+  {
+    "co_municipio": 2101251,
+    "no_municipio": "Bacabeira",
+    "no_sigla_uf": "MA"
+  },
+  {
+    "co_municipio": 2101301,
+    "no_municipio": "Bacuri",
+    "no_sigla_uf": "MA"
+  },
+  {
+    "co_municipio": 2101350,
+    "no_municipio": "Bacurituba",
+    "no_sigla_uf": "MA"
+  },
+  {
+    "co_municipio": 2101400,
+    "no_municipio": "Balsas",
+    "no_sigla_uf": "MA"
+  },
+  {
+    "co_municipio": 2101509,
+    "no_municipio": "Barão de Grajaú",
+    "no_sigla_uf": "MA"
+  },
+  {
+    "co_municipio": 2101608,
+    "no_municipio": "Barra do Corda",
+    "no_sigla_uf": "MA"
+  },
+  {
+    "co_municipio": 2101707,
+    "no_municipio": "Barreirinhas",
+    "no_sigla_uf": "MA"
+  },
+  {
+    "co_municipio": 2101731,
+    "no_municipio": "Belágua",
+    "no_sigla_uf": "MA"
+  },
+  {
+    "co_municipio": 2101772,
+    "no_municipio": "Bela Vista do Maranhão",
+    "no_sigla_uf": "MA"
+  },
+  {
+    "co_municipio": 2101806,
+    "no_municipio": "Benedito Leite",
+    "no_sigla_uf": "MA"
+  },
+  {
+    "co_municipio": 2101905,
+    "no_municipio": "Bequimão",
+    "no_sigla_uf": "MA"
+  },
+  {
+    "co_municipio": 2101939,
+    "no_municipio": "Bernardo do Mearim",
+    "no_sigla_uf": "MA"
+  },
+  {
+    "co_municipio": 2101970,
+    "no_municipio": "Boa Vista do Gurupi",
+    "no_sigla_uf": "MA"
+  },
+  {
+    "co_municipio": 2102002,
+    "no_municipio": "Bom Jardim",
+    "no_sigla_uf": "MA"
+  },
+  {
+    "co_municipio": 2102036,
+    "no_municipio": "Bom Jesus das Selvas",
+    "no_sigla_uf": "MA"
+  },
+  {
+    "co_municipio": 2102077,
+    "no_municipio": "Bom Lugar",
+    "no_sigla_uf": "MA"
+  },
+  {
+    "co_municipio": 2102101,
+    "no_municipio": "Brejo",
+    "no_sigla_uf": "MA"
+  },
+  {
+    "co_municipio": 2102150,
+    "no_municipio": "Brejo de Areia",
+    "no_sigla_uf": "MA"
+  },
+  {
+    "co_municipio": 2102200,
+    "no_municipio": "Buriti",
+    "no_sigla_uf": "MA"
+  },
+  {
+    "co_municipio": 2102309,
+    "no_municipio": "Buriti Bravo",
+    "no_sigla_uf": "MA"
+  },
+  {
+    "co_municipio": 2102325,
+    "no_municipio": "Buriticupu",
+    "no_sigla_uf": "MA"
+  },
+  {
+    "co_municipio": 2102358,
+    "no_municipio": "Buritirana",
+    "no_sigla_uf": "MA"
+  },
+  {
+    "co_municipio": 2102374,
+    "no_municipio": "Cachoeira Grande",
+    "no_sigla_uf": "MA"
+  },
+  {
+    "co_municipio": 2102408,
+    "no_municipio": "Cajapió",
+    "no_sigla_uf": "MA"
+  },
+  {
+    "co_municipio": 2102507,
+    "no_municipio": "Cajari",
+    "no_sigla_uf": "MA"
+  },
+  {
+    "co_municipio": 2102556,
+    "no_municipio": "Campestre do Maranhão",
+    "no_sigla_uf": "MA"
+  },
+  {
+    "co_municipio": 2102606,
+    "no_municipio": "Cândido Mendes",
+    "no_sigla_uf": "MA"
+  },
+  {
+    "co_municipio": 2102705,
+    "no_municipio": "Cantanhede",
+    "no_sigla_uf": "MA"
+  },
+  {
+    "co_municipio": 2102754,
+    "no_municipio": "Capinzal do Norte",
+    "no_sigla_uf": "MA"
+  },
+  {
+    "co_municipio": 2102804,
+    "no_municipio": "Carolina",
+    "no_sigla_uf": "MA"
+  },
+  {
+    "co_municipio": 2102903,
+    "no_municipio": "Carutapera",
+    "no_sigla_uf": "MA"
+  },
+  {
+    "co_municipio": 2103000,
+    "no_municipio": "Caxias",
+    "no_sigla_uf": "MA"
+  },
+  {
+    "co_municipio": 2103109,
+    "no_municipio": "Cedral",
+    "no_sigla_uf": "MA"
+  },
+  {
+    "co_municipio": 2103125,
+    "no_municipio": "Central do Maranhão",
+    "no_sigla_uf": "MA"
+  },
+  {
+    "co_municipio": 2103158,
+    "no_municipio": "Centro do Guilherme",
+    "no_sigla_uf": "MA"
+  },
+  {
+    "co_municipio": 2103174,
+    "no_municipio": "Centro Novo do Maranhão",
+    "no_sigla_uf": "MA"
+  },
+  {
+    "co_municipio": 2103208,
+    "no_municipio": "Chapadinha",
+    "no_sigla_uf": "MA"
+  },
+  {
+    "co_municipio": 2103257,
+    "no_municipio": "Cidelândia",
+    "no_sigla_uf": "MA"
+  },
+  {
+    "co_municipio": 2103307,
+    "no_municipio": "Codó",
+    "no_sigla_uf": "MA"
+  },
+  {
+    "co_municipio": 2103406,
+    "no_municipio": "Coelho Neto",
+    "no_sigla_uf": "MA"
+  },
+  {
+    "co_municipio": 2103505,
+    "no_municipio": "Colinas",
+    "no_sigla_uf": "MA"
+  },
+  {
+    "co_municipio": 2103554,
+    "no_municipio": "Conceição do Lago-Açu",
+    "no_sigla_uf": "MA"
+  },
+  {
+    "co_municipio": 2103604,
+    "no_municipio": "Coroatá",
+    "no_sigla_uf": "MA"
+  },
+  {
+    "co_municipio": 2103703,
+    "no_municipio": "Cururupu",
+    "no_sigla_uf": "MA"
+  },
+  {
+    "co_municipio": 2103752,
+    "no_municipio": "Davinópolis",
+    "no_sigla_uf": "MA"
+  },
+  {
+    "co_municipio": 2103802,
+    "no_municipio": "Dom Pedro",
+    "no_sigla_uf": "MA"
+  },
+  {
+    "co_municipio": 2103901,
+    "no_municipio": "Duque Bacelar",
+    "no_sigla_uf": "MA"
+  },
+  {
+    "co_municipio": 2104008,
+    "no_municipio": "Esperantinópolis",
+    "no_sigla_uf": "MA"
+  },
+  {
+    "co_municipio": 2104057,
+    "no_municipio": "Estreito",
+    "no_sigla_uf": "MA"
+  },
+  {
+    "co_municipio": 2104073,
+    "no_municipio": "Feira Nova do Maranhão",
+    "no_sigla_uf": "MA"
+  },
+  {
+    "co_municipio": 2104081,
+    "no_municipio": "Fernando Falcão",
+    "no_sigla_uf": "MA"
+  },
+  {
+    "co_municipio": 2104099,
+    "no_municipio": "Formosa da Serra Negra",
+    "no_sigla_uf": "MA"
+  },
+  {
+    "co_municipio": 2104107,
+    "no_municipio": "Fortaleza dos Nogueiras",
+    "no_sigla_uf": "MA"
+  },
+  {
+    "co_municipio": 2104206,
+    "no_municipio": "Fortuna",
+    "no_sigla_uf": "MA"
+  },
+  {
+    "co_municipio": 2104305,
+    "no_municipio": "Godofredo Viana",
+    "no_sigla_uf": "MA"
+  },
+  {
+    "co_municipio": 2104404,
+    "no_municipio": "Gonçalves Dias",
+    "no_sigla_uf": "MA"
+  },
+  {
+    "co_municipio": 2104503,
+    "no_municipio": "Governador Archer",
+    "no_sigla_uf": "MA"
+  },
+  {
+    "co_municipio": 2104552,
+    "no_municipio": "Governador Edison Lobão",
+    "no_sigla_uf": "MA"
+  },
+  {
+    "co_municipio": 2104602,
+    "no_municipio": "Governador Eugênio Barros",
+    "no_sigla_uf": "MA"
+  },
+  {
+    "co_municipio": 2104628,
+    "no_municipio": "Governador Luiz Rocha",
+    "no_sigla_uf": "MA"
+  },
+  {
+    "co_municipio": 2104651,
+    "no_municipio": "Governador Newton Bello",
+    "no_sigla_uf": "MA"
+  },
+  {
+    "co_municipio": 2104677,
+    "no_municipio": "Governador Nunes Freire",
+    "no_sigla_uf": "MA"
+  },
+  {
+    "co_municipio": 2104701,
+    "no_municipio": "Graça Aranha",
+    "no_sigla_uf": "MA"
+  },
+  {
+    "co_municipio": 2104800,
+    "no_municipio": "Grajaú",
+    "no_sigla_uf": "MA"
+  },
+  {
+    "co_municipio": 2104909,
+    "no_municipio": "Guimarães",
+    "no_sigla_uf": "MA"
+  },
+  {
+    "co_municipio": 2105005,
+    "no_municipio": "Humberto de Campos",
+    "no_sigla_uf": "MA"
+  },
+  {
+    "co_municipio": 2105104,
+    "no_municipio": "Icatu",
+    "no_sigla_uf": "MA"
+  },
+  {
+    "co_municipio": 2105153,
+    "no_municipio": "Igarapé do Meio",
+    "no_sigla_uf": "MA"
+  },
+  {
+    "co_municipio": 2105203,
+    "no_municipio": "Igarapé Grande",
+    "no_sigla_uf": "MA"
+  },
+  {
+    "co_municipio": 2105302,
+    "no_municipio": "Imperatriz",
+    "no_sigla_uf": "MA"
+  },
+  {
+    "co_municipio": 2105351,
+    "no_municipio": "Itaipava do Grajaú",
+    "no_sigla_uf": "MA"
+  },
+  {
+    "co_municipio": 2105401,
+    "no_municipio": "Itapecuru Mirim",
+    "no_sigla_uf": "MA"
+  },
+  {
+    "co_municipio": 2105427,
+    "no_municipio": "Itinga do Maranhão",
+    "no_sigla_uf": "MA"
+  },
+  {
+    "co_municipio": 2105450,
+    "no_municipio": "Jatobá",
+    "no_sigla_uf": "MA"
+  },
+  {
+    "co_municipio": 2105476,
+    "no_municipio": "Jenipapo dos Vieiras",
+    "no_sigla_uf": "MA"
+  },
+  {
+    "co_municipio": 2105500,
+    "no_municipio": "João Lisboa",
+    "no_sigla_uf": "MA"
+  },
+  {
+    "co_municipio": 2105609,
+    "no_municipio": "Joselândia",
+    "no_sigla_uf": "MA"
+  },
+  {
+    "co_municipio": 2105658,
+    "no_municipio": "Junco do Maranhão",
+    "no_sigla_uf": "MA"
+  },
+  {
+    "co_municipio": 2105708,
+    "no_municipio": "Lago da Pedra",
+    "no_sigla_uf": "MA"
+  },
+  {
+    "co_municipio": 2105807,
+    "no_municipio": "Lago do Junco",
+    "no_sigla_uf": "MA"
+  },
+  {
+    "co_municipio": 2105906,
+    "no_municipio": "Lago Verde",
+    "no_sigla_uf": "MA"
+  },
+  {
+    "co_municipio": 2105922,
+    "no_municipio": "Lagoa do Mato",
+    "no_sigla_uf": "MA"
+  },
+  {
+    "co_municipio": 2105948,
+    "no_municipio": "Lago dos Rodrigues",
+    "no_sigla_uf": "MA"
+  },
+  {
+    "co_municipio": 2105963,
+    "no_municipio": "Lagoa Grande do Maranhão",
+    "no_sigla_uf": "MA"
+  },
+  {
+    "co_municipio": 2105989,
+    "no_municipio": "Lajeado Novo",
+    "no_sigla_uf": "MA"
+  },
+  {
+    "co_municipio": 2106003,
+    "no_municipio": "Lima Campos",
+    "no_sigla_uf": "MA"
+  },
+  {
+    "co_municipio": 2106102,
+    "no_municipio": "Loreto",
+    "no_sigla_uf": "MA"
+  },
+  {
+    "co_municipio": 2106201,
+    "no_municipio": "Luís Domingues",
+    "no_sigla_uf": "MA"
+  },
+  {
+    "co_municipio": 2106300,
+    "no_municipio": "Magalhães de Almeida",
+    "no_sigla_uf": "MA"
+  },
+  {
+    "co_municipio": 2106326,
+    "no_municipio": "Maracaçumé",
+    "no_sigla_uf": "MA"
+  },
+  {
+    "co_municipio": 2106359,
+    "no_municipio": "Marajá do Sena",
+    "no_sigla_uf": "MA"
+  },
+  {
+    "co_municipio": 2106375,
+    "no_municipio": "Maranhãozinho",
+    "no_sigla_uf": "MA"
+  },
+  {
+    "co_municipio": 2106409,
+    "no_municipio": "Mata Roma",
+    "no_sigla_uf": "MA"
+  },
+  {
+    "co_municipio": 2106508,
+    "no_municipio": "Matinha",
+    "no_sigla_uf": "MA"
+  },
+  {
+    "co_municipio": 2106607,
+    "no_municipio": "Matões",
+    "no_sigla_uf": "MA"
+  },
+  {
+    "co_municipio": 2106631,
+    "no_municipio": "Matões do Norte",
+    "no_sigla_uf": "MA"
+  },
+  {
+    "co_municipio": 2106672,
+    "no_municipio": "Milagres do Maranhão",
+    "no_sigla_uf": "MA"
+  },
+  {
+    "co_municipio": 2106706,
+    "no_municipio": "Mirador",
+    "no_sigla_uf": "MA"
+  },
+  {
+    "co_municipio": 2106755,
+    "no_municipio": "Miranda do Norte",
+    "no_sigla_uf": "MA"
+  },
+  {
+    "co_municipio": 2106805,
+    "no_municipio": "Mirinzal",
+    "no_sigla_uf": "MA"
+  },
+  {
+    "co_municipio": 2106904,
+    "no_municipio": "Monção",
+    "no_sigla_uf": "MA"
+  },
+  {
+    "co_municipio": 2107001,
+    "no_municipio": "Montes Altos",
+    "no_sigla_uf": "MA"
+  },
+  {
+    "co_municipio": 2107100,
+    "no_municipio": "Morros",
+    "no_sigla_uf": "MA"
+  },
+  {
+    "co_municipio": 2107209,
+    "no_municipio": "Nina Rodrigues",
+    "no_sigla_uf": "MA"
+  },
+  {
+    "co_municipio": 2107258,
+    "no_municipio": "Nova Colinas",
+    "no_sigla_uf": "MA"
+  },
+  {
+    "co_municipio": 2107308,
+    "no_municipio": "Nova Iorque",
+    "no_sigla_uf": "MA"
+  },
+  {
+    "co_municipio": 2107357,
+    "no_municipio": "Nova Olinda do Maranhão",
+    "no_sigla_uf": "MA"
+  },
+  {
+    "co_municipio": 2107407,
+    "no_municipio": "Olho d'Água das Cunhãs",
+    "no_sigla_uf": "MA"
+  },
+  {
+    "co_municipio": 2107456,
+    "no_municipio": "Olinda Nova do Maranhão",
+    "no_sigla_uf": "MA"
+  },
+  {
+    "co_municipio": 2107506,
+    "no_municipio": "Paço do Lumiar",
+    "no_sigla_uf": "MA"
+  },
+  {
+    "co_municipio": 2107605,
+    "no_municipio": "Palmeirândia",
+    "no_sigla_uf": "MA"
+  },
+  {
+    "co_municipio": 2107704,
+    "no_municipio": "Paraibano",
+    "no_sigla_uf": "MA"
+  },
+  {
+    "co_municipio": 2107803,
+    "no_municipio": "Parnarama",
+    "no_sigla_uf": "MA"
+  },
+  {
+    "co_municipio": 2107902,
+    "no_municipio": "Passagem Franca",
+    "no_sigla_uf": "MA"
+  },
+  {
+    "co_municipio": 2108009,
+    "no_municipio": "Pastos Bons",
+    "no_sigla_uf": "MA"
+  },
+  {
+    "co_municipio": 2108058,
+    "no_municipio": "Paulino Neves",
+    "no_sigla_uf": "MA"
+  },
+  {
+    "co_municipio": 2108108,
+    "no_municipio": "Paulo Ramos",
+    "no_sigla_uf": "MA"
+  },
+  {
+    "co_municipio": 2108207,
+    "no_municipio": "Pedreiras",
+    "no_sigla_uf": "MA"
+  },
+  {
+    "co_municipio": 2108256,
+    "no_municipio": "Pedro do Rosário",
+    "no_sigla_uf": "MA"
+  },
+  {
+    "co_municipio": 2108306,
+    "no_municipio": "Penalva",
+    "no_sigla_uf": "MA"
+  },
+  {
+    "co_municipio": 2108405,
+    "no_municipio": "Peri Mirim",
+    "no_sigla_uf": "MA"
+  },
+  {
+    "co_municipio": 2108454,
+    "no_municipio": "Peritoró",
+    "no_sigla_uf": "MA"
+  },
+  {
+    "co_municipio": 2108504,
+    "no_municipio": "Pindaré-Mirim",
+    "no_sigla_uf": "MA"
+  },
+  {
+    "co_municipio": 2108603,
+    "no_municipio": "Pinheiro",
+    "no_sigla_uf": "MA"
+  },
+  {
+    "co_municipio": 2108702,
+    "no_municipio": "Pio XII",
+    "no_sigla_uf": "MA"
+  },
+  {
+    "co_municipio": 2108801,
+    "no_municipio": "Pirapemas",
+    "no_sigla_uf": "MA"
+  },
+  {
+    "co_municipio": 2108900,
+    "no_municipio": "Poção de Pedras",
+    "no_sigla_uf": "MA"
+  },
+  {
+    "co_municipio": 2109007,
+    "no_municipio": "Porto Franco",
+    "no_sigla_uf": "MA"
+  },
+  {
+    "co_municipio": 2109056,
+    "no_municipio": "Porto Rico do Maranhão",
+    "no_sigla_uf": "MA"
+  },
+  {
+    "co_municipio": 2109106,
+    "no_municipio": "Presidente Dutra",
+    "no_sigla_uf": "MA"
+  },
+  {
+    "co_municipio": 2109205,
+    "no_municipio": "Presidente Juscelino",
+    "no_sigla_uf": "MA"
+  },
+  {
+    "co_municipio": 2109239,
+    "no_municipio": "Presidente Médici",
+    "no_sigla_uf": "MA"
+  },
+  {
+    "co_municipio": 2109270,
+    "no_municipio": "Presidente Sarney",
+    "no_sigla_uf": "MA"
+  },
+  {
+    "co_municipio": 2109304,
+    "no_municipio": "Presidente Vargas",
+    "no_sigla_uf": "MA"
+  },
+  {
+    "co_municipio": 2109403,
+    "no_municipio": "Primeira Cruz",
+    "no_sigla_uf": "MA"
+  },
+  {
+    "co_municipio": 2109452,
+    "no_municipio": "Raposa",
+    "no_sigla_uf": "MA"
+  },
+  {
+    "co_municipio": 2109502,
+    "no_municipio": "Riachão",
+    "no_sigla_uf": "MA"
+  },
+  {
+    "co_municipio": 2109551,
+    "no_municipio": "Ribamar Fiquene",
+    "no_sigla_uf": "MA"
+  },
+  {
+    "co_municipio": 2109601,
+    "no_municipio": "Rosário",
+    "no_sigla_uf": "MA"
+  },
+  {
+    "co_municipio": 2109700,
+    "no_municipio": "Sambaíba",
+    "no_sigla_uf": "MA"
+  },
+  {
+    "co_municipio": 2109759,
+    "no_municipio": "Santa Filomena do Maranhão",
+    "no_sigla_uf": "MA"
+  },
+  {
+    "co_municipio": 2109809,
+    "no_municipio": "Santa Helena",
+    "no_sigla_uf": "MA"
+  },
+  {
+    "co_municipio": 2109908,
+    "no_municipio": "Santa Inês",
+    "no_sigla_uf": "MA"
+  },
+  {
+    "co_municipio": 2110005,
+    "no_municipio": "Santa Luzia",
+    "no_sigla_uf": "MA"
+  },
+  {
+    "co_municipio": 2110039,
+    "no_municipio": "Santa Luzia do Paruá",
+    "no_sigla_uf": "MA"
+  },
+  {
+    "co_municipio": 2110104,
+    "no_municipio": "Santa Quitéria do Maranhão",
+    "no_sigla_uf": "MA"
+  },
+  {
+    "co_municipio": 2110203,
+    "no_municipio": "Santa Rita",
+    "no_sigla_uf": "MA"
+  },
+  {
+    "co_municipio": 2110237,
+    "no_municipio": "Santana do Maranhão",
+    "no_sigla_uf": "MA"
+  },
+  {
+    "co_municipio": 2110278,
+    "no_municipio": "Santo Amaro do Maranhão",
+    "no_sigla_uf": "MA"
+  },
+  {
+    "co_municipio": 2110302,
+    "no_municipio": "Santo Antônio dos Lopes",
+    "no_sigla_uf": "MA"
+  },
+  {
+    "co_municipio": 2110401,
+    "no_municipio": "São Benedito do Rio Preto",
+    "no_sigla_uf": "MA"
+  },
+  {
+    "co_municipio": 2110500,
+    "no_municipio": "São Bento",
+    "no_sigla_uf": "MA"
+  },
+  {
+    "co_municipio": 2110609,
+    "no_municipio": "São Bernardo",
+    "no_sigla_uf": "MA"
+  },
+  {
+    "co_municipio": 2110658,
+    "no_municipio": "São Domingos do Azeitão",
+    "no_sigla_uf": "MA"
+  },
+  {
+    "co_municipio": 2110708,
+    "no_municipio": "São Domingos do Maranhão",
+    "no_sigla_uf": "MA"
+  },
+  {
+    "co_municipio": 2110807,
+    "no_municipio": "São Félix de Balsas",
+    "no_sigla_uf": "MA"
+  },
+  {
+    "co_municipio": 2110856,
+    "no_municipio": "São Francisco do Brejão",
+    "no_sigla_uf": "MA"
+  },
+  {
+    "co_municipio": 2110906,
+    "no_municipio": "São Francisco do Maranhão",
+    "no_sigla_uf": "MA"
+  },
+  {
+    "co_municipio": 2111003,
+    "no_municipio": "São João Batista",
+    "no_sigla_uf": "MA"
+  },
+  {
+    "co_municipio": 2111029,
+    "no_municipio": "São João do Carú",
+    "no_sigla_uf": "MA"
+  },
+  {
+    "co_municipio": 2111052,
+    "no_municipio": "São João do Paraíso",
+    "no_sigla_uf": "MA"
+  },
+  {
+    "co_municipio": 2111078,
+    "no_municipio": "São João do Soter",
+    "no_sigla_uf": "MA"
+  },
+  {
+    "co_municipio": 2111102,
+    "no_municipio": "São João dos Patos",
+    "no_sigla_uf": "MA"
+  },
+  {
+    "co_municipio": 2111201,
+    "no_municipio": "São José de Ribamar",
+    "no_sigla_uf": "MA"
+  },
+  {
+    "co_municipio": 2111250,
+    "no_municipio": "São José dos Basílios",
+    "no_sigla_uf": "MA"
+  },
+  {
+    "co_municipio": 2111300,
+    "no_municipio": "São Luís",
+    "no_sigla_uf": "MA"
+  },
+  {
+    "co_municipio": 2111409,
+    "no_municipio": "São Luís Gonzaga do Maranhão",
+    "no_sigla_uf": "MA"
+  },
+  {
+    "co_municipio": 2111508,
+    "no_municipio": "São Mateus do Maranhão",
+    "no_sigla_uf": "MA"
+  },
+  {
+    "co_municipio": 2111532,
+    "no_municipio": "São Pedro da Água Branca",
+    "no_sigla_uf": "MA"
+  },
+  {
+    "co_municipio": 2111573,
+    "no_municipio": "São Pedro dos Crentes",
+    "no_sigla_uf": "MA"
+  },
+  {
+    "co_municipio": 2111607,
+    "no_municipio": "São Raimundo das Mangabeiras",
+    "no_sigla_uf": "MA"
+  },
+  {
+    "co_municipio": 2111631,
+    "no_municipio": "São Raimundo do Doca Bezerra",
+    "no_sigla_uf": "MA"
+  },
+  {
+    "co_municipio": 2111672,
+    "no_municipio": "São Roberto",
+    "no_sigla_uf": "MA"
+  },
+  {
+    "co_municipio": 2111706,
+    "no_municipio": "São Vicente Ferrer",
+    "no_sigla_uf": "MA"
+  },
+  {
+    "co_municipio": 2111722,
+    "no_municipio": "Satubinha",
+    "no_sigla_uf": "MA"
+  },
+  {
+    "co_municipio": 2111748,
+    "no_municipio": "Senador Alexandre Costa",
+    "no_sigla_uf": "MA"
+  },
+  {
+    "co_municipio": 2111763,
+    "no_municipio": "Senador La Rocque",
+    "no_sigla_uf": "MA"
+  },
+  {
+    "co_municipio": 2111789,
+    "no_municipio": "Serrano do Maranhão",
+    "no_sigla_uf": "MA"
+  },
+  {
+    "co_municipio": 2111805,
+    "no_municipio": "Sítio Novo",
+    "no_sigla_uf": "MA"
+  },
+  {
+    "co_municipio": 2111904,
+    "no_municipio": "Sucupira do Norte",
+    "no_sigla_uf": "MA"
+  },
+  {
+    "co_municipio": 2111953,
+    "no_municipio": "Sucupira do Riachão",
+    "no_sigla_uf": "MA"
+  },
+  {
+    "co_municipio": 2112001,
+    "no_municipio": "Tasso Fragoso",
+    "no_sigla_uf": "MA"
+  },
+  {
+    "co_municipio": 2112100,
+    "no_municipio": "Timbiras",
+    "no_sigla_uf": "MA"
+  },
+  {
+    "co_municipio": 2112209,
+    "no_municipio": "Timon",
+    "no_sigla_uf": "MA"
+  },
+  {
+    "co_municipio": 2112233,
+    "no_municipio": "Trizidela do Vale",
+    "no_sigla_uf": "MA"
+  },
+  {
+    "co_municipio": 2112274,
+    "no_municipio": "Tufilândia",
+    "no_sigla_uf": "MA"
+  },
+  {
+    "co_municipio": 2112308,
+    "no_municipio": "Tuntum",
+    "no_sigla_uf": "MA"
+  },
+  {
+    "co_municipio": 2112407,
+    "no_municipio": "Turiaçu",
+    "no_sigla_uf": "MA"
+  },
+  {
+    "co_municipio": 2112456,
+    "no_municipio": "Turilândia",
+    "no_sigla_uf": "MA"
+  },
+  {
+    "co_municipio": 2112506,
+    "no_municipio": "Tutóia",
+    "no_sigla_uf": "MA"
+  },
+  {
+    "co_municipio": 2112605,
+    "no_municipio": "Urbano Santos",
+    "no_sigla_uf": "MA"
+  },
+  {
+    "co_municipio": 2112704,
+    "no_municipio": "Vargem Grande",
+    "no_sigla_uf": "MA"
+  },
+  {
+    "co_municipio": 2112803,
+    "no_municipio": "Viana",
+    "no_sigla_uf": "MA"
+  },
+  {
+    "co_municipio": 2112852,
+    "no_municipio": "Vila Nova dos Martírios",
+    "no_sigla_uf": "MA"
+  },
+  {
+    "co_municipio": 2112902,
+    "no_municipio": "Vitória do Mearim",
+    "no_sigla_uf": "MA"
+  },
+  {
+    "co_municipio": 2113009,
+    "no_municipio": "Vitorino Freire",
+    "no_sigla_uf": "MA"
+  },
+  {
+    "co_municipio": 2114007,
+    "no_municipio": "Zé Doca",
+    "no_sigla_uf": "MA"
+  },
+  {
+    "co_municipio": 5100201,
+    "no_municipio": "Água Boa",
+    "no_sigla_uf": "MT"
+  },
+  {
+    "co_municipio": 5100250,
+    "no_municipio": "Alta Floresta",
+    "no_sigla_uf": "MT"
+  },
+  {
+    "co_municipio": 5100300,
+    "no_municipio": "Alto Araguaia",
+    "no_sigla_uf": "MT"
+  },
+  {
+    "co_municipio": 5100359,
+    "no_municipio": "Alto Boa Vista",
+    "no_sigla_uf": "MT"
+  },
+  {
+    "co_municipio": 5100409,
+    "no_municipio": "Alto Garças",
+    "no_sigla_uf": "MT"
+  },
+  {
+    "co_municipio": 5100607,
+    "no_municipio": "Alto Taquari",
+    "no_sigla_uf": "MT"
+  },
+  {
+    "co_municipio": 5100805,
+    "no_municipio": "Apiacás",
+    "no_sigla_uf": "MT"
+  },
+  {
+    "co_municipio": 5101001,
+    "no_municipio": "Araguaiana",
+    "no_sigla_uf": "MT"
+  },
+  {
+    "co_municipio": 5101209,
+    "no_municipio": "Araguainha",
+    "no_sigla_uf": "MT"
+  },
+  {
+    "co_municipio": 5101258,
+    "no_municipio": "Araputanga",
+    "no_sigla_uf": "MT"
+  },
+  {
+    "co_municipio": 5101407,
+    "no_municipio": "Aripuanã",
+    "no_sigla_uf": "MT"
+  },
+  {
+    "co_municipio": 5101605,
+    "no_municipio": "Barão de Melgaço",
+    "no_sigla_uf": "MT"
+  },
+  {
+    "co_municipio": 5101704,
+    "no_municipio": "Barra do Bugres",
+    "no_sigla_uf": "MT"
+  },
+  {
+    "co_municipio": 5101803,
+    "no_municipio": "Barra do Garças",
+    "no_sigla_uf": "MT"
+  },
+  {
+    "co_municipio": 5101852,
+    "no_municipio": "Bom Jesus do Araguaia",
+    "no_sigla_uf": "MT"
+  },
+  {
+    "co_municipio": 5101902,
+    "no_municipio": "Brasnorte",
+    "no_sigla_uf": "MT"
+  },
+  {
+    "co_municipio": 5102504,
+    "no_municipio": "Cáceres",
+    "no_sigla_uf": "MT"
+  },
+  {
+    "co_municipio": 5102603,
+    "no_municipio": "Campinápolis",
+    "no_sigla_uf": "MT"
+  },
+  {
+    "co_municipio": 5102637,
+    "no_municipio": "Campo Novo do Parecis",
+    "no_sigla_uf": "MT"
+  },
+  {
+    "co_municipio": 5102686,
+    "no_municipio": "Campos de Júlio",
+    "no_sigla_uf": "MT"
+  },
+  {
+    "co_municipio": 5102694,
+    "no_municipio": "Canabrava do Norte",
+    "no_sigla_uf": "MT"
+  },
+  {
+    "co_municipio": 5102702,
+    "no_municipio": "Canarana",
+    "no_sigla_uf": "MT"
+  },
+  {
+    "co_municipio": 5102793,
+    "no_municipio": "Carlinda",
+    "no_sigla_uf": "MT"
+  },
+  {
+    "co_municipio": 5102850,
+    "no_municipio": "Castanheira",
+    "no_sigla_uf": "MT"
+  },
+  {
+    "co_municipio": 5103007,
+    "no_municipio": "Chapada dos Guimarães",
+    "no_sigla_uf": "MT"
+  },
+  {
+    "co_municipio": 5103056,
+    "no_municipio": "Cláudia",
+    "no_sigla_uf": "MT"
+  },
+  {
+    "co_municipio": 5103106,
+    "no_municipio": "Cocalinho",
+    "no_sigla_uf": "MT"
+  },
+  {
+    "co_municipio": 5103205,
+    "no_municipio": "Colíder",
+    "no_sigla_uf": "MT"
+  },
+  {
+    "co_municipio": 5103254,
+    "no_municipio": "Colniza",
+    "no_sigla_uf": "MT"
+  },
+  {
+    "co_municipio": 5103304,
+    "no_municipio": "Comodoro",
+    "no_sigla_uf": "MT"
+  },
+  {
+    "co_municipio": 5103353,
+    "no_municipio": "Confresa",
+    "no_sigla_uf": "MT"
+  },
+  {
+    "co_municipio": 5103361,
+    "no_municipio": "Conquista D'Oeste",
+    "no_sigla_uf": "MT"
+  },
+  {
+    "co_municipio": 5103379,
+    "no_municipio": "Cotriguaçu",
+    "no_sigla_uf": "MT"
+  },
+  {
+    "co_municipio": 5103403,
+    "no_municipio": "Cuiabá",
+    "no_sigla_uf": "MT"
+  },
+  {
+    "co_municipio": 5103437,
+    "no_municipio": "Curvelândia",
+    "no_sigla_uf": "MT"
+  },
+  {
+    "co_municipio": 5103452,
+    "no_municipio": "Denise",
+    "no_sigla_uf": "MT"
+  },
+  {
+    "co_municipio": 5103502,
+    "no_municipio": "Diamantino",
+    "no_sigla_uf": "MT"
+  },
+  {
+    "co_municipio": 5103700,
+    "no_municipio": "Feliz Natal",
+    "no_sigla_uf": "MT"
+  },
+  {
+    "co_municipio": 5103809,
+    "no_municipio": "Figueirópolis D'Oeste",
+    "no_sigla_uf": "MT"
+  },
+  {
+    "co_municipio": 5103858,
+    "no_municipio": "Gaúcha do Norte",
+    "no_sigla_uf": "MT"
+  },
+  {
+    "co_municipio": 5103908,
+    "no_municipio": "General Carneiro",
+    "no_sigla_uf": "MT"
+  },
+  {
+    "co_municipio": 5103957,
+    "no_municipio": "Glória D'Oeste",
+    "no_sigla_uf": "MT"
+  },
+  {
+    "co_municipio": 5104104,
+    "no_municipio": "Guarantã do Norte",
+    "no_sigla_uf": "MT"
+  },
+  {
+    "co_municipio": 5104203,
+    "no_municipio": "Guiratinga",
+    "no_sigla_uf": "MT"
+  },
+  {
+    "co_municipio": 5104500,
+    "no_municipio": "Indiavaí",
+    "no_sigla_uf": "MT"
+  },
+  {
+    "co_municipio": 5104526,
+    "no_municipio": "Ipiranga do Norte",
+    "no_sigla_uf": "MT"
+  },
+  {
+    "co_municipio": 5104542,
+    "no_municipio": "Itanhangá",
+    "no_sigla_uf": "MT"
+  },
+  {
+    "co_municipio": 5104559,
+    "no_municipio": "Itaúba",
+    "no_sigla_uf": "MT"
+  },
+  {
+    "co_municipio": 5105002,
+    "no_municipio": "Jauru",
+    "no_sigla_uf": "MT"
+  },
+  {
+    "co_municipio": 5105101,
+    "no_municipio": "Juara",
+    "no_sigla_uf": "MT"
+  },
+  {
+    "co_municipio": 5105150,
+    "no_municipio": "Juína",
+    "no_sigla_uf": "MT"
+  },
+  {
+    "co_municipio": 5105176,
+    "no_municipio": "Juruena",
+    "no_sigla_uf": "MT"
+  },
+  {
+    "co_municipio": 5105234,
+    "no_municipio": "Lambari D'Oeste",
+    "no_sigla_uf": "MT"
+  },
+  {
+    "co_municipio": 5105259,
+    "no_municipio": "Lucas do Rio Verde",
+    "no_sigla_uf": "MT"
+  },
+  {
+    "co_municipio": 5105309,
+    "no_municipio": "Luciara",
+    "no_sigla_uf": "MT"
+  },
+  {
+    "co_municipio": 5105507,
+    "no_municipio": "Vila Bela da Santíssima Trindade",
+    "no_sigla_uf": "MT"
+  },
+  {
+    "co_municipio": 5105580,
+    "no_municipio": "Marcelândia",
+    "no_sigla_uf": "MT"
+  },
+  {
+    "co_municipio": 5105606,
+    "no_municipio": "Matupá",
+    "no_sigla_uf": "MT"
+  },
+  {
+    "co_municipio": 5105622,
+    "no_municipio": "Mirassol d'Oeste",
+    "no_sigla_uf": "MT"
+  },
+  {
+    "co_municipio": 5105903,
+    "no_municipio": "Nobres",
+    "no_sigla_uf": "MT"
+  },
+  {
+    "co_municipio": 5106109,
+    "no_municipio": "Nossa Senhora do Livramento",
+    "no_sigla_uf": "MT"
+  },
+  {
+    "co_municipio": 5106158,
+    "no_municipio": "Nova Bandeirantes",
+    "no_sigla_uf": "MT"
+  },
+  {
+    "co_municipio": 5106174,
+    "no_municipio": "Nova Nazaré",
+    "no_sigla_uf": "MT"
+  },
+  {
+    "co_municipio": 5106182,
+    "no_municipio": "Nova Lacerda",
+    "no_sigla_uf": "MT"
+  },
+  {
+    "co_municipio": 5106190,
+    "no_municipio": "Nova Santa Helena",
+    "no_sigla_uf": "MT"
+  },
+  {
+    "co_municipio": 5106208,
+    "no_municipio": "Nova Brasilândia",
+    "no_sigla_uf": "MT"
+  },
+  {
+    "co_municipio": 5106216,
+    "no_municipio": "Nova Canaã do Norte",
+    "no_sigla_uf": "MT"
+  },
+  {
+    "co_municipio": 5106224,
+    "no_municipio": "Nova Mutum",
+    "no_sigla_uf": "MT"
+  },
+  {
+    "co_municipio": 5106232,
+    "no_municipio": "Nova Olímpia",
+    "no_sigla_uf": "MT"
+  },
+  {
+    "co_municipio": 5106240,
+    "no_municipio": "Nova Ubiratã",
+    "no_sigla_uf": "MT"
+  },
+  {
+    "co_municipio": 5106257,
+    "no_municipio": "Nova Xavantina",
+    "no_sigla_uf": "MT"
+  },
+  {
+    "co_municipio": 5106265,
+    "no_municipio": "Novo Mundo",
+    "no_sigla_uf": "MT"
+  },
+  {
+    "co_municipio": 5106273,
+    "no_municipio": "Novo Horizonte do Norte",
+    "no_sigla_uf": "MT"
+  },
+  {
+    "co_municipio": 5106281,
+    "no_municipio": "Novo São Joaquim",
+    "no_sigla_uf": "MT"
+  },
+  {
+    "co_municipio": 5106299,
+    "no_municipio": "Paranaíta",
+    "no_sigla_uf": "MT"
+  },
+  {
+    "co_municipio": 5106307,
+    "no_municipio": "Paranatinga",
+    "no_sigla_uf": "MT"
+  },
+  {
+    "co_municipio": 5106315,
+    "no_municipio": "Novo Santo Antônio",
+    "no_sigla_uf": "MT"
+  },
+  {
+    "co_municipio": 5106422,
+    "no_municipio": "Peixoto de Azevedo",
+    "no_sigla_uf": "MT"
+  },
+  {
+    "co_municipio": 5106455,
+    "no_municipio": "Planalto da Serra",
+    "no_sigla_uf": "MT"
+  },
+  {
+    "co_municipio": 5106505,
+    "no_municipio": "Poconé",
+    "no_sigla_uf": "MT"
+  },
+  {
+    "co_municipio": 5106653,
+    "no_municipio": "Pontal do Araguaia",
+    "no_sigla_uf": "MT"
+  },
+  {
+    "co_municipio": 5106703,
+    "no_municipio": "Ponte Branca",
+    "no_sigla_uf": "MT"
+  },
+  {
+    "co_municipio": 5106752,
+    "no_municipio": "Pontes e Lacerda",
+    "no_sigla_uf": "MT"
+  },
+  {
+    "co_municipio": 5106778,
+    "no_municipio": "Porto Alegre do Norte",
+    "no_sigla_uf": "MT"
+  },
+  {
+    "co_municipio": 5106802,
+    "no_municipio": "Porto dos Gaúchos",
+    "no_sigla_uf": "MT"
+  },
+  {
+    "co_municipio": 5106828,
+    "no_municipio": "Porto Esperidião",
+    "no_sigla_uf": "MT"
+  },
+  {
+    "co_municipio": 5106851,
+    "no_municipio": "Porto Estrela",
+    "no_sigla_uf": "MT"
+  },
+  {
+    "co_municipio": 5107008,
+    "no_municipio": "Poxoréo",
+    "no_sigla_uf": "MT"
+  },
+  {
+    "co_municipio": 5107065,
+    "no_municipio": "Querência",
+    "no_sigla_uf": "MT"
+  },
+  {
+    "co_municipio": 5107107,
+    "no_municipio": "São José dos Quatro Marcos",
+    "no_sigla_uf": "MT"
+  },
+  {
+    "co_municipio": 5107156,
+    "no_municipio": "Reserva do Cabaçal",
+    "no_sigla_uf": "MT"
+  },
+  {
+    "co_municipio": 5107180,
+    "no_municipio": "Ribeirão Cascalheira",
+    "no_sigla_uf": "MT"
+  },
+  {
+    "co_municipio": 5107198,
+    "no_municipio": "Ribeirãozinho",
+    "no_sigla_uf": "MT"
+  },
+  {
+    "co_municipio": 5107206,
+    "no_municipio": "Rio Branco",
+    "no_sigla_uf": "MT"
+  },
+  {
+    "co_municipio": 5107248,
+    "no_municipio": "Santa Carmem",
+    "no_sigla_uf": "MT"
+  },
+  {
+    "co_municipio": 5107305,
+    "no_municipio": "São José do Rio Claro",
+    "no_sigla_uf": "MT"
+  },
+  {
+    "co_municipio": 5107354,
+    "no_municipio": "São José do Xingu",
+    "no_sigla_uf": "MT"
+  },
+  {
+    "co_municipio": 5107578,
+    "no_municipio": "Rondolândia",
+    "no_sigla_uf": "MT"
+  },
+  {
+    "co_municipio": 5107602,
+    "no_municipio": "Rondonópolis",
+    "no_sigla_uf": "MT"
+  },
+  {
+    "co_municipio": 5107743,
+    "no_municipio": "Santa Cruz do Xingu",
+    "no_sigla_uf": "MT"
+  },
+  {
+    "co_municipio": 5107750,
+    "no_municipio": "Salto do Céu",
+    "no_sigla_uf": "MT"
+  },
+  {
+    "co_municipio": 5107768,
+    "no_municipio": "Santa Rita do Trivelato",
+    "no_sigla_uf": "MT"
+  },
+  {
+    "co_municipio": 5107776,
+    "no_municipio": "Santa Terezinha",
+    "no_sigla_uf": "MT"
+  },
+  {
+    "co_municipio": 5107792,
+    "no_municipio": "Santo Antônio do Leste",
+    "no_sigla_uf": "MT"
+  },
+  {
+    "co_municipio": 5107800,
+    "no_municipio": "Santo Antônio do Leverger",
+    "no_sigla_uf": "MT"
+  },
+  {
+    "co_municipio": 5107859,
+    "no_municipio": "São Félix do Araguaia",
+    "no_sigla_uf": "MT"
+  },
+  {
+    "co_municipio": 5107875,
+    "no_municipio": "Sapezal",
+    "no_sigla_uf": "MT"
+  },
+  {
+    "co_municipio": 5107883,
+    "no_municipio": "Serra Nova Dourada",
+    "no_sigla_uf": "MT"
+  },
+  {
+    "co_municipio": 5107909,
+    "no_municipio": "Sinop",
+    "no_sigla_uf": "MT"
+  },
+  {
+    "co_municipio": 5107925,
+    "no_municipio": "Sorriso",
+    "no_sigla_uf": "MT"
+  },
+  {
+    "co_municipio": 5107941,
+    "no_municipio": "Tabaporã",
+    "no_sigla_uf": "MT"
+  },
+  {
+    "co_municipio": 5107958,
+    "no_municipio": "Tangará da Serra",
+    "no_sigla_uf": "MT"
+  },
+  {
+    "co_municipio": 5108006,
+    "no_municipio": "Tapurah",
+    "no_sigla_uf": "MT"
+  },
+  {
+    "co_municipio": 5108055,
+    "no_municipio": "Terra Nova do Norte",
+    "no_sigla_uf": "MT"
+  },
+  {
+    "co_municipio": 5108105,
+    "no_municipio": "Tesouro",
+    "no_sigla_uf": "MT"
+  },
+  {
+    "co_municipio": 5108204,
+    "no_municipio": "Torixoréu",
+    "no_sigla_uf": "MT"
+  },
+  {
+    "co_municipio": 5108303,
+    "no_municipio": "União do Sul",
+    "no_sigla_uf": "MT"
+  },
+  {
+    "co_municipio": 5108352,
+    "no_municipio": "Vale de São Domingos",
+    "no_sigla_uf": "MT"
+  },
+  {
+    "co_municipio": 5108402,
+    "no_municipio": "Várzea Grande",
+    "no_sigla_uf": "MT"
+  },
+  {
+    "co_municipio": 5108501,
+    "no_municipio": "Vera",
+    "no_sigla_uf": "MT"
+  },
+  {
+    "co_municipio": 5108600,
+    "no_municipio": "Vila Rica",
+    "no_sigla_uf": "MT"
+  },
+  {
+    "co_municipio": 5108808,
+    "no_municipio": "Nova Guarita",
+    "no_sigla_uf": "MT"
+  },
+  {
+    "co_municipio": 5108907,
+    "no_municipio": "Nova Maringá",
+    "no_sigla_uf": "MT"
+  },
+  {
+    "co_municipio": 5108956,
+    "no_municipio": "Nova Monte Verde",
+    "no_sigla_uf": "MT"
+  }
+]

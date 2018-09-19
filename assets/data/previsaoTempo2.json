@@ -24,30 +24,6 @@
       "direcaoVentos": "N - NW",
       "intensidade": "Fracos",
       "diaSemana": "QUARTA-FEIRA"
-    },
-    {
-      "data": "14/09/2018",
-      "nomeCidade": "Porto Velho",
-      "tempo": "Claro a parcialmente nublado com possibilidade de chuva em áreas isoladas",
-      "temperaturaMax": "34",
-      "temperaturaMin": "23",
-      "umidadeMax": "80",
-      "umidadeMin": "22",
-      "direcaoVentos": "N - NE",
-      "intensidade": "Fracos",
-      "diaSemana": "QUINTA-FEIRA"
-    },
-    {
-      "data": "15/09/2018",
-      "nomeCidade": "Porto Velho",
-      "tempo": "Claro a parcialmente nublado com possibilidade de chuva em áreas isoladas",
-      "temperaturaMax": "34",
-      "temperaturaMin": "23",
-      "umidadeMax": "80",
-      "umidadeMin": "22",
-      "direcaoVentos": "N - NE",
-      "intensidade": "Fracos",
-      "diaSemana": "QUINTA-FEIRA"
     }
   ]
 }
