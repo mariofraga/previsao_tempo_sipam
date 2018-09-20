@@ -41,7 +41,7 @@ class _HomeState extends State<Home> {
 
   Future<Map> _getTempo() async {
     http.Response response;
-    response = await http.get("http://www.aerofilmes.com/previsaoTempo.json");
+    response = await http.get("http://www.aerofilmes.com/previsao_ok.json");
     String body = utf8.decode(response.bodyBytes);
     return json.decode(body);
   }
@@ -72,15 +72,38 @@ class _HomeState extends State<Home> {
             switch (snapshot.connectionState) {
               case (ConnectionState.waiting):
               case (ConnectionState.none):
-                return Container(
-                  width: 200.0,
-                  height: 200.0,
-                  alignment: Alignment.center,
-                  child: CircularProgressIndicator(
-                    valueColor: AlwaysStoppedAnimation<Color>(Colors.white),
-                    strokeWidth: 5.0,
-                  ),
-                );
+                return Stack(
+                    fit: StackFit.expand,
+                    children: <Widget>[
+                      Container(
+                        decoration: BoxDecoration(color: Colors.white),
+                      ),
+                      Column(
+                        mainAxisAlignment: MainAxisAlignment.start,
+                        children: <Widget>[
+                          Expanded(
+                            flex: 2,
+                            child: Container(
+                              child: Column(
+                                mainAxisAlignment: MainAxisAlignment.center,
+                                children: <Widget>[
+                                  CircleAvatar(
+                                    backgroundColor: Colors.white,
+                                    radius: 120.0,
+                                    child: Image.asset(
+                                      "images/icons/icsipam_grande.png",
+                                      height: 500.0,
+                                      fit: BoxFit.cover,
+                                    ),
+                                  )
+                                ],
+                              ),
+                            ),
+                          )
+                        ],
+                      )
+                    ],
+                  );
               default:
                 if (snapshot.hasError)
                   return Container();
@@ -134,7 +157,7 @@ class _HomeState extends State<Home> {
                               child: Text(
                                 index == 0
                                     ? "Hoje"
-                                    : snapshot.data["dias"][index]["data"],
+                                    : snapshot.data["dias"][index]["dt_data_previsao"],
                                 style: TextStyle(fontSize: 12.0),
                               ),
                             );
@@ -187,27 +210,26 @@ class _HomeState extends State<Home> {
         mainAxisAlignment: MainAxisAlignment.spaceAround,
         children: <Widget>[
           LinhaTemperatura(
-              snapshot.data["dias"][index]["diaSemana"],
-              snapshot.data["dias"][index]["temperaturaMax"],
-              snapshot.data["dias"][index]["temperaturaMin"],
+              "day week",
+              snapshot.data["dias"][index]["nu_temperatura_maxima"],
+              snapshot.data["dias"][index]["nu_temperatura_minima"],
               "$imgTemp"),
-          LinhaTempo(snapshot.data["dias"][index]["tempo"]),
-          LinhaUmidade(snapshot.data["dias"][index]["umidadeMax"],
-              snapshot.data["dias"][index]["umidadeMin"]),
-          LinhaVentos(snapshot.data["dias"][index]["direcaoVentos"],
-              snapshot.data["dias"][index]["intensidade"])
+          LinhaTempo(snapshot.data["dias"][index]["tempo"], snapshot.data["dias"][index]["chuva"]),
+          LinhaUmidade(snapshot.data["dias"][index]["nu_umidade_maxima"],
+              snapshot.data["dias"][index]["nu_umidade_minima"]),
+          LinhaVentos(snapshot.data["dias"][index]["no_direcao_vento"], snapshot.data["dias"][index]["no_direcao_vento_variacao"], snapshot.data["dias"][index]["vento"], snapshot.data["dias"][index]["vento_variacao"],)
         ],
       ),
     );
   }
 
-  Widget LinhaVentos(String direcao, String intensidade) {
+  Widget LinhaVentos(String ventodirecao, String direcaoVariacao, String vento, String ventoVariacao) {
     return Padding(
       padding: EdgeInsets.only(left: 20.0, top: 15.0, right: 20.0, bottom: 0.0),
       child: Column(
         children: <Widget>[
           TituloELinha("VENTOS"),
-          Descricao("$direcao/$intensidade", "vazia"),
+          Descricao("$ventodirecao/$direcaoVariacao - $vento/$ventoVariacao", "vazia"),
         ],
       ),
     );
@@ -260,13 +282,13 @@ class _HomeState extends State<Home> {
     );
   }
 
-  Widget LinhaTempo(String tempo) {
+  Widget LinhaTempo(String tempo, String chuva) {
     return Padding(
       padding: EdgeInsets.only(left: 20.0, top: 15.0, right: 20.0, bottom: 0.0),
       child: Column(
         children: <Widget>[
           TituloELinha("TEMPO"),
-          Text("$tempo",
+          Text("$tempo, $chuva",
               style: TextStyle(
                   fontSize: 16.0,
                   fontWeight: FontWeight.bold,
