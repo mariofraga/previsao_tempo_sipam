@@ -48,6 +48,9 @@ flutter:
      - images/sol1_escurecido.jpg
      - images/sol2_escurecido.jpg
      - images/favicon.ico
+     - assets/data/cidades_previsao.json
+     - assets/data/favorito.json
+     - assets/data/previsao_ok.json
 
 
   # An image asset can refer to one or more resolution-specific "variants", see
