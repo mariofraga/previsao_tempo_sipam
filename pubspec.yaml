@@ -43,6 +43,7 @@ flutter:
      - images/dia-am.png
      - assets/data/cidades.json
      - assets/data/previsaoTempo.json
+     - assets/data/previsao_ok.json
      - images/sol1.jpg
      - images/sol2.jpg
      - images/sol1_escurecido.jpg
