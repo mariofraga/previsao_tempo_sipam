@@ -11,6 +11,14 @@ class Cidades extends StatefulWidget {
   _CidadesState createState() => _CidadesState();
 }
 
+
+class EntidadeCidade{
+  int co_municipio;
+  String no_municipio;
+  String no_sigla_uf;
+}
+
+
 /*class Cidade {
   String nomeCidade;
   String uf;
@@ -19,8 +27,9 @@ class Cidades extends StatefulWidget {
 }*/
 
 class _CidadesState extends State<Cidades> {
-  List<String> cidadesOrifinal = new List<String>();
-  List<String> cidades = new List<String>();
+  List<EntidadeCidade> cidadesOrifinal = new List<EntidadeCidade>();
+  List<EntidadeCidade> cidades = new List<EntidadeCidade>();
+  List<EntidadeCidade> cidadesVazia = new List<EntidadeCidade>();
 
   String _search;
 
@@ -76,16 +85,21 @@ class _CidadesState extends State<Cidades> {
                 ),
                 onChanged: (text) {
                   setState(() {
-                    cidades = cidadesOrifinal
-                        .where(
-                            (f) => f.toLowerCase().contains(text.toLowerCase()))
-                        .toList();
-                    print(
-                        "Quantidade de Cidades Encontradas: ${cidades.length.toString()}");
+                    if(text.length > 2) {
+                      cidades = cidadesOrifinal
+                          .where(
+                              (f) =>
+                              f.no_municipio.toLowerCase().contains(
+                                  text.toLowerCase()))
+                          .toList();
+                      print(
+                          "Quantidade de Cidades Encontradas:: ${cidades.length
+                              .toString()}");
+                    }
                   });
                 },
                 decoration: InputDecoration(
-                  labelText: "Pesquise Aqui",
+                  labelText: "Pesquise Aqui.",
                   labelStyle: TextStyle(
                     color: Colors.white,
                     fontWeight: FontWeight.bold,
@@ -142,21 +156,29 @@ class _CidadesState extends State<Cidades> {
     return decoded;
   }
 
+
   void carregaCidadeLista() async {
     Map decoded = await loadCrossword();
     List<String> lc = new List();
-    for (var cidade in decoded["estados"][6]["cidades"]) {
-      cidades.add(cidade + " RO ");
-      cidadesOrifinal.add(cidade + " RO ");
+    EntidadeCidade c;
+    for (var cidade in decoded["listaCidades"]) {
+      c = new EntidadeCidade();
+      c.no_municipio = cidade["no_municipio"];
+      c.co_municipio = cidade["co_municipio"];
+      c.no_sigla_uf = cidade["no_sigla_uf"];
+      cidades.add(c);
     }
     print("Quantidade de Cidades Encontradas: ${cidades.length.toString()}");
     setState(() {
       this.cidades = cidades;
+      this.cidadesOrifinal = cidades;
     });
   }
 
+
+
   Future<String> _loadCrosswordAsset() async {
-    return await rootBundle.loadString('assets/data/cidades.json');
+    return await rootBundle.loadString('assets/data/cidades_previsao.json');
   }
 
   Widget getCidadeList(BuildContext context, int index) {
@@ -170,19 +192,16 @@ class _CidadesState extends State<Cidades> {
               children: <Widget>[
                 FlatButton(
                   onPressed: () {
-                    Navigator.pop(context, cidades[index]);
+                    Navigator.pop(context, {'co_municipio':cidades[index].co_municipio,'no_municipio':cidades[index].no_municipio});
                   },
                   child:
-
-                Text(cidades[index],
+                Text(cidades[index].no_municipio + " - " + cidades[index].no_sigla_uf,
                     style: TextStyle(
                         color: Colors.white, fontWeight: FontWeight.bold)),
                 ),
-
-
                 FlatButton(
                   onPressed: () {
-                    Navigator.pop(context, cidades[index]);
+                    Navigator.pop(context, {'co_municipio':cidades[index].co_municipio,'no_municipio':cidades[index].no_municipio});
                   },
                   child: Icon(
                     Icons.location_on,
@@ -199,3 +218,5 @@ class _CidadesState extends State<Cidades> {
         ));
   }
 }
+
+
