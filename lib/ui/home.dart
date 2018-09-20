@@ -13,6 +13,8 @@ class Home extends StatefulWidget {
 class _HomeState extends State<Home> {
   String cidadeFavorita;
   int contadorfundo = 0;
+  String no_municipio;
+  int co_municipio = 1100015;
 
   Future<Map> dados;
 
@@ -28,7 +30,7 @@ class _HomeState extends State<Home> {
   @override
   void initState() {
     //listObjPrevisao;
-    dados = _getTempo().then((map) {});
+    dados = _getTempo(co_municipio).then((map) {});
 
     super.initState();
     print("ok");
@@ -39,9 +41,9 @@ class _HomeState extends State<Home> {
     }
   }
 
-  Future<Map> _getTempo() async {
+  Future<Map> _getTempo(int co_municipio) async {
     http.Response response;
-    response = await http.get("http://www.aerofilmes.com/previsao_ok.json");
+    response = await http.get("http://172.23.14.99:8000/api/previsao/ha45664Hk214g5f66l89u11gf/$co_municipio");
     String body = utf8.decode(response.bodyBytes);
     return json.decode(body);
   }
@@ -67,7 +69,7 @@ class _HomeState extends State<Home> {
     ]);
     return Container(
       child: FutureBuilder(
-          future: _getTempo(),
+          future: _getTempo(co_municipio),
           builder: (context, snapshot) {
             switch (snapshot.connectionState) {
               case (ConnectionState.waiting):
