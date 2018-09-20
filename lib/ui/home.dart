@@ -4,6 +4,7 @@ import 'dart:convert';
 import 'dart:async' show Future;
 import 'package:flutter/services.dart';
 import 'package:http/http.dart' as http;
+import 'package:previsao_tempo/ui/uteis.dart';
 
 class Home extends StatefulWidget {
   @override
@@ -11,12 +12,14 @@ class Home extends StatefulWidget {
 }
 
 class _HomeState extends State<Home> {
-  String cidadeFavorita;
-  int contadorfundo = 0;
-  String no_municipio;
-  int co_municipio = 1100015;
+  //String cidadeFavorita;
+  //int contadorfundo = 0;
+  //String no_municipio;
+  //int co_municipio = 1100015;
 
+  var cidadeFavorita;
   Future<Map> dados;
+  uteis u = new uteis();
 
   @override
   void dispose() {
@@ -30,36 +33,48 @@ class _HomeState extends State<Home> {
   @override
   void initState() {
     //listObjPrevisao;
-    dados = _getTempo(co_municipio).then((map) {});
-
+    dados = _getTempo().then((map) {});
     super.initState();
-    print("ok");
-    if (cidadeFavorita == null || cidadeFavorita.isEmpty) {
-      cidadeFavorita = "Porto Velho";
-    } else {
-      cidadeFavorita = "outra";
-    }
   }
 
-  Future<Map> _getTempo(int co_municipio) async {
+  Future<Map> _getTempo() async {
+    Map decoded = json.decode(await u.readData());
+    print("Entrou no get tempo");
+    print(decoded);
+    cidadeFavorita = decoded;
+    if(decoded["co_municipio"] == 0){
+      _selecionaCidade(context);
+      cidadeFavorita["co_municipio"] = 1100015;
+    }
+
+    print("preparando para o responde");
+    print(cidadeFavorita);
+    cidadeFavorita["co_municipio"] = 1100015;
+    String urlCon = "http://172.23.14.99:8000/api/previsao/ha45664Hk214g5f66l89u11gf/${cidadeFavorita["co_municipio"]}";
+    print(urlCon);
+
     http.Response response;
-    response = await http.get("http://172.23.14.99:8000/api/previsao/ha45664Hk214g5f66l89u11gf/$co_municipio");
+    response = await http.get("urlCom");
     String body = utf8.decode(response.bodyBytes);
     return json.decode(body);
   }
 
   void _selecionaCidade(BuildContext c) async {
-    final _recCidade = await Navigator.push(
-        c, MaterialPageRoute(builder: (context) => Cidades()));
-    if (_recCidade != null) {
+    final _recCidade = await Navigator.push(c, MaterialPageRoute(builder: (context) => Cidades()));
+    print("Entrou no seleicona cidade");
       if (_recCidade != null) {
+        u.writeData(_recCidade.toString());
         cidadeFavorita = _recCidade;
       } else {
-        cidadeFavorita = "nenhuma";
+        print("_recCidade = null");
       }
-      setState(() {});
+      setState(() {
+        print("print do setState");
+        print(_recCidade);
+        cidadeFavorita = _recCidade;
+      });
     }
-  }
+
 
   @override
   Widget build(BuildContext context) {
@@ -69,7 +84,7 @@ class _HomeState extends State<Home> {
     ]);
     return Container(
       child: FutureBuilder(
-          future: _getTempo(co_municipio),
+          future: _getTempo(),
           builder: (context, snapshot) {
             switch (snapshot.connectionState) {
               case (ConnectionState.waiting):
