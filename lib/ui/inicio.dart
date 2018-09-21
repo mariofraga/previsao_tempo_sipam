@@ -5,6 +5,9 @@ import 'package:flutter/services.dart' show rootBundle;
 import 'package:flutter/material.dart';
 import 'package:http/http.dart' as http;
 import 'package:previsao_tempo/ui/cidades.dart';
+import 'dart:io';
+import 'package:path_provider/path_provider.dart';
+import 'package:previsao_tempo/ui/uteis.dart';
 
 class Inicio extends StatefulWidget {
   @override
@@ -16,19 +19,20 @@ class Inicio extends StatefulWidget {
 class _InicioState extends State<Inicio> {
 
   var cidadeFavorita;
-  String no_municipio;
-  int co_municipio;
+//  String no_municipio;
+//  int co_municipio;
   Future<Map> dados;
+  uteis s = new uteis();
 
 
   void _selecionaCidade(BuildContext c) async {
-    final _recCidade = await Navigator.push(
-        c, MaterialPageRoute(builder: (context) => Cidades()));
+    final _recCidade = await Navigator.push(c, MaterialPageRoute(builder: (context) => Cidades()));
     if (_recCidade != null) {
       if (_recCidade != null) {
         cidadeFavorita = _recCidade;
         print("deu certo");
-        dados = _getTempo(cidadeFavorita["co_municipio"]).then((map) {});
+        s.writeData(cidadeFavorita.toString());
+        print("gravou ok.");
       }
       setState(() {
         print(cidadeFavorita["co_municipio"]);
@@ -44,7 +48,7 @@ class _InicioState extends State<Inicio> {
 
   @override
   void initState() {
-    loadCrossword();
+    inicioApp();
     super.initState();
   }
 
@@ -53,11 +57,11 @@ class _InicioState extends State<Inicio> {
     return await rootBundle.loadString('assets/data/favorito.json');
   }
 
-  Future<Map> loadCrossword() async {
-    Map decoded = json.decode(await _loadCrosswordAsset());
-    if(decoded["co_municipoo"] == 0){
+  Future<Map> inicioApp() async {
+    //Map decoded = json.decode(await _loadCrosswordAsset());
+    Map decoded = json.decode(await s.readData());
+    if(decoded["co_municipio"] == 0){
       _selecionaCidade(context);
-    } else {
     }
     return decoded;
   }
@@ -69,4 +73,5 @@ class _InicioState extends State<Inicio> {
     return Container();
   }
 }
+
 

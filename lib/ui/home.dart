@@ -4,8 +4,6 @@ import 'dart:convert';
 import 'dart:async' show Future;
 import 'package:flutter/services.dart';
 import 'package:http/http.dart' as http;
-import 'package:intl/intl.dart';
-import 'package:intl/date_symbol_data_local.dart';
 
 class Home extends StatefulWidget {
   @override
@@ -31,9 +29,8 @@ class _HomeState extends State<Home> {
 
   @override
   void initState() {
-    initializeDateFormatting("pt_BR", null).then((_) => _HomeState());
     //listObjPrevisao;
-    dados = _getTempo().then((map) {});
+    dados = _getTempo(co_municipio).then((map) {});
 
     super.initState();
     print("ok");
@@ -44,9 +41,9 @@ class _HomeState extends State<Home> {
     }
   }
 
-  Future<Map> _getTempo() async {
+  Future<Map> _getTempo(int co_municipio) async {
     http.Response response;
-    response = await http.get("http://www.aerofilmes.com/previsao_ok.json");
+    response = await http.get("http://172.23.14.99:8000/api/previsao/ha45664Hk214g5f66l89u11gf/$co_municipio");
     String body = utf8.decode(response.bodyBytes);
     return json.decode(body);
   }
@@ -72,7 +69,7 @@ class _HomeState extends State<Home> {
     ]);
     return Container(
       child: FutureBuilder(
-          future: _getTempo(),
+          future: _getTempo(co_municipio),
           builder: (context, snapshot) {
             switch (snapshot.connectionState) {
               case (ConnectionState.waiting):
@@ -162,7 +159,7 @@ class _HomeState extends State<Home> {
                               child: Text(
                                 index == 0
                                     ? "Hoje"
-                                    : DateFormat.MMMd("pt_BR").format(DateTime.parse(snapshot.data["dias"][index]["dt_data_previsao"])),
+                                    : snapshot.data["dias"][index]["dt_data_previsao"],
                                 style: TextStyle(fontSize: 12.0),
                               ),
                             );
@@ -174,7 +171,8 @@ class _HomeState extends State<Home> {
                         child: TabBarView(
                           children: List<Widget>.generate(
                               snapshot.data["dias"].length, (index) {
-                              return pagePrevisaoTempo(snapshot, "${snapshot.data["dias"][index]["codigo_tempo"]}", AlignmentDirectional.centerStart, index);
+                            return pagePrevisaoTempo(snapshot, "0${index + 1}",
+                                AlignmentDirectional.centerStart, index);
                           }),
                         ),
                       ),
@@ -186,6 +184,7 @@ class _HomeState extends State<Home> {
                         tooltip: 'Inbox',
                         child: Icon(
                           Icons.location_on,
+                          textDirection: TextDirection.rtl,
                           color: Colors.white,
                         ),
                       ),
@@ -213,7 +212,7 @@ class _HomeState extends State<Home> {
         mainAxisAlignment: MainAxisAlignment.spaceAround,
         children: <Widget>[
           LinhaTemperatura(
-              "${DateFormat.EEEE("pt_BR").format(DateTime.parse(snapshot.data["dias"][index]["dt_data_previsao"]))}",
+              "day week",
               snapshot.data["dias"][index]["nu_temperatura_maxima"],
               snapshot.data["dias"][index]["nu_temperatura_minima"],
               "$imgTemp"),
@@ -245,7 +244,7 @@ class _HomeState extends State<Home> {
         children: <Widget>[
           Text(
             "$descricao",
-            style: TextStyle(fontSize: 25.0, color: Colors.white),
+            style: TextStyle(fontSize: 30.0, color: Colors.white),
           ),
         ],
       );
@@ -272,12 +271,11 @@ class _HomeState extends State<Home> {
       crossAxisAlignment: CrossAxisAlignment.stretch,
       children: <Widget>[
         Text(
-          "${titulo.toUpperCase()}",
+          "$titulo",
           style: TextStyle(
               fontSize: 19.5, color: Colors.white, fontWeight: FontWeight.bold),
         ),
         Container(
-
           color: Colors.white.withOpacity(0.85),
           margin: const EdgeInsets.symmetric(vertical: 5.0),
           height: 2.5,
@@ -327,15 +325,15 @@ class _HomeState extends State<Home> {
                 padding: EdgeInsets.only(
                     left: 0.0, top: 0.0, right: 15.0, bottom: 0.0),
                 child: Image.asset(
-                  "images/icons_previsao/$imgTempo.png",
+                  "images/icons/$imgTempo.png",
                   fit: BoxFit.cover,
-                  height: 105.0,
+                  height: 115.0,
                 ),
               ),
               Column(
                 children: <Widget>[
                   Text(
-                    "Temperatura Máx e Mín",
+                    "Temperatudo Máx e Mín",
                     style: TextStyle(
                       fontSize: 17.0,
                       fontWeight: FontWeight.bold,
