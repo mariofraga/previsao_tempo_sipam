@@ -9,6 +9,7 @@ import 'dart:io';
 import 'package:path_provider/path_provider.dart';
 import 'package:previsao_tempo/ui/uteis.dart';
 
+
 class Inicio extends StatefulWidget {
   @override
   _InicioState createState() => _InicioState();
@@ -19,10 +20,10 @@ class Inicio extends StatefulWidget {
 class _InicioState extends State<Inicio> {
 
   var cidadeFavorita;
-//  String no_municipio;
-//  int co_municipio;
   Future<Map> dados;
-  uteis s = new uteis();
+  uteis u = new uteis();
+
+
 
 
   void _selecionaCidade(BuildContext c) async {
@@ -31,7 +32,8 @@ class _InicioState extends State<Inicio> {
       if (_recCidade != null) {
         cidadeFavorita = _recCidade;
         print("deu certo");
-        s.writeData(cidadeFavorita.toString());
+        print(_recCidade);
+        u.writeData(json.encode(cidadeFavorita));
         print("gravou ok.");
       }
       setState(() {
@@ -58,12 +60,15 @@ class _InicioState extends State<Inicio> {
   }
 
   Future<Map> inicioApp() async {
-    //Map decoded = json.decode(await _loadCrosswordAsset());
-    Map decoded = json.decode(await s.readData());
-    if(decoded["co_municipio"] == 0){
+    Map decoded1 = json.decode(await _loadCrosswordAsset());
+    Map decoded = await u.readData();
+
+    print("teste inicio decoded -> ${decoded.toString()}");
+
+    if (decoded["co_municipio"] == 0) {
       _selecionaCidade(context);
+      return decoded;
     }
-    return decoded;
   }
 
 

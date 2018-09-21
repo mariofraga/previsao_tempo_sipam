@@ -4,28 +4,38 @@ import 'dart:io';
 import 'package:path_provider/path_provider.dart';
 
 class uteis {
+
+  var strInicio = {'co_municipio':0,'no_municipio':0};
+
   Future<String> get _localPath async {
     final directory = await getApplicationDocumentsDirectory();
     return directory.path;
   }
 
   Future<File> get localFile async {
-    final path = await _localPath;
-    return File('$path/favorito50.json');
-  }
 
-  Future<String> readData() async {
+    try {
+      final path = await _localPath;
+      return File('$path/Favorito777.json');
+    } catch( e){
+      writeData(json.encode(strInicio));
+    }
+   }
+
+  Future<Map> readData() async {
     try {
       final file = await localFile;
       String body = await file.readAsString();
-      return body;
+      return json.decode(body);
     } catch (e) {
-      return "{ \"co_municipio\":0, \"no_municipoo\":0 }";
+      print(e.toString());
+      return strInicio;
     }
   }
 
   Future<File> writeData(String data) async {
     final file = await localFile;
+    print("Arquivo a ser gravado: ${data}");
     return file.writeAsString("$data");
   }
 }

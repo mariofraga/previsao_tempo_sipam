@@ -33,28 +33,31 @@ class _HomeState extends State<Home> {
   @override
   void initState() {
     //listObjPrevisao;
-    dados = _getTempo().then((map) {});
+    _getTempo();
     super.initState();
   }
 
   Future<Map> _getTempo() async {
-    Map decoded = json.decode(await u.readData());
+    Map decoded = await u.readData();
     print("Entrou no get tempo");
     print(decoded);
     cidadeFavorita = decoded;
-    if(decoded["co_municipio"] == 0){
+    if(cidadeFavorita["co_municipio"] == 0){
       _selecionaCidade(context);
-      cidadeFavorita["co_municipio"] = 1100015;
+    }
+    String urlCon;
+    http.Response response;
+    try {
+      urlCon =      "http://172.23.14.99:8000/api/previsao/ha45664Hk214g5f66l89u11gf/${cidadeFavorita["co_municipio"]}";
+      response = await http.get(urlCon);
+    } catch(e){
+      print("Não Conectou.");
+      print(e.toString());
+      urlCon =      "http://www.aerofilmes.com/previsao_ok.json";
+      response = await http.get(urlCon);
     }
 
-    print("preparando para o responde");
-    print(cidadeFavorita);
-    cidadeFavorita["co_municipio"] = 1100015;
-    String urlCon = "http://172.23.14.99:8000/api/previsao/ha45664Hk214g5f66l89u11gf/${cidadeFavorita["co_municipio"]}";
-    print(urlCon);
 
-    http.Response response;
-    response = await http.get("urlCom");
     String body = utf8.decode(response.bodyBytes);
     return json.decode(body);
   }
@@ -63,15 +66,18 @@ class _HomeState extends State<Home> {
     final _recCidade = await Navigator.push(c, MaterialPageRoute(builder: (context) => Cidades()));
     print("Entrou no seleicona cidade");
       if (_recCidade != null) {
-        u.writeData(_recCidade.toString());
         cidadeFavorita = _recCidade;
+        print("deu certo");
+        print(_recCidade);
+        u.writeData(json.encode(cidadeFavorita));
+        print("gravou ok.");
       } else {
         print("_recCidade = null");
       }
       setState(() {
         print("print do setState");
-        print(_recCidade);
-        cidadeFavorita = _recCidade;
+        print(cidadeFavorita);
+        cidadeFavorita = json.encode(_recCidade.toString());
       });
     }
 
@@ -156,7 +162,7 @@ class _HomeState extends State<Home> {
                                             color: Colors.white,
                                             fontSize: 16.0,
                                             fontWeight: FontWeight.bold)),
-                                    Text("$cidadeFavorita",
+                                    Text("${cidadeFavorita["no_municipio"]}",
                                         style: TextStyle(
                                             color: Colors.white,
                                             fontSize: 16.0,

@@ -192,7 +192,9 @@ class _CidadesState extends State<Cidades> {
               children: <Widget>[
                 FlatButton(
                   onPressed: () {
-                    Navigator.pop(context, {'co_municipio':cidades[index].co_municipio,'no_municipio':cidades[index].no_municipio});
+                    var retornoCidade = {'co_municipio':cidades[index].co_municipio,'no_municipio': cidades[index].no_municipio};
+                    print(retornoCidade);
+                    Navigator.pop(context, retornoCidade);
                   },
                   child:
                 Text(cidades[index].no_municipio + " - " + cidades[index].no_sigla_uf,
@@ -201,7 +203,9 @@ class _CidadesState extends State<Cidades> {
                 ),
                 FlatButton(
                   onPressed: () {
-                    Navigator.pop(context, {'co_municipio':cidades[index].co_municipio,'no_municipio':cidades[index].no_municipio});
+                    var retornoCidade = {'co_municipio':cidades[index].co_municipio,'no_municipio': cidades[index].no_municipio};
+                    print(retornoCidade);
+                    Navigator.pop(context, retornoCidade);
                   },
                   child: Icon(
                     Icons.location_on,
