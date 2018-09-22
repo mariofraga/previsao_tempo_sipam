@@ -22,6 +22,7 @@ class _HomeState extends State<Home> {
   var cidadeFavorita;
   Future<Map> dados;
   uteis u = new uteis();
+  bool abriuCidades = false;
 
   @override
   void dispose() {
@@ -45,7 +46,8 @@ class _HomeState extends State<Home> {
     print("Entrou no get tempo");
     print(decoded);
     cidadeFavorita = decoded;
-    if(cidadeFavorita["co_municipio"] == 0){
+    String body;
+    if(cidadeFavorita["co_municipio"] == 0 && abriuCidades == false){
       _selecionaCidade(context);
     }
     String urlCon;
@@ -53,36 +55,38 @@ class _HomeState extends State<Home> {
     try {
       urlCon =      "http://172.23.14.99:8000/api/previsao/ha45664Hk214g5f66l89u11gf/${cidadeFavorita["co_municipio"]}";
       response = await http.get(urlCon);
+      body = utf8.decode(response.bodyBytes);
     } catch(e){
-      print("Não Conectou.");
+      print("NÃ£o Conectou.");
       print(e.toString());
       urlCon =      "http://www.aerofilmes.com/previsao_ok.json";
       response = await http.get(urlCon);
+      body = utf8.decode(response.bodyBytes);
     }
-
-
-    String body = utf8.decode(response.bodyBytes);
     return json.decode(body);
   }
+
 
   void _selecionaCidade(BuildContext c) async {
     final _recCidade = await Navigator.push(c, MaterialPageRoute(builder: (context) => Cidades()));
     print("Entrou no seleicona cidade");
-      if (_recCidade != null) {
-        cidadeFavorita = _recCidade;
-        print("deu certo");
-        print(_recCidade);
-        u.writeData(json.encode(cidadeFavorita));
-        print("gravou ok.");
-      } else {
-        print("_recCidade = null");
-      }
-      setState(() {
-        print("print do setState");
-        print(cidadeFavorita);
-        cidadeFavorita = json.encode(_recCidade.toString());
-      });
+    if (_recCidade != null) {
+      cidadeFavorita = _recCidade;
+      abriuCidades == false;
+      print("deu certo");
+      print(_recCidade);
+      u.writeData(json.encode(cidadeFavorita));
+      print("gravou ok.");
+    } else {
+      print("_recCidade = null");
     }
+    setState(() {
+      print("print do setState");
+      print(cidadeFavorita);
+      cidadeFavorita = json.encode(_recCidade.toString());
+    });
+  }
+
 
 
   @override
@@ -149,7 +153,7 @@ class _HomeState extends State<Home> {
                               mainAxisAlignment: MainAxisAlignment.spaceBetween,
                               children: <Widget>[
                                 Padding(
-                                  padding: EdgeInsets.only(top: 5.0),
+                                  padding: EdgeInsets.only(top: 4.0),
                                   child: Image.asset(
                                     "images/icons/icsipam.png",
                                     height: 60.0,
@@ -176,6 +180,7 @@ class _HomeState extends State<Home> {
                             )),
                         bottom: TabBar(
                           labelColor: Colors.amber,
+                          indicatorColor: Colors.amber,
                           unselectedLabelColor: Colors.white,
                           tabs: List<Widget>.generate(
                               snapshot.data["dias"].length, (index) {
@@ -183,7 +188,7 @@ class _HomeState extends State<Home> {
                               child: Text(
                                 index == 0
                                     ? "Hoje"
-                                    : snapshot.data["dias"][index]["dt_data_previsao"],
+                                    : DateFormat.MMMd("pt_BR").format(DateTime.parse(snapshot.data["dias"][index]["dt_data_previsao"])),
                                 style: TextStyle(fontSize: 12.0),
                               ),
                             );
@@ -195,8 +200,7 @@ class _HomeState extends State<Home> {
                         child: TabBarView(
                           children: List<Widget>.generate(
                               snapshot.data["dias"].length, (index) {
-                            return pagePrevisaoTempo(snapshot, "0${index + 1}",
-                                AlignmentDirectional.centerStart, index);
+                              return pagePrevisaoTempo(snapshot, "${snapshot.data["dias"][index]["codigo_tempo"]}", AlignmentDirectional.centerStart, index);
                           }),
                         ),
                       ),
@@ -208,7 +212,6 @@ class _HomeState extends State<Home> {
                         tooltip: 'Inbox',
                         child: Icon(
                           Icons.location_on,
-                          textDirection: TextDirection.rtl,
                           color: Colors.white,
                         ),
                       ),
@@ -236,7 +239,7 @@ class _HomeState extends State<Home> {
         mainAxisAlignment: MainAxisAlignment.spaceAround,
         children: <Widget>[
           LinhaTemperatura(
-              "day week",
+              "${DateFormat.EEEE("pt_BR").format(DateTime.parse(snapshot.data["dias"][index]["dt_data_previsao"]))}",
               snapshot.data["dias"][index]["nu_temperatura_maxima"],
               snapshot.data["dias"][index]["nu_temperatura_minima"],
               "$imgTemp"),
@@ -268,7 +271,7 @@ class _HomeState extends State<Home> {
         children: <Widget>[
           Text(
             "$descricao",
-            style: TextStyle(fontSize: 30.0, color: Colors.white),
+            style: TextStyle(fontSize: 25.0, color: Colors.white),
           ),
         ],
       );
@@ -295,11 +298,12 @@ class _HomeState extends State<Home> {
       crossAxisAlignment: CrossAxisAlignment.stretch,
       children: <Widget>[
         Text(
-          "$titulo",
+          "${titulo.toUpperCase()}",
           style: TextStyle(
               fontSize: 19.5, color: Colors.white, fontWeight: FontWeight.bold),
         ),
         Container(
+
           color: Colors.white.withOpacity(0.85),
           margin: const EdgeInsets.symmetric(vertical: 5.0),
           height: 2.5,
@@ -349,15 +353,15 @@ class _HomeState extends State<Home> {
                 padding: EdgeInsets.only(
                     left: 0.0, top: 0.0, right: 15.0, bottom: 0.0),
                 child: Image.asset(
-                  "images/icons/$imgTempo.png",
+                  "images/icons_previsao/$imgTempo.png",
                   fit: BoxFit.cover,
-                  height: 115.0,
+                  height: 105.0,
                 ),
               ),
               Column(
                 children: <Widget>[
                   Text(
-                    "Temperatudo Máx e Mín",
+                    "Temperatura Máx e Mín",
                     style: TextStyle(
                       fontSize: 17.0,
                       fontWeight: FontWeight.bold,
