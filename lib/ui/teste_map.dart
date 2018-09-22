@@ -11,29 +11,55 @@ class TesteMap extends StatefulWidget {
   _TesteMapState createState() => _TesteMapState();
 }
 
+
+
+class EntidadeCidade{
+  int co_municipio;
+  String no_municipio;
+  String no_sigla_uf;
+}
+
 class _TesteMapState extends State<TesteMap> {
+
+  List<EntidadeCidade> cidadesOrifinal = new List<EntidadeCidade>();
+  List<EntidadeCidade> cidades = new List<EntidadeCidade>();
 
   Future<Map> dados;
 
   @override
   void initState() {
-   dados = _getTempo().then((map) { });
-
+    loadCrossword();
+    carregaCidadeLista();
   // print(dados.data['dias'][1]);
 
     super.initState();
   }
 
   Future<String> _loadCrosswordAsset() async {
-    return await rootBundle.loadString('assets/data/previsaoTempo.json');
+    return await rootBundle.loadString('assets/data/cidades_previsao.json');
   }
 
   Future<Map> loadCrossword() async {
-    print(await _loadCrosswordAsset());
     Map decoded = json.decode(await _loadCrosswordAsset());
-    print(decoded['dias'][1]);
-    print(decoded['dias'].runtimeType);
-    return decoded;
+      return decoded;
+  }
+
+  void carregaCidadeLista() async {
+    Map decoded = await loadCrossword();
+    List<String> lc = new List();
+    EntidadeCidade c;
+    for (var cidade in decoded["listaCidades"]) {
+      c = new EntidadeCidade();
+      c.no_municipio = cidade["no_municipio"];
+      c.co_municipio = cidade["co_municipio"];
+      c.no_sigla_uf = cidade["no_sigla_uf"];
+      cidades.add(c);
+    }
+    print("Quantidade de Cidades Encontradas: ${cidades.length.toString()}");
+    setState(() {
+      this.cidades = cidades;
+      this.cidadesOrifinal = cidades;
+    });
   }
 
 
@@ -42,14 +68,12 @@ class _TesteMapState extends State<TesteMap> {
     response = await http.get("http://www.aerofilmes.com/previsaoTempo.json");
     //print(response.body);
     //print("esse print é verdade.");
-    return json.decode(response.body);
+      return json.decode(response.body);
   }
 
   @override
   Widget build(BuildContext context) {
     return Container();
   }
-
-
 
 }

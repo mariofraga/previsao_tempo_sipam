@@ -1,4 +1,4 @@
-package br.com.gadelha.previsaotempo;
+package br.gov.sipam.previsaotempo;
 
 import android.os.Bundle;
 import io.flutter.app.FlutterActivity;

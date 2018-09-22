@@ -4,7 +4,8 @@ import 'dart:convert';
 import 'dart:async' show Future;
 import 'package:flutter/services.dart';
 import 'package:http/http.dart' as http;
-
+import 'package:intl/intl.dart';
+import 'package:intl/date_symbol_data_local.dart';
 
 class Home extends StatefulWidget {
   @override
@@ -14,9 +15,10 @@ class Home extends StatefulWidget {
 class _HomeState extends State<Home> {
   String cidadeFavorita;
   int contadorfundo = 0;
+  String no_municipio;
+  int co_municipio = 1100015;
 
   Future<Map> dados;
-
 
   @override
   void dispose() {
@@ -29,6 +31,7 @@ class _HomeState extends State<Home> {
 
   @override
   void initState() {
+    initializeDateFormatting("pt_BR", null).then((_) => _HomeState());
     //listObjPrevisao;
     dados = _getTempo().then((map) {});
 
@@ -43,7 +46,7 @@ class _HomeState extends State<Home> {
 
   Future<Map> _getTempo() async {
     http.Response response;
-    response = await http.get("http://www.aerofilmes.com/previsaoTempo.json");
+    response = await http.get("http://www.aerofilmes.com/previsao_ok.json");
     String body = utf8.decode(response.bodyBytes);
     return json.decode(body);
   }
@@ -61,8 +64,6 @@ class _HomeState extends State<Home> {
     }
   }
 
-
-
   @override
   Widget build(BuildContext context) {
     SystemChrome.setPreferredOrientations([
@@ -76,95 +77,120 @@ class _HomeState extends State<Home> {
             switch (snapshot.connectionState) {
               case (ConnectionState.waiting):
               case (ConnectionState.none):
-                return Container(
-                  width: 200.0,
-                  height: 200.0,
-                  alignment: Alignment.center,
-                  child: CircularProgressIndicator(
-                    valueColor: AlwaysStoppedAnimation<Color>(Colors.white),
-                    strokeWidth: 5.0,
-                  ),
-                );
+                return Stack(
+                    fit: StackFit.expand,
+                    children: <Widget>[
+                      Container(
+                        decoration: BoxDecoration(color: Colors.white),
+                      ),
+                      Column(
+                        mainAxisAlignment: MainAxisAlignment.start,
+                        children: <Widget>[
+                          Expanded(
+                            flex: 2,
+                            child: Container(
+                              child: Column(
+                                mainAxisAlignment: MainAxisAlignment.center,
+                                children: <Widget>[
+                                  CircleAvatar(
+                                    backgroundColor: Colors.white,
+                                    radius: 120.0,
+                                    child: Image.asset(
+                                      "images/icons/icsipam_grande.png",
+                                      height: 500.0,
+                                      fit: BoxFit.cover,
+                                    ),
+                                  )
+                                ],
+                              ),
+                            ),
+                          )
+                        ],
+                      )
+                    ],
+                  );
               default:
                 if (snapshot.hasError)
                   return Container();
                 else
                   return DefaultTabController(
                     length: 4,
-                    child:
-                    Scaffold(
-                    backgroundColor: Colors.white,
-                    appBar: AppBar(
-                      backgroundColor: Colors.lightGreen[900],
-                      centerTitle: true,
-                      title:
-                      FlatButton(
+                    child: Scaffold(
+                      backgroundColor: Colors.white,
+                      appBar: AppBar(
+                        backgroundColor: Colors.lightGreen[900],
+                        centerTitle: true,
+                        title: FlatButton(
+                            onPressed: () {
+                              _selecionaCidade(context);
+                            },
+                            child: Row(
+                              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                              children: <Widget>[
+                                Padding(
+                                  padding: EdgeInsets.only(top: 5.0),
+                                  child: Image.asset(
+                                    "images/icons/icsipam.png",
+                                    height: 60.0,
+                                    fit: BoxFit.cover,
+                                  ),
+                                ),
+                                //new Image.asset('images/favicon.ico', width: 32.0,),
+                                Column(
+                                  mainAxisAlignment: MainAxisAlignment.center,
+                                  children: <Widget>[
+                                    Text("Previsão do Tempo na Amazônia",
+                                        style: TextStyle(
+                                            color: Colors.white,
+                                            fontSize: 16.0,
+                                            fontWeight: FontWeight.bold)),
+                                    Text("$cidadeFavorita",
+                                        style: TextStyle(
+                                            color: Colors.white,
+                                            fontSize: 16.0,
+                                            fontWeight: FontWeight.bold))
+                                  ],
+                                ),
+                              ],
+                            )),
+                        bottom: TabBar(
+                          labelColor: Colors.amber,
+                          unselectedLabelColor: Colors.white,
+                          tabs: List<Widget>.generate(
+                              snapshot.data["dias"].length, (index) {
+                            return Tab(
+                              child: Text(
+                                index == 0
+                                    ? "Hoje"
+                                    : DateFormat.MMMd("pt_BR").format(DateTime.parse(snapshot.data["dias"][index]["dt_data_previsao"])),
+                                style: TextStyle(fontSize: 12.0),
+                              ),
+                            );
+                          }),
+                        ),
+                      ),
+                      body: Container(
+                        color: Colors.black38,
+                        child: TabBarView(
+                          children: List<Widget>.generate(
+                              snapshot.data["dias"].length, (index) {
+                              return pagePrevisaoTempo(snapshot, "${snapshot.data["dias"][index]["codigo_tempo"]}", AlignmentDirectional.centerStart, index);
+                          }),
+                        ),
+                      ),
+                      floatingActionButton: FloatingActionButton(
                         onPressed: () {
                           _selecionaCidade(context);
                         },
-                        child:
-                            Row(
-                              mainAxisAlignment: MainAxisAlignment.spaceAround,
-                              children: <Widget>[
-                             //   new Image.asset('images/favicon.ico', width: 32.0,),
-                            Text(" Previsão do Tempo $cidadeFavorita",
-                                style: TextStyle( color: Colors.white,
-                                    fontSize: 16.0, fontWeight: FontWeight.bold)),
-
-
-                              ],
-                            )
-                      ),
-
-                      bottom: TabBar(
-                        labelColor: Colors.amber,
-                        unselectedLabelColor: Colors.white,
-                        tabs: [
-                          Tab(
-                            child: Text("HOJE", style: TextStyle(fontSize: 12.0),),
-                          ),
-                          Tab(
-                            child: Text(snapshot.data["dias"][1]["data"], style: TextStyle(fontSize: 12.0),),
-                          ),
-                          Tab(
-                            child: Text(snapshot.data["dias"][2]["data"], style: TextStyle(fontSize: 12.0),),
-                          ),
-                          Tab(
-                            child: Text("15/09/2018", style: TextStyle(fontSize: 12.0),),
-                          ),
-                        ],
+                        backgroundColor: Colors.lightGreen[700],
+                        tooltip: 'Inbox',
+                        child: Icon(
+                          Icons.location_on,
+                          color: Colors.white,
+                        ),
                       ),
                     ),
-                    body: Container(
-                      color: Colors.black38,
-                      child: TabBarView(
-                        children: [
-                          pagePrevisaoTempo(snapshot, "01",
-                              AlignmentDirectional.centerStart, 0),
-                          pagePrevisaoTempo(snapshot, "02",
-                              AlignmentDirectional.center, 1),
-                          pagePrevisaoTempo(snapshot, "03",
-                              AlignmentDirectional.centerEnd, 2),
-                          pagePrevisaoTempo(snapshot, "03",
-                              AlignmentDirectional.centerStart, 1),
-                        ],
-                      ),
-                    ),
-                    floatingActionButton: FloatingActionButton(
-                      onPressed: () {
-                        _selecionaCidade(context);
-                      },
-                      backgroundColor: Colors.lightGreen[700],
-                      tooltip: 'Inbox',
-                      child: Icon(
-                        Icons.location_on,
-                        textDirection: TextDirection.rtl,
-                        color: Colors.white,
-
-                      ),
-                    ),
-                  ),
-               );
+                  );
             }
           }),
     );
@@ -187,27 +213,26 @@ class _HomeState extends State<Home> {
         mainAxisAlignment: MainAxisAlignment.spaceAround,
         children: <Widget>[
           LinhaTemperatura(
-              snapshot.data["dias"][index]["diaSemana"],
-              snapshot.data["dias"][index]["temperaturaMax"],
-              snapshot.data["dias"][index]["temperaturaMin"],
+              "${DateFormat.EEEE("pt_BR").format(DateTime.parse(snapshot.data["dias"][index]["dt_data_previsao"]))}",
+              snapshot.data["dias"][index]["nu_temperatura_maxima"],
+              snapshot.data["dias"][index]["nu_temperatura_minima"],
               "$imgTemp"),
-          LinhaTempo(snapshot.data["dias"][index]["tempo"]),
-          LinhaUmidade(snapshot.data["dias"][index]["umidadeMax"],
-              snapshot.data["dias"][index]["umidadeMin"]),
-          LinhaVentos(snapshot.data["dias"][index]["direcaoVentos"],
-              snapshot.data["dias"][index]["intensidade"])
+          LinhaTempo(snapshot.data["dias"][index]["tempo"], snapshot.data["dias"][index]["chuva"]),
+          LinhaUmidade(snapshot.data["dias"][index]["nu_umidade_maxima"],
+              snapshot.data["dias"][index]["nu_umidade_minima"]),
+          LinhaVentos(snapshot.data["dias"][index]["no_direcao_vento"], snapshot.data["dias"][index]["no_direcao_vento_variacao"], snapshot.data["dias"][index]["vento"], snapshot.data["dias"][index]["vento_variacao"],)
         ],
       ),
     );
   }
 
-  Widget LinhaVentos(String direcao, String intensidade) {
+  Widget LinhaVentos(String ventodirecao, String direcaoVariacao, String vento, String ventoVariacao) {
     return Padding(
       padding: EdgeInsets.only(left: 20.0, top: 15.0, right: 20.0, bottom: 0.0),
       child: Column(
         children: <Widget>[
           TituloELinha("VENTOS"),
-          Descricao("$direcao/$intensidade", "vazia"),
+          Descricao("$ventodirecao/$direcaoVariacao - $vento/$ventoVariacao", "vazia"),
         ],
       ),
     );
@@ -220,7 +245,7 @@ class _HomeState extends State<Home> {
         children: <Widget>[
           Text(
             "$descricao",
-            style: TextStyle(fontSize: 30.0, color: Colors.white),
+            style: TextStyle(fontSize: 25.0, color: Colors.white),
           ),
         ],
       );
@@ -247,11 +272,12 @@ class _HomeState extends State<Home> {
       crossAxisAlignment: CrossAxisAlignment.stretch,
       children: <Widget>[
         Text(
-          "$titulo",
+          "${titulo.toUpperCase()}",
           style: TextStyle(
               fontSize: 19.5, color: Colors.white, fontWeight: FontWeight.bold),
         ),
         Container(
+
           color: Colors.white.withOpacity(0.85),
           margin: const EdgeInsets.symmetric(vertical: 5.0),
           height: 2.5,
@@ -260,13 +286,13 @@ class _HomeState extends State<Home> {
     );
   }
 
-  Widget LinhaTempo(String tempo) {
+  Widget LinhaTempo(String tempo, String chuva) {
     return Padding(
       padding: EdgeInsets.only(left: 20.0, top: 15.0, right: 20.0, bottom: 0.0),
       child: Column(
         children: <Widget>[
           TituloELinha("TEMPO"),
-          Text("$tempo",
+          Text("$tempo, $chuva",
               style: TextStyle(
                   fontSize: 16.0,
                   fontWeight: FontWeight.bold,
@@ -301,15 +327,15 @@ class _HomeState extends State<Home> {
                 padding: EdgeInsets.only(
                     left: 0.0, top: 0.0, right: 15.0, bottom: 0.0),
                 child: Image.asset(
-                  "images/icons/$imgTempo.png",
+                  "images/icons_previsao/$imgTempo.png",
                   fit: BoxFit.cover,
-                  height: 115.0,
+                  height: 105.0,
                 ),
               ),
               Column(
                 children: <Widget>[
                   Text(
-                    "Temperatudo Máx e Mín",
+                    "Temperatura Máx e Mín",
                     style: TextStyle(
                       fontSize: 17.0,
                       fontWeight: FontWeight.bold,

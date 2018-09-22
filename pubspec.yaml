@@ -8,6 +8,7 @@ dependencies:
   # The following adds the Cupertino Icons font to your application.
   # Use with the CupertinoIcons class for iOS style icons.
   cupertino_icons: ^0.1.2
+  intl: ^0.15.7
 
 dev_dependencies:
   flutter_test:
@@ -32,6 +33,9 @@ flutter:
      - images/icons/01.png
      - images/icons/02.png
      - images/icons/03.png
+     - images/icons/04.png
+     - images/icons/icsipam.png
+     - images/icons/icsipam_grande.png
      - images/icons/vazia.png
      - images/icons/termo.png
      - images/icons/ventos.png
@@ -40,11 +44,68 @@ flutter:
      - images/dia-am.png
      - assets/data/cidades.json
      - assets/data/previsaoTempo.json
+     - assets/data/previsao_ok.json
      - images/sol1.jpg
      - images/sol2.jpg
      - images/sol1_escurecido.jpg
      - images/sol2_escurecido.jpg
      - images/favicon.ico
+     - assets/data/cidades_previsao.json
+     - assets/data/favorito.json
+     - assets/data/previsao_ok.json
+
+     # An image asset can refer to one or more resolution-specific
+     - images/icons_previsao/100.png
+     - images/icons_previsao/110.png
+     - images/icons_previsao/120.png
+     - images/icons_previsao/130.png
+     - images/icons_previsao/140.png
+     - images/icons_previsao/200.png
+     - images/icons_previsao/210.png
+     - images/icons_previsao/220.png
+     - images/icons_previsao/230.png
+     - images/icons_previsao/240.png
+     - images/icons_previsao/300.png
+     - images/icons_previsao/310.png
+     - images/icons_previsao/320.png
+     - images/icons_previsao/330.png
+     - images/icons_previsao/340.png
+     - images/icons_previsao/400.png
+     - images/icons_previsao/410.png
+     - images/icons_previsao/420.png
+     - images/icons_previsao/430.png
+     - images/icons_previsao/440.png
+     - images/icons_previsao/500.png
+     - images/icons_previsao/510.png
+     - images/icons_previsao/520.png
+     - images/icons_previsao/530.png
+     - images/icons_previsao/540.png
+     - images/icons_previsao/1001.png
+     - images/icons_previsao/1101.png
+     - images/icons_previsao/1201.png
+     - images/icons_previsao/1301.png
+     - images/icons_previsao/1401.png
+     - images/icons_previsao/2001.png
+     - images/icons_previsao/2101.png
+     - images/icons_previsao/2201.png
+     - images/icons_previsao/2301.png
+     - images/icons_previsao/1401.png
+     - images/icons_previsao/3001.png
+     - images/icons_previsao/3101.png
+     - images/icons_previsao/3201.png
+     - images/icons_previsao/3301.png
+     - images/icons_previsao/3401.png
+     - images/icons_previsao/4001.png
+     - images/icons_previsao/4101.png
+     - images/icons_previsao/4201.png
+     - images/icons_previsao/4301.png
+     - images/icons_previsao/4401.png
+     - images/icons_previsao/5001.png
+     - images/icons_previsao/5101.png
+     - images/icons_previsao/5201.png
+     - images/icons_previsao/5301.png
+     - images/icons_previsao/5401.png
+
 
 
   # An image asset can refer to one or more resolution-specific "variants", see
