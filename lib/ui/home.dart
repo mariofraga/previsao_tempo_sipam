@@ -4,6 +4,8 @@ import 'dart:convert';
 import 'dart:async' show Future;
 import 'package:flutter/services.dart';
 import 'package:http/http.dart' as http;
+import 'package:intl/intl.dart';
+import 'package:intl/date_symbol_data_local.dart';
 import 'package:previsao_tempo/ui/uteis.dart';
 
 class Home extends StatefulWidget {
@@ -32,6 +34,7 @@ class _HomeState extends State<Home> {
 
   @override
   void initState() {
+    initializeDateFormatting("pt_BR", null).then((_) => _HomeState());
     //listObjPrevisao;
     _getTempo();
     super.initState();
@@ -162,7 +165,7 @@ class _HomeState extends State<Home> {
                                             color: Colors.white,
                                             fontSize: 16.0,
                                             fontWeight: FontWeight.bold)),
-                                    Text("${cidadeFavorita["no_municipio"]}",
+                                    Text("$cidadeFavorita",
                                         style: TextStyle(
                                             color: Colors.white,
                                             fontSize: 16.0,
