@@ -5,7 +5,7 @@ import 'package:path_provider/path_provider.dart';
 
 class uteis {
 
-  var strInicio = {'co_municipio':0,'no_municipio':0};
+  String strInicio = ''' {"co_municipio":0,"no_municipio":"0"} ''';
 
   Future<String> get _localPath async {
     final directory = await getApplicationDocumentsDirectory();
@@ -13,29 +13,44 @@ class uteis {
   }
 
   Future<File> get localFile async {
-
+    File arquivo;
     try {
+      print("Entrou. no local,");
       final path = await _localPath;
-      return File('$path/Favorito777.json');
-    } catch( e){
-      writeData(json.encode(strInicio));
+      print("passou do pat");
+      if(FileSystemEntity.typeSync('$path/FavoritoNovo.json') != FileSystemEntityType.NOT_FOUND) {
+        arquivo = File('$path/FavoritoNovo.json');
+      } else {
+        arquivo = null;
+      }
+      print("passou do Arquivo!.");
+      return arquivo;
+      } catch(e){
+      print("erro na leitura do arquivo.");
+       writeData(json.encode(strInicio));
     }
    }
 
   Future<Map> readData() async {
     try {
       final file = await localFile;
-      String body = await file.readAsString();
-      return json.decode(body);
+      final path = await _localPath;
+      if(FileSystemEntity.typeSync('$path/FavoritoNovo.json') != FileSystemEntityType.NOT_FOUND) {
+        String body = await file.readAsString();
+        return json.decode(body);
+      } else {
+        return json.decode(strInicio);
+      }
     } catch (e) {
       print(e.toString());
-      return strInicio;
+      return json.decode(strInicio);
     }
   }
 
   Future<File> writeData(String data) async {
+    print("entrou no write.");
     final file = await localFile;
     print("Arquivo a ser gravado: ${data}");
-    return file.writeAsString("$data");
+    return file.writeAsString(data);
   }
 }
