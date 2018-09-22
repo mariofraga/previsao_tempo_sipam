@@ -15,15 +15,11 @@ class Inicio extends StatefulWidget {
   _InicioState createState() => _InicioState();
 }
 
-
-
 class _InicioState extends State<Inicio> {
 
   var cidadeFavorita;
   Future<Map> dados;
   uteis u = new uteis();
-
-
 
 
   void _selecionaCidade(BuildContext c) async {
