@@ -23,6 +23,8 @@ class _HomeState extends State<Home> {
   Future<Map> dados;
   uteis u = new uteis();
   bool abriuCidades = false;
+  int contadorAlinhamento = 0;
+
 
   @override
   void dispose() {
@@ -33,11 +35,38 @@ class _HomeState extends State<Home> {
     ]);
   }
 
+  AlignmentDirectional carregaAlinhamento() {
+    switch (contadorAlinhamento) {
+      case 0:
+        {
+          contadorAlinhamento++;
+          return AlignmentDirectional.centerStart;
+        }
+      case 1:
+      {
+        contadorAlinhamento++;
+        return AlignmentDirectional.center;
+      }
+      case 2:
+        {
+          contadorAlinhamento++;
+          return AlignmentDirectional.centerEnd;
+        }
+      default:
+        {
+          contadorAlinhamento = 0;
+          return AlignmentDirectional.center;
+        }
+
+    }
+  }
+  
+
   @override
   void initState() {
     initializeDateFormatting("pt_BR", null).then((_) => _HomeState());
     //listObjPrevisao;
-    _getTempo();
+    //_getTempo();
     super.initState();
   }
 
@@ -46,14 +75,17 @@ class _HomeState extends State<Home> {
     print("Entrou no get tempo");
     print(decoded);
     cidadeFavorita = decoded;
+    String retorno_vazio = '''{ "dias": [ { } ] }''';
     String body;
     if(cidadeFavorita["co_municipio"] == 0 && abriuCidades == false){
-      _selecionaCidade(context);
+    //  _selecionaCidade(context);
+     return  json.decode(body).hasError;
     }
     String urlCon;
     http.Response response;
     try {
-      urlCon =      "http://172.23.14.99:8000/api/previsao/ha45664Hk214g5f66l89u11gf/${cidadeFavorita["co_municipio"]}";
+      urlCon =      "http://www.aerofilmes.com/previsao_ok.json";
+      // urlCon =      "http://172.23.14.99:8000/api/previsao/ha45664Hk214g5f66l89u11gf/${cidadeFavorita["co_municipio"]}";
       response = await http.get(urlCon);
       body = utf8.decode(response.bodyBytes);
     } catch(e){
@@ -63,7 +95,7 @@ class _HomeState extends State<Home> {
       response = await http.get(urlCon);
       body = utf8.decode(response.bodyBytes);
     }
-    return json.decode(body);
+    return json.decode(body) ;
   }
 
 
@@ -125,7 +157,7 @@ class _HomeState extends State<Home> {
                                       height: 500.0,
                                       fit: BoxFit.cover,
                                     ),
-                                  )
+                                  ),
                                 ],
                               ),
                             ),
@@ -136,7 +168,68 @@ class _HomeState extends State<Home> {
                   );
               default:
                 if (snapshot.hasError)
-                  return Container();
+                  return Stack(
+                    fit: StackFit.expand,
+                    children: <Widget>[
+                      Container(
+                        decoration: BoxDecoration(color: Colors.white),
+                      ),
+                      Column(
+                        mainAxisAlignment: MainAxisAlignment.start,
+                        children: <Widget>[
+                          Expanded(
+                            flex: 2,
+                            child: Container(
+                              child: Column(
+                                mainAxisAlignment: MainAxisAlignment.center,
+                                children: <Widget>[
+                              FlatButton(
+                              onPressed: () {
+                              _selecionaCidade(context);
+                              },
+                              child:
+                                  CircleAvatar(
+                                    backgroundColor: Colors.white,
+                                    radius: 120.0,
+                                    child: Image.asset(
+                                      "images/icons/icsipam_grande.png",
+                                      height: 500.0,
+                                      fit: BoxFit.cover,
+                                    ),
+                                  ),
+                                  ),
+                                  FlatButton(
+                                    onPressed: () {
+                                      _selecionaCidade(context);
+                                    },
+                                    child:
+                                        Container(
+                                        padding: EdgeInsets.only(top: 15.0),
+                                        child:
+                                        Row(
+                                            mainAxisAlignment: MainAxisAlignment.center,
+                                            children: <Widget>[
+                                        Text("SELECIONE UMA CIDADE ",
+                                            style: TextStyle(
+                                                color: Colors.green[700], fontWeight: FontWeight.bold, fontSize: 18.0)),
+                                        Icon(
+                                          Icons.location_on,
+                                          size: 30.0,
+                                          color: Colors.green[800],
+                                        ),
+                                          ]
+                                        )
+                                        )
+
+                                  ),
+                                ],
+                              ),
+                            ),
+                          )
+                        ],
+                      )
+                    ],
+                  );
                 else
                   return DefaultTabController(
                     length: 4,
@@ -169,7 +262,7 @@ class _HomeState extends State<Home> {
                                             color: Colors.white,
                                             fontSize: 16.0,
                                             fontWeight: FontWeight.bold)),
-                                    Text("$cidadeFavorita",
+                                    Text("${cidadeFavorita["no_municipio"]}",
                                         style: TextStyle(
                                             color: Colors.white,
                                             fontSize: 16.0,
@@ -232,7 +325,7 @@ class _HomeState extends State<Home> {
               Colors.black.withOpacity(0.2), BlendMode.hardLight),
           image: new AssetImage("images/sol2.jpg"),
           fit: BoxFit.cover,
-          alignment: alinhamento,
+          alignment: carregaAlinhamento(),
         ),
       ),
       child: Column(
