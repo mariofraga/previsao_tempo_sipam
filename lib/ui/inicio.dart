@@ -60,11 +60,27 @@ class _InicioState extends State<Inicio> {
     Map decoded = await u.readData();
 
     print("teste inicio decoded -> ${decoded.toString()}");
-
+    String body;
     if (decoded["co_municipio"] == 0) {
       _selecionaCidade(context);
-      return decoded;
+   //   return decoded;
     }
+
+    String urlCon;
+    http.Response response;
+    try {
+      urlCon =      "http://www.aerofilmes.com/previsao_ok.json";
+      // urlCon =      "http://172.23.14.99:8000/api/previsao/ha45664Hk214g5f66l89u11gf/${cidadeFavorita["co_municipio"]}";
+      response = await http.get(urlCon);
+      body = utf8.decode(response.bodyBytes);
+    } catch(e){
+      print("NÃ£o Conectou.");
+      print(e.toString());
+      urlCon =      "http://www.aerofilmes.com/previsao_ok.json";
+      response = await http.get(urlCon);
+      body = utf8.decode(response.bodyBytes);
+    }
+
   }
 
 
