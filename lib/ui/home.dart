@@ -14,11 +14,6 @@ class Home extends StatefulWidget {
 }
 
 class _HomeState extends State<Home> {
-  //String cidadeFavorita;
-  //int contadorfundo = 0;
-  //String no_municipio;
-  //int co_municipio = 1100015;
-
   var cidadeFavorita;
   Future<Map> dados;
   uteis u = new uteis();
@@ -75,17 +70,15 @@ class _HomeState extends State<Home> {
     print("Entrou no get tempo");
     print(decoded);
     cidadeFavorita = decoded;
-    String retorno_vazio = '''{ "dias": [ { } ] }''';
     String body;
     if(cidadeFavorita["co_municipio"] == 0 && abriuCidades == false){
-    //  _selecionaCidade(context);
      return  json.decode(body).hasError;
     }
     String urlCon;
     http.Response response;
     try {
-      urlCon =      "http://www.aerofilmes.com/previsao_ok.json";
-      // urlCon =      "http://172.23.14.99:8000/api/previsao/ha45664Hk214g5f66l89u11gf/${cidadeFavorita["co_municipio"]}";
+     // urlCon =      "http://www.aerofilmes.com/previsao_ok.json";
+       urlCon =      "http://appportalmeteorologia.sipam.gov.br/api/previsao/ha45664Hk214g5f66l89u11gf/${cidadeFavorita["co_municipio"]}";
       response = await http.get(urlCon);
       body = utf8.decode(response.bodyBytes);
     } catch(e){
@@ -101,19 +94,15 @@ class _HomeState extends State<Home> {
 
   void _selecionaCidade(BuildContext c) async {
     final _recCidade = await Navigator.push(c, MaterialPageRoute(builder: (context) => Cidades()));
-    print("Entrou no seleicona cidade");
     if (_recCidade != null) {
       cidadeFavorita = _recCidade;
       abriuCidades == false;
-      print("deu certo");
-      print(_recCidade);
       u.writeData(json.encode(cidadeFavorita));
       print("gravou ok.");
     } else {
       print("_recCidade = null");
     }
     setState(() {
-      print("print do setState");
       print(cidadeFavorita);
       cidadeFavorita = json.encode(_recCidade.toString());
     });

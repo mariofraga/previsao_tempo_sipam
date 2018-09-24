@@ -168,7 +168,7 @@ class _CidadesState extends State<Cidades> {
       c.no_sigla_uf = cidade["no_sigla_uf"];
       cidades.add(c);
     }
-    print("Quantidade de Cidades Encontradas: ${cidades.length.toString()}");
+   // print("Quantidade de Cidades Encontradas: ${cidades.length.toString()}");
     setState(() {
       this.cidades = cidades;
       this.cidadesOrifinal = cidades;

@@ -16,15 +16,12 @@ class uteis {
   Future<File> get localFile async {
     File arquivo;
     try {
-      print("Entrou. no local,");
       final path = await _localPath;
-      print("passou do pat");
       if(FileSystemEntity.typeSync('$path/$nomeArquivo') != FileSystemEntityType.NOT_FOUND) {
         arquivo = File('$path/$nomeArquivo');
       } else {
         arquivo = File('$path/$nomeArquivo');
       }
-      print("passou do Arquivo!.");
       return arquivo;
       } catch(e){
       print("erro na leitura do arquivo.");
@@ -49,12 +46,10 @@ class uteis {
   }
 
   Future<File> writeData(String data) async {
-    print("entrou no write.");
     Future<File> Arquivo;
 
     try{
       final file = await localFile;
-      print("Arquivo a ser gravado!!!: ${data}");
       Arquivo = file.writeAsString("${data}");
       return Arquivo;
     } catch (e){
