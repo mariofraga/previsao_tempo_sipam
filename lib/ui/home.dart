@@ -243,7 +243,7 @@ class _HomeState extends State<Home> {
                               _selecionaCidade(context);
                             },
                             child: Row(
-                              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                              mainAxisAlignment: MainAxisAlignment.spaceAround,
                               children: <Widget>[
                                 Padding(
                                   padding: EdgeInsets.only(top: 4.0),
