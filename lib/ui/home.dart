@@ -226,16 +226,17 @@ class _HomeState extends State<Home> {
                       backgroundColor: Colors.white,
                       appBar: AppBar(
                         backgroundColor: Colors.lightGreen[900],
-                        centerTitle: true,
+                        centerTitle: false,
+                        titleSpacing: 5.0,
                         title: FlatButton(
                             onPressed: () {
                               _selecionaCidade(context);
                             },
                             child: Row(
-                              mainAxisAlignment: MainAxisAlignment.spaceAround,
+                              mainAxisAlignment: MainAxisAlignment.start,
                               children: <Widget>[
                                 Padding(
-                                  padding: EdgeInsets.only(top: 4.0),
+                                  padding: EdgeInsets.only(top: 4.0, right: 15.0),
                                   child: Image.asset(
                                     "images/icons/icsipam.png",
                                     height: 60.0,
@@ -244,6 +245,7 @@ class _HomeState extends State<Home> {
                                 ),
                                 //new Image.asset('images/favicon.ico', width: 32.0,),
                                 Column(
+                                  crossAxisAlignment: CrossAxisAlignment.center,
                                   mainAxisAlignment: MainAxisAlignment.center,
                                   children: <Widget>[
                                     Text("Previsão do Tempo na Amazônia",
@@ -251,9 +253,9 @@ class _HomeState extends State<Home> {
                                             color: Colors.white,
                                             fontSize: 16.0,
                                             fontWeight: FontWeight.bold)),
-                                    Text("${cidadeFavorita["no_municipio"]}",
+                                    Text("${cidadeFavorita["no_municipio"]}".toUpperCase(),
                                         style: TextStyle(
-                                            color: Colors.white,
+                                            color: Colors.amber,
                                             fontSize: 16.0,
                                             fontWeight: FontWeight.bold))
                                   ],
@@ -282,7 +284,7 @@ class _HomeState extends State<Home> {
                         child: TabBarView(
                           children: List<Widget>.generate(
                               snapshot.data["dias"].length, (index) {
-                              return pagePrevisaoTempo(snapshot, "${snapshot.data["dias"][index]["codigo_tempo"]}", AlignmentDirectional.centerStart, index);
+                              return pagePrevisaoTempo(snapshot, "${snapshot.data["dias"][index]["chuva"]== null ? snapshot.data["dias"][index]["codigo_tempo"].toString() : snapshot.data["dias"][index]["codigo_tempo"].toString()+'1'}", AlignmentDirectional.centerStart, index);
                           }),
                         ),
                       ),
@@ -328,7 +330,7 @@ class _HomeState extends State<Home> {
           LinhaTempo(snapshot.data["dias"][index]["tempo"], snapshot.data["dias"][index]["chuva"]),
           LinhaUmidade(snapshot.data["dias"][index]["nu_umidade_maxima"],
               snapshot.data["dias"][index]["nu_umidade_minima"]),
-          LinhaVentos(snapshot.data["dias"][index]["no_direcao_vento"], snapshot.data["dias"][index]["no_direcao_vento_variacao"], snapshot.data["dias"][index]["vento"], snapshot.data["dias"][index]["vento_variacao"],)
+          LinhaVentos(snapshot.data["dias"][index]["no_direcao_vento"], snapshot.data["dias"][index]["no_direcao_vento_variacao"], snapshot.data["dias"][index]["vento"], snapshot.data["dias"][index]["vento_variacao"])
         ],
       ),
     );
@@ -340,7 +342,7 @@ class _HomeState extends State<Home> {
       child: Column(
         children: <Widget>[
           TituloELinha("VENTOS"),
-          Descricao("$ventodirecao/$direcaoVariacao - $vento/$ventoVariacao", "vazia"),
+          Descricao("$ventodirecao/$direcaoVariacao - $vento ${ventoVariacao == null ? '' : '/ '+ventoVariacao}", "vazia"),
         ],
       ),
     );
@@ -353,17 +355,18 @@ class _HomeState extends State<Home> {
         children: <Widget>[
           Text(
             "$descricao",
-            style: TextStyle(fontSize: 25.0, color: Colors.white),
+            style: TextStyle(fontSize: 22.0, color: Colors.white),
           ),
         ],
       );
     } else {
+
       return Row(
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
         children: <Widget>[
           Text(
             "$descricao",
-            style: TextStyle(fontSize: 30.0, color: Colors.white),
+            style: TextStyle(fontSize: 26.0, color: Colors.white),
           ),
           Image.asset(
             "images/icons/$img.png",
@@ -443,7 +446,7 @@ class _HomeState extends State<Home> {
               Column(
                 children: <Widget>[
                   Text(
-                    "Temperatura Máx e Mín",
+                    "Temperatura Mín e Máx",
                     style: TextStyle(
                       fontSize: 17.0,
                       fontWeight: FontWeight.bold,
@@ -451,7 +454,7 @@ class _HomeState extends State<Home> {
                     ),
                   ),
                   Text(
-                    "$tempMax°C - $tempMin°C",
+                    "$tempMin°C - $tempMax°C",
                     style: TextStyle(
                         fontSize: 35.0,
                         fontWeight: FontWeight.bold,
